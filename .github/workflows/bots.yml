@@ -1,0 +1,69 @@
+name: Bots de trading (simulado)
+
+on:
+  schedule:
+    - cron: "7 * * * *"      # cada hora, minuto 7 (hora UTC)
+  workflow_dispatch:         # botón "Run workflow" para lanzarlo a mano
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bots
+  cancel-in-progress: false
+
+jobs:
+  ejecutar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Europe/Madrid
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install pandas
+
+      - name: Bot diario (12 criptos)
+        run: |
+          { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot.py; } >> registro_bot.txt 2>&1 || echo "El bot diario falló (ver registro_bot.txt)"
+
+      - name: Bot 4 horas (BTC)
+        run: |
+          { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot_4h.py; } >> registro_bot_4h.txt 2>&1 || echo "El bot 4h falló (ver registro_bot_4h.txt)"
+
+      - name: Panel
+        run: |
+          python generar_panel.py
+          for f in registro_bot.txt registro_bot_4h.txt; do tail -n 600 "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done
+          tail -n 8 registro_bot.txt registro_bot_4h.txt
+
+      - name: Guardar resultados
+        run: |
+          git config user.name "bot-trading"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Bots: actualización $(date '+%d/%m/%Y %H:%M')"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+
+      - name: Preparar web del panel
+        run: mkdir -p web && cp panel.html web/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  publicar-panel:
+    needs: ejecutar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
