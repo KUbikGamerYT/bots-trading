@@ -106,3 +106,6 @@ Capital simulado (4h): 100.00 USDT
 --- 10/11/2026 05:51
 Procesando vela de 4h de 2026-11-10 00:00:00 UTC
 Capital simulado (4h): 100.00 USDT
+--- 10/11/2026 06:52
+La vela de 4h de 2026-11-10 00:00:00 ya está procesada. Nada que hacer.
+Capital simulado (4h): 100.00 USDT
