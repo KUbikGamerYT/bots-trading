@@ -24,9 +24,75 @@
   "last_rebalance": "2026-11",
   "start": "2026-11-12T12:36:44.360238+00:00",
   "prices": {
-    "DBC": 27.97452059564344,
-    "SPY": 684.5189620276499,
-    "EFA": 94.06076589350019
+    "DBC": 27.948822194539602,
+    "SPY": 684.5879077295629,
+    "EFA": 94.0458450504512
   },
-  "actualizado": "2026-11-12T20:43:31+00:00"
+  "actualizado": "2026-11-12T22:27:45+00:00",
+  "analisis": {
+    "fecha": "2026-11-12T22:27:45+00:00",
+    "filas": [
+      [
+        "DBC \u00b7 Materias primas",
+        "cartera",
+        "Fuerza media 1/3/6/12 meses +23.3 % (puesto 1). Entre los 3 m\u00e1s fuertes: se mantiene."
+      ],
+      [
+        "SPY \u00b7 Bolsa EE.UU. S&P 500",
+        "cartera",
+        "Fuerza media 1/3/6/12 meses +7.8 % (puesto 2). Entre los 3 m\u00e1s fuertes: se mantiene."
+      ],
+      [
+        "EFA \u00b7 Bolsa desarrollada ex-EE.UU.",
+        "cartera",
+        "Fuerza media 1/3/6/12 meses +6.5 % (puesto 3). Entre los 3 m\u00e1s fuertes: se mantiene."
+      ],
+      [
+        "IWM \u00b7 Peque\u00f1as EE.UU.",
+        "cerca",
+        "Fuerza media 1/3/6/12 meses +6.3 % (puesto 4). No llega al top 3."
+      ],
+      [
+        "VNQ \u00b7 Inmobiliario",
+        "cerca",
+        "Fuerza media 1/3/6/12 meses +5.4 % (puesto 5). No llega al top 3."
+      ],
+      [
+        "QQQ \u00b7 Nasdaq 100",
+        "no",
+        "Fuerza media 1/3/6/12 meses +5.1 % (puesto 6). No llega al top 3."
+      ],
+      [
+        "TIP \u00b7 Bonos ligados a inflaci\u00f3n",
+        "no",
+        "Fuerza media 1/3/6/12 meses +3.4 % (puesto 7). No llega al top 3."
+      ],
+      [
+        "IEF \u00b7 Bonos EE.UU. 7-10 a\u00f1os",
+        "no",
+        "Fuerza media 1/3/6/12 meses +3.1 % (puesto 8). No llega al top 3."
+      ],
+      [
+        "TLT \u00b7 Bonos EE.UU. 20+ a\u00f1os",
+        "no",
+        "Fuerza media 1/3/6/12 meses +2.8 % (puesto 9). No llega al top 3."
+      ],
+      [
+        "LQD \u00b7 Bonos corporativos",
+        "no",
+        "Fuerza media 1/3/6/12 meses +2.6 % (puesto 10). No llega al top 3."
+      ],
+      [
+        "EEM \u00b7 Emergentes",
+        "no",
+        "Fuerza media 1/3/6/12 meses +1.9 % (puesto 11). No llega al top 3."
+      ],
+      [
+        "GLD \u00b7 Oro",
+        "no",
+        "Fuerza media 1/3/6/12 meses -4.7 % (puesto 12). Fuerza negativa: nunca compra algo que est\u00e9 bajando."
+      ]
+    ],
+    "resumen": "Solo opera una vez al mes (pr\u00f3xima revisi\u00f3n desde el 01/12/2026). Ranking con meses cerrados."
+  }
 }

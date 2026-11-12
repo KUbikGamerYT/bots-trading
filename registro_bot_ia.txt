@@ -68,3 +68,5 @@ Decisión semanal con datos hasta el 2026-11-11: Bitcoin, S&P 500, Oro
   Oro      nota de la IA: Hold
            **Rating**: Hold **Executive Summary**: Mantener la asignación actual en GLD sin incrementar la exposición larga. Esperar una confirmación técnica clara: ya sea la ruptura sostenida por encima de la media móvil de 50 periodos, o una confirmación de q
 Capital simulado (agente IA): 100.00 €
+--- 12/11/2026 23:27
+Capital simulado (agente IA): 100.00 €
