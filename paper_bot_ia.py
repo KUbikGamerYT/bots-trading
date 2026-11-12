@@ -7,9 +7,9 @@ equipo de riesgo) que da una nota por activo: Buy, Overweight, Hold, Underweight
 
 Reglas del bot:
   - 3 activos: Bitcoin (BTC-USD), S&P 500 (SPY) y oro (GLD), pasados a euros.
-  - Una vez por semana (lunes) la IA analiza cada uno con la información hasta el cierre anterior.
+  - Una vez por semana la IA analiza cada uno con la información hasta el cierre anterior.
   - Buy u Overweight -> tener 1/3 del capital en ese activo.  Underweight o Sell -> vender.
-    Hold o respuesta ilegible -> no tocar.
+    Hold -> no tocar.  Si la IA falla (cuota gratis agotada), se reintenta al día siguiente.
   - Coste simulado 0,1 % por lado.
   - Cada hora solo se valora la cartera con los precios actuales (no gasta IA).
 SIN BACKTEST: la IA "recuerda" el pasado, así que solo vale probarla de hoy en adelante.
@@ -73,7 +73,7 @@ def preguntar_ia(ticker, fecha):
     cfg = DEFAULT_CONFIG.copy()
     cfg["llm_provider"] = "google"
     cfg["quick_think_llm"] = os.environ.get("IA_MODELO_RAPIDO", "gemini-3.5-flash-lite")
-    cfg["deep_think_llm"] = os.environ.get("IA_MODELO_PROFUNDO", "gemini-3.8-flash")
+    cfg["deep_think_llm"] = os.environ.get("IA_MODELO_PROFUNDO", "gemini-3.5-flash-lite")  # el 3.8 agota la cuota gratis
     cfg["max_debate_rounds"] = 1
     cfg["max_risk_discuss_rounds"] = 1
     cfg["llm_max_retries"] = 8          # el plan gratuito limita llamadas por minuto
@@ -84,10 +84,17 @@ def preguntar_ia(ticker, fecha):
     return nota, " ".join(texto.split())[:400]
 
 
-def decidir(st, px, fecha, log=print):
+def pendientes(st, forzar=False):
+    """Activos sin decisión válida en los últimos 6 días (si falló por cuota, se reintenta al día siguiente)."""
+    hace6 = datetime.now(timezone.utc) - timedelta(days=6)
+    hechos = st.get("decididos", {})
+    return [s for s in TICKERS if forzar or s not in hechos or datetime.fromisoformat(hechos[s]) < hace6]
+
+
+def decidir(st, px, fecha, activos, log=print):
     pos = st["positions"]
     tot = equity(st, px)
-    for s in TICKERS:
+    for s in activos:
         try:
             nota, resumen = preguntar_ia(s, fecha)
         except Exception as e:
@@ -96,6 +103,10 @@ def decidir(st, px, fecha, log=print):
         if resumen:
             log(f"           {resumen[:250]}")
         append_csv(DECISIONES, dict(fecha=fecha, simbolo=s, nota=nota, resumen=resumen))
+        if nota in ("ERROR", "REVIEW"):
+            log("           (se reintentará en la próxima ejecución diaria)")
+            continue
+        st.setdefault("decididos", {})[s] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         precio = float(px[s])
         if nota in VENDER and s in pos:
             p = pos.pop(s)
@@ -135,13 +146,12 @@ def main():
         if not os.environ.get("GOOGLE_API_KEY"):
             print("Falta la clave GOOGLE_API_KEY (secret de GitHub). No se consulta a la IA.")
         else:
-            ult = st.get("ultima_decision")
-            reciente = ult and datetime.fromisoformat(ult) > datetime.now(timezone.utc) - timedelta(days=6)
-            if reciente and not a.forzar:
-                print(f"Ya hubo decisión esta semana ({ult[:10]}). Nada que hacer.")
+            activos = pendientes(st, a.forzar)
+            if not activos:
+                print("Los 3 activos ya tienen decisión esta semana. Nada que hacer.")
             else:
-                print(f"Decisión semanal con datos hasta el {fecha}")
-                decidir(st, px, fecha)
+                print(f"Decisión semanal con datos hasta el {fecha}: {', '.join(NOMBRE[x] for x in activos)}")
+                decidir(st, px, fecha, activos)
                 st["ultima_decision"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     hoy = str(datetime.now(MADRID).date())

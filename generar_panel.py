@@ -58,7 +58,7 @@ BOTS = [
          ret_anual=-0.90, dd=-0.95, experimento=True, activo="Activo"),
     dict(id="ia", nombre="Agente IA · TradingAgents (€)", estado="estado_bot_ia.json",
          capital="capital_ia.csv", ops="operaciones_ia.csv", registro="registro_bot_ia.txt",
-         esperado="EXPERIMENTO: un equipo de IAs (Gemini) lee gráficos, noticias y redes cada lunes y da una nota "
+         esperado="EXPERIMENTO: un equipo de IAs (Gemini) lee gráficos, noticias y redes una vez por semana y da una nota "
                   "a Bitcoin, S&P 500 y oro; si es Buy u Overweight compra 1/3 del capital, si es Underweight o Sell "
                   "vende. SIN BACKTEST posible (la IA recuerda el pasado): solo vale lo que haga de hoy en adelante. "
                   "No cuenta en la cartera combinada hasta tener unos meses de resultados.",

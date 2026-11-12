@@ -6,17 +6,17 @@
 <style>
 :root{color-scheme:light;
 --bg:#f4f3f0;--card:#fcfcfb;--card2:#f7f6f3;--ink:#0b0b0b;--ink2:#52514e;--ink3:#7d7c77;--line:#e4e2dc;--line2:#efede8;
---s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--tot:#0b0b0b;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--s8:#9a5b13;--tot:#0b0b0b;
 --pos:#0f7b3f;--neg:#c2361b;--ok-bg:#e3f4ea;--ok:#0f6b37;--warn-bg:#fff1d6;--warn:#7a5200;--crit-bg:#fde6e1;--crit:#a52a12;
 --neu-bg:#ecebe7;--neu:#52514e;--accent:#2a78d6}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#d08a3c;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}}
 :root[data-theme="dark"]{color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#d08a3c;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}
 *{box-sizing:border-box}
@@ -49,7 +49,7 @@ button.chip{cursor:pointer;font:inherit;font-size:12px}
 .leyenda button[aria-pressed="false"]{opacity:.4}
 .leyenda button:focus-visible{outline:2px solid var(--accent)}
 .sw{display:inline-block;width:10px;height:10px;border-radius:3px;flex:none;vertical-align:middle;margin-right:8px}
-.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}.sw.s7{background:var(--s7)}
+.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}.sw.s7{background:var(--s7)}.sw.s8{background:var(--s8)}
 .sw.tot{background:var(--tot);height:3px;width:14px;border-radius:2px}
 .leyenda .sw{margin:0}
 h2{font-size:15px;margin:28px 0 10px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
@@ -99,10 +99,10 @@ pre{white-space:pre-wrap;font:12px/1.5 ui-monospace,Consolas,monospace;backgroun
 .eje{fill:var(--ink3);font-size:11px}
 .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .ln.tot{stroke:var(--tot);stroke-width:2.5}
-.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}.ln.s7{stroke:var(--s7)}
-.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}.ar.s7{fill:var(--s7)}
+.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}.ln.s7{stroke:var(--s7)}.ln.s8{stroke:var(--s8)}
+.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}.ar.s7{fill:var(--s7)}.ar.s8{fill:var(--s8)}
 .dot{stroke:var(--card);stroke-width:2}
-.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}.dot.s7{fill:var(--s7)}
+.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}.dot.s7{fill:var(--s7)}.dot.s8{fill:var(--s8)}
 .cruz{stroke:var(--ink3);stroke-width:1}
 .tip{position:absolute;pointer-events:none;display:none;background:var(--card);color:var(--ink);border:1px solid var(--line);
   box-shadow:0 6px 20px rgba(0,0,0,.12);padding:8px 10px;border-radius:8px;font-size:12px;min-width:150px;z-index:2}
@@ -113,8 +113,8 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
 </style></head><body><main>
 <div class="top">
   <div class="marca"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="var(--bg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg></div><div><h1>Panel de trading</h1><p>Dinero simulado · paper trading</p></div></div>
-  <div class="chips"><span class="chip"><span class="vivo"></span>Actualizado 12/11 20:53</span>
-    <span class="chip">7 bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
+  <div class="chips"><span class="chip"><span class="vivo"></span>Actualizado 12/11 21:31</span>
+    <span class="chip">8 bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
 </div>
 
 <section class="panel hero" aria-label="Cartera combinada">
@@ -130,7 +130,7 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
     </div>
   </div>
   <div>
-    <div class="leyenda" role="group" aria-label="Mostrar u ocultar series"><button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button><button type="button" aria-pressed="true"><span class="sw s1"></span>12 criptos</button><button type="button" aria-pressed="true"><span class="sw s2"></span>BTC 4h</button><button type="button" aria-pressed="true"><span class="sw s3"></span>Acciones €</button><button type="button" aria-pressed="true"><span class="sw s4"></span>ETF 12 mercados</button><button type="button" aria-pressed="true"><span class="sw s5"></span>Oro 4h</button><button type="button" aria-pressed="true"><span class="sw s6"></span>Rebotes índices</button><button type="button" aria-pressed="true"><span class="sw s7"></span>Experimento 5 min</button></div>
+    <div class="leyenda" role="group" aria-label="Mostrar u ocultar series"><button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button><button type="button" aria-pressed="true"><span class="sw s1"></span>12 criptos</button><button type="button" aria-pressed="true"><span class="sw s2"></span>BTC 4h</button><button type="button" aria-pressed="true"><span class="sw s3"></span>Acciones €</button><button type="button" aria-pressed="true"><span class="sw s4"></span>ETF 12 mercados</button><button type="button" aria-pressed="true"><span class="sw s5"></span>Oro 4h</button><button type="button" aria-pressed="true"><span class="sw s6"></span>Rebotes índices</button><button type="button" aria-pressed="true"><span class="sw s7"></span>Experimento 5 min</button><button type="button" aria-pressed="true"><span class="sw s8"></span>Agente IA</button></div>
     <div class="chart" id="graf-main" role="img" aria-label="Rentabilidad acumulada de la cartera y de cada bot"></div>
   </div>
 </section>
@@ -205,6 +205,16 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
   <td class="num">+0,0 %<small>−90 %/año</small></td>
   <td class="num ">+0,0 %</td>
   <td class="num">0,0 %<small>límite −95 %</small>
+    <span class="barra" title="-0 % del límite"><i style="width:-0%"></i></span></td>
+  <td class="num">0<small>sin cerrar</small></td>
+  <td><span class="badge neutro" title="No cuenta en la cartera combinada"><span aria-hidden="true">⚗</span> Experimento</span></td>
+</tr><tr>
+  <td><span class="sw s8"></span><b>Agente IA</b><small>BTC, S&amp;P 500, oro · semanal · no cuenta</small></td>
+  <td class="num">0</td>
+  <td class="num ">+0,0 %</td>
+  <td class="num">+0,0 %<small>0 %/año</small></td>
+  <td class="num ">+0,0 %</td>
+  <td class="num">0,0 %<small>límite −30 %</small>
     <span class="barra" title="-0 % del límite"><i style="width:-0%"></i></span></td>
   <td class="num">0<small>sin cerrar</small></td>
   <td><span class="badge neutro" title="No cuenta en la cartera combinada"><span aria-hidden="true">⚗</span> Experimento</span></td>
@@ -472,11 +482,49 @@ Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 100.00 USDT</pre></details>
 </div>
 </details>
+<details class="bot" id="bot-ia">
+<summary>
+  <span class="sw s8"></span>
+  <span class="tit"><b>Agente IA</b><small>BTC, S&amp;P 500, oro · semanal · no cuenta</small></span>
+  <span class="spark" data-pts="[[&quot;2026-11-12 01:00&quot;, 100.0]]" data-s="8" aria-hidden="true"></span>
+  <span class="val"><b>100,00 <small>€</small></b><em class="">+0,0 %</em></span>
+  <span class="badge neutro"><span aria-hidden="true">⚗</span> Experimento</span>
+  <span class="chev" aria-hidden="true"></span>
+</summary>
+<div class="cuerpo">
+  <p class="desc">EXPERIMENTO: un equipo de IAs (Gemini) lee gráficos, noticias y redes una vez por semana y da una nota a Bitcoin, S&amp;P 500 y oro; si es Buy u Overweight compra 1/3 del capital, si es Underweight o Sell vende. SIN BACKTEST posible (la IA recuerda el pasado): solo vale lo que haga de hoy en adelante. No cuenta en la cartera combinada hasta tener unos meses de resultados.</p>
+  <div class="kpis">
+    <div class="kpi"><span>Capital</span><b>100,00 <small>€</small></b><em class="">+0,0 % desde el inicio</em></div>
+    <div class="kpi"><span>Peor caída</span><b>0,0 %</b><em>límite backtest −30 %</em></div>
+    <div class="kpi"><span>Operaciones cerradas</span><b>0</b><em>aciertos —</em></div>
+    <div class="kpi"><span>Posiciones abiertas</span><b>0</b><em>liquidez 100,00</em></div>
+  </div>
+  <div class="graf" data-pts="[[&quot;2026-11-12 01:00&quot;, 100.0]]" data-s="8" data-m="€" role="img"
+       aria-label="Evolución del capital de Agente IA"></div>
+  <h3>Posiciones abiertas</h3><div class="vacio">Sin posiciones abiertas: en liquidez, esperando señal.</div>
+  <h3>Últimas operaciones</h3><div class="vacio">Todavía no ha cerrado ninguna operación.</div>
+  <details class="log"><summary>Registro del bot · funcionando desde 12/11/2026
+    · última vela 2026-11-12</summary><pre>Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 403: Forbidden
+Vendor &#x27;fred&#x27; not configured for get_macro_indicators; trying next vendor.
+Vendor &#x27;fred&#x27; not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Research Manager: structured-output invocation failed (Error calling model &#x27;gemini-3.8-flash&#x27; (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\nPlease retry in 11h30m21.654760683s.&#x27;, &#x27;status&#x27;: &#x27;RESOURCE_EXHAUSTED&#x27;, &#x27;details&#x27;: [{&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.Help&#x27;, &#x27;links&#x27;: [{&#x27;description&#x27;: &#x27;Learn more about Gemini API quotas&#x27;, &#x27;url&#x27;: &#x27;https://aistudio.google.com/docs/rate-limits&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.QuotaFailure&#x27;, &#x27;violations&#x27;: [{&#x27;description&#x27;: &#x27;Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.&#x27;, &#x27;quotaMetric&#x27;: &#x27;generativelanguage.googleapis.com/generate_content_free_tier_requests&#x27;, &#x27;quotaId&#x27;: &#x27;GenerateRequestsPerDayPerProjectPerModel-FreeTier&#x27;, &#x27;quotaDimensions&#x27;: {&#x27;model&#x27;: &#x27;gemini-3.8-flash&#x27;, &#x27;location&#x27;: &#x27;global&#x27;}, &#x27;quotaValue&#x27;: &#x27;20&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.RetryInfo&#x27;, &#x27;retryDelay&#x27;: &#x27;41421s&#x27;}]}}); retrying once as free text
+Decisión semanal con datos hasta el 2026-11-11
+  Bitcoin  nota de la IA: Underweight
+           **Rating**: Underweight **Executive Summary**: Recomendamos reducir la exposición existente en BTC-USD entre un 30% y un 50%, ejecutando salidas tácticas en rebotes hacia la EMA de 10 periodos en $75,721.48. Se debe fijar un nivel de invalidación est
+  S&amp;P 500  nota de la IA: ERROR
+           GoogleRateLimitError: Error calling model &#x27;gemini-3.8-flash&#x27; (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this e
+  Oro      nota de la IA: ERROR
+           GoogleRateLimitError: Error calling model &#x27;gemini-3.8-flash&#x27; (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this e
+Capital simulado (agente IA): 100.00 €</pre></details>
+</div>
+</details>
 <footer>Los bots funcionan solos en la nube (GitHub): cada hora, y cada ~10 minutos con la bolsa europea abierta. Esta página se recarga sola cada 2 minutos.
 Todo es dinero simulado (100 por bot; cripto en USDT y el resto en euros, sumados como si fueran lo mismo). Revisión prevista hacia febrero de 2027:
 si los resultados se parecen al backtest, hablamos de dinero real.</footer>
 </main>
-<script type="application/json" id="datos">{"inicial": 600.0, "total": [["2026-11-07 01:00", 600.0], ["2026-11-08 01:00", 600.0], ["2026-11-08 09:00", 600.0], ["2026-11-08 13:00", 600.0], ["2026-11-08 17:00", 600.0], ["2026-11-08 21:00", 600.0], ["2026-11-09 01:00", 600.0], ["2026-11-09 05:00", 600.0], ["2026-11-09 09:00", 600.0], ["2026-11-09 13:00", 600.0], ["2026-11-09 17:00", 600.0], ["2026-11-09 21:00", 600.0], ["2026-11-10 01:00", 600.0], ["2026-11-10 05:00", 600.0], ["2026-11-10 09:00", 600.0], ["2026-11-10 13:00", 600.0], ["2026-11-10 17:00", 600.0], ["2026-11-10 21:00", 600.0], ["2026-11-11 01:00", 599.7], ["2026-11-11 05:00", 599.7], ["2026-11-11 09:00", 599.7], ["2026-11-11 13:00", 599.7], ["2026-11-11 21:00", 599.7], ["2026-11-12 05:00", 599.7], ["2026-11-12 09:00", 599.7], ["2026-11-12 13:00", 599.7], ["2026-11-12 20:53", 599.4]], "bots": [{"n": "12 criptos", "p": [["2026-11-07 01:00", 100.0], ["2026-11-08 01:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-11 01:00", 100.0]]}, {"n": "BTC 4h", "p": [["2026-11-08 09:00", 100.0], ["2026-11-08 13:00", 100.0], ["2026-11-08 17:00", 100.0], ["2026-11-08 21:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-09 05:00", 100.0], ["2026-11-09 09:00", 100.0], ["2026-11-09 13:00", 100.0], ["2026-11-09 17:00", 100.0], ["2026-11-09 21:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-10 05:00", 100.0], ["2026-11-10 09:00", 100.0], ["2026-11-10 13:00", 100.0], ["2026-11-10 17:00", 100.0], ["2026-11-10 21:00", 100.0], ["2026-11-11 01:00", 100.0], ["2026-11-11 05:00", 100.0], ["2026-11-11 09:00", 100.0], ["2026-11-11 13:00", 100.0], ["2026-11-11 21:00", 100.0], ["2026-11-12 05:00", 100.0], ["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Acciones \u20ac", "p": [["2026-11-11 01:00", 99.8], ["2026-11-12 20:52", 99.37]]}, {"n": "ETF 12 mercados", "p": [["2026-11-11 01:00", 99.9], ["2026-11-12 20:53", 100.03]]}, {"n": "Oro 4h", "p": [["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Rebotes \u00edndices", "p": [["2026-11-11 01:00", 100.0]]}, {"n": "Experimento 5 min", "p": [["2026-11-12 20:35", 100.0], ["2026-11-12 20:40", 100.0], ["2026-11-12 20:45", 100.0]]}]}</script>
+<script type="application/json" id="datos">{"inicial": 600.0, "total": [["2026-11-07 01:00", 600.0], ["2026-11-08 01:00", 600.0], ["2026-11-08 09:00", 600.0], ["2026-11-08 13:00", 600.0], ["2026-11-08 17:00", 600.0], ["2026-11-08 21:00", 600.0], ["2026-11-09 01:00", 600.0], ["2026-11-09 05:00", 600.0], ["2026-11-09 09:00", 600.0], ["2026-11-09 13:00", 600.0], ["2026-11-09 17:00", 600.0], ["2026-11-09 21:00", 600.0], ["2026-11-10 01:00", 600.0], ["2026-11-10 05:00", 600.0], ["2026-11-10 09:00", 600.0], ["2026-11-10 13:00", 600.0], ["2026-11-10 17:00", 600.0], ["2026-11-10 21:00", 600.0], ["2026-11-11 01:00", 599.7], ["2026-11-11 05:00", 599.7], ["2026-11-11 09:00", 599.7], ["2026-11-11 13:00", 599.7], ["2026-11-11 21:00", 599.7], ["2026-11-12 05:00", 599.7], ["2026-11-12 09:00", 599.7], ["2026-11-12 13:00", 599.7], ["2026-11-12 20:53", 599.4]], "bots": [{"n": "12 criptos", "p": [["2026-11-07 01:00", 100.0], ["2026-11-08 01:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-11 01:00", 100.0]]}, {"n": "BTC 4h", "p": [["2026-11-08 09:00", 100.0], ["2026-11-08 13:00", 100.0], ["2026-11-08 17:00", 100.0], ["2026-11-08 21:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-09 05:00", 100.0], ["2026-11-09 09:00", 100.0], ["2026-11-09 13:00", 100.0], ["2026-11-09 17:00", 100.0], ["2026-11-09 21:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-10 05:00", 100.0], ["2026-11-10 09:00", 100.0], ["2026-11-10 13:00", 100.0], ["2026-11-10 17:00", 100.0], ["2026-11-10 21:00", 100.0], ["2026-11-11 01:00", 100.0], ["2026-11-11 05:00", 100.0], ["2026-11-11 09:00", 100.0], ["2026-11-11 13:00", 100.0], ["2026-11-11 21:00", 100.0], ["2026-11-12 05:00", 100.0], ["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Acciones \u20ac", "p": [["2026-11-11 01:00", 99.8], ["2026-11-12 20:52", 99.37]]}, {"n": "ETF 12 mercados", "p": [["2026-11-11 01:00", 99.9], ["2026-11-12 20:53", 100.03]]}, {"n": "Oro 4h", "p": [["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Rebotes \u00edndices", "p": [["2026-11-11 01:00", 100.0]]}, {"n": "Experimento 5 min", "p": [["2026-11-12 20:35", 100.0], ["2026-11-12 20:40", 100.0], ["2026-11-12 20:45", 100.0]]}, {"n": "Agente IA", "p": [["2026-11-12 01:00", 100.0]]}]}</script>
 <script>
 (function(){
 var NS='http://www.w3.org/2000/svg';
