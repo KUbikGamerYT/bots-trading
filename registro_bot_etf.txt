@@ -26,3 +26,9 @@ Capital simulado (ETF): 99.93 EUR
   DBC  Materias primas              valor 33.31 €  (-0.1 %)
   SPY  Bolsa EE.UU. S&P 500         valor 33.31 €  (-0.1 %)
   EFA  Bolsa desarrollada ex-EE.UU. valor 33.31 €  (-0.1 %)
+--- 12/11/2026 19:08
+La sesión del 2026-11-11 ya está procesada. Nada que hacer.
+Capital simulado (ETF): 100.08 EUR
+  DBC  Materias primas              valor 33.40 €  (+0.2 %)
+  SPY  Bolsa EE.UU. S&P 500         valor 33.42 €  (+0.3 %)
+  EFA  Bolsa desarrollada ex-EE.UU. valor 33.26 €  (-0.2 %)
