@@ -2,7 +2,7 @@ name: Agente IA (decisión semanal)
 
 on:
   schedule:
-    - cron: "30 6 * * 1"     # lunes 6:30 UTC (7:30-8:30 en Madrid)
+    - cron: "30 6 * * *"     # cada día 6:30 UTC; solo pregunta por los activos sin decisión en la semana
   workflow_dispatch:         # botón "Run workflow" para lanzarlo a mano
     inputs:
       forzar:
