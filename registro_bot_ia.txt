@@ -42,3 +42,29 @@ Decisión semanal con datos hasta el 2026-11-11: S&P 500, Oro
 Capital simulado (agente IA): 100.00 €
 --- 12/11/2026 21:43
 Capital simulado (agente IA): 100.00 €
+--- 12/11/2026 22:35 DECISIÓN SEMANAL
+Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 403: Forbidden
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 403: Forbidden
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 403: Forbidden
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-11: Bitcoin, S&P 500, Oro
+  Bitcoin  nota de la IA: Hold
+           **Rating**: Hold **Executive Summary**: Mantener la postura actual sin incrementar la exposición en BTC-USD. Permanecer en la lista de observación cerca del soporte macro de la media de 200 sesiones (73,117.55 USD) y evitar compras agresivas hasta qu
+  S&P 500  nota de la IA: Hold
+           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en SPY sin realizar nuevas compras ni reducciones de tamaño. Se recomienda supervisar de cerca el comportamiento del precio frente a la media móvil de 50 días (764.55) y la banda i
+  Oro      nota de la IA: Hold
+           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en GLD sin incrementar la exposición larga. Esperar una confirmación técnica clara: ya sea la ruptura sostenida por encima de la media móvil de 50 periodos, o una confirmación de q
+Capital simulado (agente IA): 100.00 €

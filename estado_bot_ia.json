@@ -2,13 +2,34 @@
   "cash": 100.0,
   "positions": {},
   "last_bar": "2026-11-12",
-  "ultima_decision": "2026-11-12T20:37:04+00:00",
+  "ultima_decision": "2026-11-12T21:39:30+00:00",
   "start": "2026-11-12T20:02:09.612120+00:00",
   "prices": {},
-  "actualizado": "2026-11-12T20:43:37+00:00",
+  "actualizado": "2026-11-12T21:39:30+00:00",
   "decididos": {
-    "BTC-USD": "2026-11-12T20:31:55+00:00",
-    "SPY": "2026-11-12T20:35:40+00:00",
-    "GLD": "2026-11-12T20:37:04+00:00"
+    "BTC-USD": "2026-11-12T21:37:05+00:00",
+    "SPY": "2026-11-12T21:38:16+00:00",
+    "GLD": "2026-11-12T21:39:30+00:00"
+  },
+  "analisis": {
+    "resumen": "\u00daltimo an\u00e1lisis del equipo de IAs para cada activo (se renueva una vez por semana).",
+    "filas": [
+      [
+        "Bitcoin",
+        "cerca",
+        "Nota de la IA: Hold (no toca nada). An\u00e1lisis del 2026-11-11:\n\n**Rating**: Hold\n\n**Executive Summary**: Mantener la postura actual sin incrementar la exposici\u00f3n en BTC-USD. Permanecer en la lista de observaci\u00f3n cerca del soporte macro de la media de 200 sesiones (73,117.55 USD) y evitar compras agresivas hasta que se confirme un rebote t\u00e9cnico con indicadores de impulso alcistas.\n\n**Investment Thesis**: La evidencia t\u00e9cnica se mantiene equilibrada debido a conflictos insalvables entre los indicadores de corto y mediano plazo. Por un lado, el activo cotiza muy cerca del soporte clave de la media m\u00f3vil de 200 sesiones (73,117.55 USD) y presenta un RSI de 35.52 que sugiere un posible agotamiento de la presi\u00f3n vendedora, abriendo la puerta a un rebote tal como argumenta el analista agresivo. Sin embargo, el an\u00e1lisis conservador y neutral demuestra que la tendencia de mediano plazo est\u00e1 profundamente da\u00f1ada: el precio opera por debajo de la SMA de 50 (81,118.62 USD), el MACD permanece en terreno negativo con un histograma bajista y la volatilidad medida por el ATR se sit\u00faa en unos elevados 2,210.87 USD. Con un stop loss propuesto en 70,906.68 USD que se encuentra demasiado expuesto a barridas por la alta volatilidad institucional reflejada en la VWMA (76,802.37 USD), la ausencia de se\u00f1ales confirmadas de reversi\u00f3n desaconseja asumir riesgos o forzar una direcci\u00f3n alcista en este momento. Lo que cambiar\u00eda esta tesis a una recomendaci\u00f3n de compra ser\u00eda un cruce alcista confirmado en el MACD y la superaci\u00f3n de la resistencia de la EMA de 10 periodos (75,721.48 USD).\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 months"
+      ],
+      [
+        "S&P 500",
+        "cerca",
+        "Nota de la IA: Hold (no toca nada). An\u00e1lisis del 2026-11-11:\n\n**Rating**: Hold\n\n**Executive Summary**: Mantener la asignaci\u00f3n actual en SPY sin realizar nuevas compras ni reducciones de tama\u00f1o. Se recomienda supervisar de cerca el comportamiento del precio frente a la media m\u00f3vil de 50 d\u00edas (764.55) y la banda inferior de Bollinger (737.37), ejecutando ajustes t\u00e1cticos \u00fanicamente ante una ruptura confirmada.\n\n**Investment Thesis**: La evidencia t\u00e9cnica actual para SPY se encuentra equilibrada y muestra una fase de consolidaci\u00f3n. Por un lado, el analista alcista y la media m\u00f3vil de 200 d\u00edas (728.65) respaldan una tendencia estructural s\u00f3lida de fondo, apoyada por el volumen institucional y un rebote desde los m\u00ednimos de noviembre. Por otro lado, el analista conservador y el analista neutral se\u00f1alan con acierto factores de riesgo importantes que impiden tomar una direcci\u00f3n decisiva: el precio cotiza por debajo de la media m\u00f3vil de 50 d\u00edas (764.55), el MACD se mantiene en terreno negativo (-4.81), el RSI est\u00e1 en un punto neutral de 49.91 y el ATR elevado (11.06) refleja un r\u00e9gimen de volatilidad riesgoso. Esta combinaci\u00f3n de soporte estructural alcista y resistencia t\u00e9cnica a mediano plazo justifica mantener la postura actual en espera de una ruptura clara y validada.\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 months"
+      ],
+      [
+        "Oro",
+        "cerca",
+        "Nota de la IA: Hold (no toca nada). An\u00e1lisis del 2026-11-11:\n\n**Rating**: Hold\n\n**Executive Summary**: Mantener la asignaci\u00f3n actual en GLD sin incrementar la exposici\u00f3n larga. Esperar una confirmaci\u00f3n t\u00e9cnica clara: ya sea la ruptura sostenida por encima de la media m\u00f3vil de 50 periodos, o una confirmaci\u00f3n de quiebre bajista por debajo del soporte para evaluar recortes utilizando el stop loss en 351.45 y la volatilidad del ATR.\n\n**Investment Thesis**: El debate presenta una marcada contradicci\u00f3n entre la fortaleza macroecon\u00f3mica estructural impulsada por los bancos centrales y la debilidad t\u00e9cnica de GLD, que cotiza por debajo de sus medias m\u00f3viles de 50 y 200 periodos, con salidas de capital de los ETFs por $1.8 mil millones en octubre y un RSI neutral-d\u00e9bil de 43.19. Aunque el analista agresivo argumenta un agotamiento del impulso bajista respaldado por el MACD y el oro por encima de $4,000, los datos t\u00e9cnicos y las salidas netas de los fondos cotizados presentados por el analista conservador y el analista neutral muestran que la divergencia entre los flujos y la macroeconom\u00eda deja el panorama equilibrado pero incierto. Por lo tanto, la evidencia no es concluyente para un cambio de direcci\u00f3n dr\u00e1stico, justificando mantener la posici\u00f3n actual bajo una gesti\u00f3n estricta del riesgo.\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 months"
+      ]
+    ],
+    "fecha": "2026-11-12T21:39:30+00:00"
   }
 }
