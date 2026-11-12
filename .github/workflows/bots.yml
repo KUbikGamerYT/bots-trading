@@ -23,6 +23,8 @@ jobs:
       TZ: Europe/Madrid
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main            # lo último de main, no la versión de cuando se lanzó (evita conflictos si esperó en cola)
 
       - uses: actions/setup-python@v5
         with:
