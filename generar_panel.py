@@ -50,13 +50,20 @@ BOTS = [
                   "que siguen en tendencia alcista y vende en el rebote. Backtest 2010–2026: ~70 % de aciertos, "
                   "+6 a +7 % al año, peor caída −14 %, unas 3–4 operaciones al mes.",
          ret_anual=0.065, dd=-0.15, moneda="€", activo="Índice"),
+    dict(id="loco", nombre="Experimento · BTC 5 minutos", estado="estado_bot_loco.json",
+         capital="capital_loco.csv", ops="operaciones_loco.csv", registro="registro_bot_loco.txt",
+         esperado="EXPERIMENTO: el Buy Sell Signal en velas de 5 minutos de Bitcoin, con la comisión real de Binance "
+                  "(0,1 %). Unas 15–25 operaciones al día. En el backtest del oro a 5 minutos perdía casi todo en "
+                  "2 meses. No cuenta en la cartera combinada: es para ver en directo qué pasa al operar tanto.",
+         ret_anual=-0.90, dd=-0.95, experimento=True, activo="Activo"),
 ]
 
 
 CORTO = {"diario": ("12 criptos", "Cripto · diario"), "4h": ("BTC 4h", "Cripto · 4 horas"),
          "acciones": ("Acciones €", "Bolsa · mensual"), "etf": ("ETF 12 mercados", "Multiactivo · mensual"),
          "oro": ("Oro 4h", "Materias primas · 4 horas"),
-         "rebotes": ("Rebotes índices", "Índices · RSI 2 diario")}
+         "rebotes": ("Rebotes índices", "Índices · RSI 2 diario"),
+         "loco": ("Experimento 5 min", "BTC · 5 minutos · no cuenta")}
 INICIAL = 100.0
 
 
@@ -163,6 +170,8 @@ def resumen(bot, ahora):
 def estado(r):
     """Semáforo frente al backtest: (clase, icono, texto, explicación)."""
     b = r["bot"]
+    if b.get("experimento"):
+        return ("neutro", "⚗", "Experimento", "No cuenta en la cartera combinada")
     if r["dd"] < b["dd"] * 1.15:
         return ("crit", "▲", "Revisar", "La caída supera la peor del backtest")
     if r["dias"] < 30:
@@ -185,9 +194,9 @@ def tabla_real_vs(rs):
         filas += f"""<tr>
   <td><span class="sw s{i + 1}"></span><b>{esc(corto)}</b><small>{esc(mercado)}</small></td>
   <td class="num">{r["dias"]:.0f}</td>
-  <td class="num {'pos' if r['rent'] > 0.0001 else 'neg' if r['rent'] < -0.0001 else ''}">{pct(r["rent"])}</td>
+  <td class="num {'pos' if r['rent'] > 0.0005 else 'neg' if r['rent'] < -0.0005 else ''}">{pct(r["rent"])}</td>
   <td class="num">{pct(r["esperado"])}<small>{pct(b["ret_anual"], False, 0)}/año</small></td>
-  <td class="num {'pos' if dif > 0.0001 else 'neg' if dif < -0.0001 else ''}">{pct(dif)}</td>
+  <td class="num {'pos' if dif > 0.0005 else 'neg' if dif < -0.0005 else ''}">{pct(dif)}</td>
   <td class="num">{pct(r["dd"]) if r["dd"] < -0.0005 else "0,0 %"}<small>límite {pct(b["dd"], True, 0)}</small>
     <span class="barra" title="{uso * 100:.0f} % del límite"><i style="width:{min(uso, 1) * 100:.0f}%"></i></span></td>
   <td class="num">{r["n_ops"]}<small>{'aciertos ' + pct(r["aciertos"], False, 0) if r["aciertos"] is not None else 'sin cerrar'}</small></td>
@@ -260,7 +269,7 @@ def ficha(i, r):
     else:
         ops = '<div class="vacio">Todavía no ha cerrado ninguna operación.</div>'
     reg = esc("\n".join(r["registro"])) or "Sin registro todavía."
-    color = "pos" if r["rent"] > 0.0001 else ("neg" if r["rent"] < -0.0001 else "")
+    color = "pos" if r["rent"] > 0.0005 else ("neg" if r["rent"] < -0.0005 else "")
     datos = esc(json.dumps(serie_json(r["puntos"])))
     return f"""
 <details class="bot" id="bot-{esc(b['id'])}">
@@ -293,17 +302,17 @@ def ficha(i, r):
 CSS = """
 :root{color-scheme:light;
 --bg:#f4f3f0;--card:#fcfcfb;--card2:#f7f6f3;--ink:#0b0b0b;--ink2:#52514e;--ink3:#7d7c77;--line:#e4e2dc;--line2:#efede8;
---s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--tot:#0b0b0b;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--tot:#0b0b0b;
 --pos:#0f7b3f;--neg:#c2361b;--ok-bg:#e3f4ea;--ok:#0f6b37;--warn-bg:#fff1d6;--warn:#7a5200;--crit-bg:#fde6e1;--crit:#a52a12;
 --neu-bg:#ecebe7;--neu:#52514e;--accent:#2a78d6}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}}
 :root[data-theme="dark"]{color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}
 *{box-sizing:border-box}
@@ -336,7 +345,7 @@ button.chip{cursor:pointer;font:inherit;font-size:12px}
 .leyenda button[aria-pressed="false"]{opacity:.4}
 .leyenda button:focus-visible{outline:2px solid var(--accent)}
 .sw{display:inline-block;width:10px;height:10px;border-radius:3px;flex:none;vertical-align:middle;margin-right:8px}
-.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}
+.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}.sw.s7{background:var(--s7)}
 .sw.tot{background:var(--tot);height:3px;width:14px;border-radius:2px}
 .leyenda .sw{margin:0}
 h2{font-size:15px;margin:28px 0 10px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
@@ -386,10 +395,10 @@ pre{white-space:pre-wrap;font:12px/1.5 ui-monospace,Consolas,monospace;backgroun
 .eje{fill:var(--ink3);font-size:11px}
 .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .ln.tot{stroke:var(--tot);stroke-width:2.5}
-.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}
-.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}
+.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}.ln.s7{stroke:var(--s7)}
+.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}.ar.s7{fill:var(--s7)}
 .dot{stroke:var(--card);stroke-width:2}
-.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}
+.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}.dot.s7{fill:var(--s7)}
 .cruz{stroke:var(--ink3);stroke-width:1}
 .tip{position:absolute;pointer-events:none;display:none;background:var(--card);color:var(--ink);border:1px solid var(--line);
   box-shadow:0 6px 20px rgba(0,0,0,.12);padding:8px 10px;border-radius:8px;font-size:12px;min-width:150px;z-index:2}
@@ -482,9 +491,10 @@ LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="var(--bg)" stroke-width="2
 
 def main():
     ahora = datetime.now(MADRID)
-    rs = [resumen(b, ahora) for b in BOTS]
+    todos = [resumen(b, ahora) for b in BOTS]
+    rs = [r for r in todos if not r["bot"].get("experimento")]
     avisos = []
-    for r in rs:
+    for r in todos:
         if r["actualizado"]:
             horas = (ahora - r["actualizado"]).total_seconds() / 3600
             if horas > 8:
@@ -503,14 +513,14 @@ def main():
         pico = max(pico, v)
         dd_tot = min(dd_tot, v / pico - 1)
     datos = dict(inicial=inicial, total=serie_json(comb),
-                 bots=[dict(n=CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0], p=serie_json(r["puntos"])) for r in rs])
+                 bots=[dict(n=CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0], p=serie_json(r["puntos"])) for r in todos])
     leyenda = '<button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button>' + "".join(
         f'<button type="button" aria-pressed="true"><span class="sw s{i + 1}"></span>{esc(CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0])}</button>'
-        for i, r in enumerate(rs))
-    color = "pos" if rent > 0.0001 else ("neg" if rent < -0.0001 else "")
-    flecha = "▲" if rent > 0.0001 else ("▼" if rent < -0.0001 else "■")
+        for i, r in enumerate(todos))
+    color = "pos" if rent > 0.0005 else ("neg" if rent < -0.0005 else "")
+    flecha = "▲" if rent > 0.0005 else ("▼" if rent < -0.0005 else "■")
     aviso = "".join(f'<div class="aviso" role="status">⚠ {esc(a)}</div>' for a in avisos)
-    ult = max((r["actualizado"] for r in rs if r["actualizado"]), default=None)
+    ult = max((r["actualizado"] for r in todos if r["actualizado"]), default=None)
     ult_txt = ult.astimezone(MADRID).strftime("%d/%m %H:%M") if ult else "—"
     doc = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="120">
@@ -521,7 +531,7 @@ def main():
 <div class="top">
   <div class="marca"><div class="logo">{LOGO}</div><div><h1>Panel de trading</h1><p>Dinero simulado · paper trading</p></div></div>
   <div class="chips"><span class="chip"><span class="vivo"></span>Actualizado {esc(ult_txt)}</span>
-    <span class="chip">{len(rs)} bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
+    <span class="chip">{len(todos)} bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
 </div>
 {aviso}
 <section class="panel hero" aria-label="Cartera combinada">
@@ -542,9 +552,9 @@ def main():
   </div>
 </section>
 <h2>Real vs esperado <small>comparación con el backtest de cada bot</small></h2>
-<section class="panel" style="padding:6px 8px">{tabla_real_vs(rs)}</section>
+<section class="panel" style="padding:6px 8px">{tabla_real_vs(todos)}</section>
 <h2>Bots <small>pulsa en uno para ver el detalle</small></h2>
-{''.join(ficha(i, r) for i, r in enumerate(rs))}
+{''.join(ficha(i, r) for i, r in enumerate(todos))}
 <footer>Los bots funcionan solos en la nube (GitHub): cada hora, y cada ~10 minutos con la bolsa europea abierta. Esta página se recarga sola cada 2 minutos.
 Todo es dinero simulado (100 por bot; cripto en USDT y el resto en euros, sumados como si fueran lo mismo). Revisión prevista hacia febrero de 2027:
 si los resultados se parecen al backtest, hablamos de dinero real.</footer>
