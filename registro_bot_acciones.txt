@@ -1,0 +1,17 @@
+--- 12/11/2026 12:40
+
+1 Failed download:
+['ALM.MC']: OperationalError('database is locked')
+Procesando sesión del 2026-11-11
+  Revisión mensual. Las 5 más fuertes: REP.MC (+84 %), ASML.AS (+74 %), MTS.MC (+66 %), ENI.MI (+64 %), BAYN.DE (+56 %)
+  COMPRA REP.MC    a 29.8  por 20.00 €  (subió +84 % en 12 meses)
+  COMPRA ASML.AS   a 1369  por 20.00 €  (subió +74 % en 12 meses)
+  COMPRA MTS.MC    a 60.06  por 20.00 €  (subió +66 % en 12 meses)
+  COMPRA ENI.MI    a 25.59  por 20.00 €  (subió +64 % en 12 meses)
+  COMPRA BAYN.DE   a 57.41  por 20.00 €  (subió +56 % en 12 meses)
+Capital simulado (acciones): 99.80 EUR
+  REP.MC    valor 19.96 €  entrada 29.8  (-0.2 %)
+  ASML.AS   valor 19.96 €  entrada 1369  (-0.2 %)
+  MTS.MC    valor 19.96 €  entrada 60.06  (-0.2 %)
+  ENI.MI    valor 19.96 €  entrada 25.59  (-0.2 %)
+  BAYN.DE   valor 19.96 €  entrada 57.41  (-0.2 %)
