@@ -90,6 +90,12 @@ def resumen(bot):
     puntos = sorted(serie.items())
     inicial = 100.0
     actual = puntos[-1][1] if puntos else fnum(st.get("cash"), inicial)
+    # valor "en vivo" con los últimos precios que guardó el bot (si los tiene todos)
+    pos_, px_ = st.get("positions") or {}, st.get("prices") or {}
+    if st and all(s in px_ for s in pos_):
+        actual = fnum(st.get("cash"), inicial) + sum(fnum(p.get("units")) * fnum(px_[s]) for s, p in pos_.items())
+        if puntos and abs(actual - puntos[-1][1]) > 0.005 and st.get("actualizado"):
+            puntos.append((str(st["actualizado"])[:16].replace("T", " "), round(actual, 2)))
     pico, dd = inicial, 0.0
     for _, v in puntos:
         pico = max(pico, v)
@@ -258,13 +264,13 @@ def main():
     total = sum(r["actual"] for r in rs)
     aviso = "".join(f'<div class="aviso">⚠ {html.escape(a)}</div>' for a in avisos)
     doc = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel de los bots</title><meta http-equiv="refresh" content="900">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel de los bots</title><meta http-equiv="refresh" content="120">
 <style>{CSS}</style></head><body><main>
 <header><h1>Panel de los bots de trading</h1>
 <p>Dinero simulado, no real. Entre los {len(rs)} bots: <b>{eur(total)}</b> de {100 * len(rs)} iniciales
 ({pct(total / (100 * len(rs)) - 1)}), sumando USDT y euros como si fueran lo mismo. Actualizado el {ahora.strftime('%d/%m/%Y a las %H:%M')}.</p></header>
 {aviso}{''.join(tarjeta(r) for r in rs)}
-<footer>Los bots funcionan solos en la nube (GitHub) y este panel se actualiza cada hora. Recarga la página para ver lo último.
+<footer>Los bots funcionan solos en la nube (GitHub) y este panel se actualiza cada hora (cada ~10 minutos con la bolsa abierta) y se recarga solo cada 2 minutos.
 Revisión prevista hacia febrero de 2027: si los resultados se parecen al backtest, hablamos de dinero real.</footer>
 </main><script>{JS}</script></body></html>"""
     with open(OUT, "w", encoding="utf-8") as f:

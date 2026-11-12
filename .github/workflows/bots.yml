@@ -3,6 +3,7 @@ name: Bots de trading (simulado)
 on:
   schedule:
     - cron: "7 * * * *"      # cada hora, minuto 7 (hora UTC)
+    - cron: "*/10 7-16 * * 1-5"  # cada ~10 min con la bolsa europea abierta (lun-vie, 8:00-17:30 hora de Madrid)
   workflow_dispatch:         # botón "Run workflow" para lanzarlo a mano
 
 permissions:
