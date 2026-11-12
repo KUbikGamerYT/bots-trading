@@ -38,7 +38,7 @@ TICKERS = [t + ".MC" for t in ESPANA] + EUROPA
 
 def descargar():
     import yfinance as yf
-    d = yf.download(TICKERS, period="2y", interval="1d", auto_adjust=True, progress=False, threads=True)
+    d = yf.download(TICKERS, period="2y", interval="1d", auto_adjust=True, progress=False, threads=False)
     c = d["Close"].dropna(how="all")
     hoy = datetime.now(ZoneInfo("Europe/Madrid")).date()
     cerradas = c[c.index.date < hoy]            # sólo sesiones ya cerradas
