@@ -474,6 +474,22 @@ function spark(box){var pts=conv(JSON.parse(box.dataset.pts));if(pts.length<2)re
 document.querySelectorAll('.spark').forEach(spark);
 function ficha(box){multi(box,[{name:'Capital',cls:'s'+box.dataset.s,pts:conv(JSON.parse(box.dataset.pts))}],{h:200,area:true,eur:true,m:box.dataset.m});}
 document.querySelectorAll('details.bot').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){var g=d.querySelector('.graf');ficha(g);}});});
+/* recordar lo que tenías abierto entre recargas */
+var KEY='panel-vista';
+function guardar(){try{sessionStorage.setItem(KEY,JSON.stringify({
+  open:[].map.call(document.querySelectorAll('details.bot[open]'),function(d){return d.id;}),
+  logs:[].map.call(document.querySelectorAll('details.bot details.log[open]'),function(d){return d.closest('details.bot').id;}),
+  off:series.map(function(s){return !!s.off;}),y:window.scrollY}));}catch(e){}}
+try{var v=JSON.parse(sessionStorage.getItem(KEY)||'null');
+  if(v){(v.off||[]).forEach(function(o,i){if(o&&series[i]){series[i].off=true;var bt=document.querySelectorAll('.leyenda button')[i];if(bt)bt.setAttribute('aria-pressed','false');}});
+    (v.open||[]).forEach(function(id){var d=document.getElementById(id);if(d){d.open=true;ficha(d.querySelector('.graf'));}});
+    (v.logs||[]).forEach(function(id){var d=document.getElementById(id);if(d){var l=d.querySelector('details.log');if(l)l.open=true;}});
+    if(v.y)requestAnimationFrame(function(){window.scrollTo(0,v.y);});}}catch(e){}
+document.addEventListener('toggle',guardar,true);
+document.querySelectorAll('.leyenda button').forEach(function(b){b.addEventListener('click',guardar);});
+window.addEventListener('scroll',function(){clearTimeout(window._sg);window._sg=setTimeout(guardar,200);});
+/* recarga automática cada 2 minutos, guardando antes la vista (y sin recargar si estás mirando el gráfico) */
+setInterval(function(){if(document.querySelector('.tip[style*="block"]'))return;guardar();location.reload();},120000);
 draw();
 var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){draw();document.querySelectorAll('details.bot[open] .graf').forEach(ficha);},150);});
 /* tema */
@@ -523,7 +539,7 @@ def main():
     ult = max((r["actualizado"] for r in todos if r["actualizado"]), default=None)
     ult_txt = ult.astimezone(MADRID).strftime("%d/%m %H:%M") if ult else "—"
     doc = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="120">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panel de trading</title><meta name="description" content="Bots de paper trading: cartera combinada, real frente a esperado y detalle por bot.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b0b0b'/%3E%3Cpath d='M4 16l4-4 3 2 7-7' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <script>try{{var t=localStorage.getItem('tema');if(t&&t!=='auto')document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}</script>
