@@ -23,3 +23,20 @@ Decisión semanal con datos hasta el 2026-11-11
   Oro      nota de la IA: ERROR
            GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this e
 Capital simulado (agente IA): 100.00 €
+--- 12/11/2026 21:33 DECISIÓN SEMANAL
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 403: Forbidden
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 403: Forbidden
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-11: S&P 500, Oro
+  S&P 500  nota de la IA: Hold
+           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en SPY sin incrementar exposición por el momento. Esperar a una ruptura confirmada por encima de la media móvil de 50 periodos en 764.55 antes de comprometer nuevo capital. Gestion
+  Oro      nota de la IA: Underweight
+           **Rating**: Underweight **Executive Summary**: Se recomienda reducir la exposición en GLD mediante una toma de beneficios parcial o una posición bajista controlada al 2.5% de la cartera. El stop loss debe situarse estrictamente en 378.89 con un horiz
+Capital simulado (agente IA): 100.00 €
