@@ -55,11 +55,15 @@ jobs:
         run: |
           { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot_rebotes.py; } >> registro_bot_rebotes.txt 2>&1 || echo "El bot de rebotes falló (ver registro_bot_rebotes.txt)"
 
+      - name: Experimento BTC 5 minutos
+        run: |
+          { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot_loco.py; } >> registro_bot_loco.txt 2>&1 || echo "El experimento falló (ver registro_bot_loco.txt)"
+
       - name: Panel
         run: |
           python generar_panel.py
-          for f in registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt registro_bot_oro.txt registro_bot_rebotes.txt; do tail -n 600 "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done
-          tail -n 8 registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt registro_bot_oro.txt registro_bot_rebotes.txt
+          for f in registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt registro_bot_oro.txt registro_bot_rebotes.txt registro_bot_loco.txt; do tail -n 600 "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done
+          tail -n 8 registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt registro_bot_oro.txt registro_bot_rebotes.txt registro_bot_loco.txt
 
       - name: Guardar resultados
         run: |
