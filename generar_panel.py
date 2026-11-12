@@ -1,5 +1,5 @@
 """
-Genera panel.html: un resumen visual de los dos bots de paper trading.
+Genera panel.html: un resumen visual de los bots de paper trading.
 
 Lee los archivos que dejan los bots en esta misma carpeta:
     estado_bot.json, capital_diario.csv, operaciones.csv        (bot diario, 12 criptos)
@@ -26,6 +26,12 @@ BOTS = [
          capital="capital_4h.csv", ops="operaciones_4h.csv", registro="registro_bot_4h.txt",
          esperado="Backtest 2022–2026: +9 % al año, peor caída −16 %. Unas 1–2 operaciones al mes.",
          ret_anual=0.09, dd=-0.16),
+    dict(id="acciones", nombre="Bot acciones · España y Europa (€)", estado="estado_bot_acciones.json",
+         capital="capital_acciones.csv", ops="operaciones_acciones.csv", registro="registro_bot_acciones.txt",
+         esperado="Cada mes se queda con las 5 empresas que más han subido en 12 meses. Backtest 2010–2026: "
+                  "+14 a +20 % al año, peor caída −44 %; en 2003–2009 lo hizo peor que comprar todas. "
+                  "Números algo inflados (faltan empresas que quebraron). 1–2 cambios al mes.",
+         ret_anual=0.15, dd=-0.44, moneda="€", activo="Empresa"),
 ]
 
 
@@ -125,7 +131,7 @@ def grafico(r):
     fechas = (f'<text x="{L}" y="{H - 6}" class="eje">{html.escape(pts[0][0][:10])}</text>'
               f'<text x="{W - R}" y="{H - 6}" class="eje" text-anchor="end">{html.escape(pts[-1][0][:10])}</text>')
     data = json.dumps([[f, round(v, 2)] for f, v in pts])
-    return f'''<div class="graf" data-pts='{html.escape(data)}' data-l="{L}" data-r="{R}" data-w="{W}">
+    return f'''<div class="graf" data-pts='{html.escape(data)}' data-l="{L}" data-r="{R}" data-w="{W}" data-m="{html.escape(r['bot'].get('moneda', 'USDT'))}">
 <svg viewBox="0 0 {W} {H}" role="img" aria-label="Evolución del capital simulado">
 {ticks}{base}<path d="{area}" class="area"/><path d="{path}" class="linea"/>
 <circle r="5" class="punto" cx="{X(n - 1):.1f}" cy="{Y(pts[-1][1]):.1f}"/>{fechas}
@@ -143,9 +149,9 @@ def tarjeta(r):
             ent, stop, uds = fnum(p.get("entry")), fnum(p.get("stop")), fnum(p.get("units"))
             px = fnum(r["precios"].get(s), ent)
             filas += (f"<tr><td><b>{html.escape(s)}</b></td><td>{html.escape(str(p.get('time', '')))}</td>"
-                      f"<td>{ent:.6g}</td><td>{px:.6g}</td><td>{stop:.6g}</td>"
+                      f"<td>{ent:.6g}</td><td>{px:.6g}</td><td>{f'{stop:.6g}' if stop else '—'}</td>"
                       f"<td>{eur(uds * px)}</td><td class='{'pos' if px >= ent else 'neg'}'>{pct(px / ent - 1)}</td></tr>")
-        pos = ("<div class='tabla'><table><thead><tr><th>Moneda</th><th>Desde</th><th>Entrada</th><th>Precio</th>"
+        pos = (f"<div class='tabla'><table><thead><tr><th>{b.get('activo', 'Moneda')}</th><th>Desde</th><th>Entrada</th><th>Precio</th>"
                f"<th>Stop</th><th>Valor</th><th>Resultado</th></tr></thead><tbody>{filas}</tbody></table></div>")
     else:
         pos = '<div class="vacio">Sin posiciones abiertas: todo en liquidez, esperando señal.</div>'
@@ -157,7 +163,7 @@ def tarjeta(r):
             filas += (f"<tr><td><b>{html.escape(o.get('simbolo', ''))}</b></td>"
                       f"<td>{html.escape(str(o.get('entrada', ''))[:10])}</td><td>{html.escape(str(o.get('salida', ''))[:10])}</td>"
                       f"<td class='{'pos' if bf > 0 else 'neg'}'>{bf:+.2f}</td><td>{html.escape(o.get('motivo', ''))}</td></tr>")
-        ops = ("<div class='tabla'><table><thead><tr><th>Moneda</th><th>Entrada</th><th>Salida</th><th>Resultado</th>"
+        ops = (f"<div class='tabla'><table><thead><tr><th>{b.get('activo', 'Moneda')}</th><th>Entrada</th><th>Salida</th><th>Resultado</th>"
                f"<th>Motivo</th></tr></thead><tbody>{filas}</tbody></table></div>")
     else:
         ops = '<div class="vacio">Todavía no ha cerrado ninguna operación.</div>'
@@ -167,7 +173,7 @@ def tarjeta(r):
   <div class="cab"><h2>{html.escape(b["nombre"])}</h2>
     <span class="meta">Funcionando desde {html.escape(r["inicio"] or "—")} · última vela {html.escape(str(r["ultima"]))}</span></div>
   <div class="kpis">
-    <div class="kpi grande"><span>Capital simulado</span><b>{eur(r["actual"])} <small>USDT</small></b>
+    <div class="kpi grande"><span>Capital simulado</span><b>{eur(r["actual"])} <small>{b.get("moneda", "USDT")}</small></b>
       <em class="{color}">{pct(r["rent"])} desde el inicio</em></div>
     <div class="kpi"><span>Peor caída</span><b>{pct(r["dd"]) if r["dd"] < -0.0005 else "0,0 %"}</b><em>límite esperado {pct(b["dd"])}</em></div>
     <div class="kpi"><span>Operaciones cerradas</span><b>{r["n_ops"]}</b><em>aciertos {acierto}</em></div>
@@ -228,7 +234,7 @@ document.querySelectorAll('.graf').forEach(function(g){
     var px=L+(W-L-R)*i/Math.max(1,pts.length-1);
     cruz.setAttribute('x1',px);cruz.setAttribute('x2',px);
     tip.style.display='block';tip.style.left=(px*b.width/W)+'px';tip.style.top=(e.clientY-b.top)+'px';
-    tip.textContent=pts[i][0]+' · '+pts[i][1].toFixed(2).replace('.',',')+' USDT';
+    tip.textContent=pts[i][0]+' · '+pts[i][1].toFixed(2).replace('.',',')+' '+(g.dataset.m||'USDT');
   });
   svg.addEventListener('mouseleave',function(){tip.style.display='none';cruz.setAttribute('x1',-10);cruz.setAttribute('x2',-10);});
 });
@@ -255,8 +261,8 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel de los bots</title><meta http-equiv="refresh" content="900">
 <style>{CSS}</style></head><body><main>
 <header><h1>Panel de los bots de trading</h1>
-<p>Dinero simulado, no real. Entre los dos bots: <b>{eur(total)} USDT</b> de 200 iniciales
-({pct(total / 200 - 1)}). Actualizado el {ahora.strftime('%d/%m/%Y a las %H:%M')}.</p></header>
+<p>Dinero simulado, no real. Entre los {len(rs)} bots: <b>{eur(total)}</b> de {100 * len(rs)} iniciales
+({pct(total / (100 * len(rs)) - 1)}), sumando USDT y euros como si fueran lo mismo. Actualizado el {ahora.strftime('%d/%m/%Y a las %H:%M')}.</p></header>
 {aviso}{''.join(tarjeta(r) for r in rs)}
 <footer>Los bots funcionan solos en la nube (GitHub) y este panel se actualiza cada hora. Recarga la página para ver lo último.
 Revisión prevista hacia febrero de 2027: si los resultados se parecen al backtest, hablamos de dinero real.</footer>
