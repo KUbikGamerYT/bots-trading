@@ -6,17 +6,17 @@
 <style>
 :root{color-scheme:light;
 --bg:#f4f3f0;--card:#fcfcfb;--card2:#f7f6f3;--ink:#0b0b0b;--ink2:#52514e;--ink3:#7d7c77;--line:#e4e2dc;--line2:#efede8;
---s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--tot:#0b0b0b;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--tot:#0b0b0b;
 --pos:#0f7b3f;--neg:#c2361b;--ok-bg:#e3f4ea;--ok:#0f6b37;--warn-bg:#fff1d6;--warn:#7a5200;--crit-bg:#fde6e1;--crit:#a52a12;
 --neu-bg:#ecebe7;--neu:#52514e;--accent:#2a78d6}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}}
 :root[data-theme="dark"]{color-scheme:dark;
 --bg:#0f0f0e;--card:#1a1a19;--card2:#151514;--ink:#f0efec;--ink2:#c3c2b7;--ink3:#8d8c85;--line:#2c2b29;--line2:#232321;
---s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--tot:#f0efec;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--tot:#f0efec;
 --pos:#3fbf73;--neg:#ff7a5c;--ok-bg:#12301f;--ok:#6fd99a;--warn-bg:#33270a;--warn:#f2c661;--crit-bg:#3a1710;--crit:#ff9b82;
 --neu-bg:#262624;--neu:#c3c2b7;--accent:#3987e5}
 *{box-sizing:border-box}
@@ -49,7 +49,7 @@ button.chip{cursor:pointer;font:inherit;font-size:12px}
 .leyenda button[aria-pressed="false"]{opacity:.4}
 .leyenda button:focus-visible{outline:2px solid var(--accent)}
 .sw{display:inline-block;width:10px;height:10px;border-radius:3px;flex:none;vertical-align:middle;margin-right:8px}
-.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}
+.sw.s1{background:var(--s1)}.sw.s2{background:var(--s2)}.sw.s3{background:var(--s3)}.sw.s4{background:var(--s4)}.sw.s5{background:var(--s5)}.sw.s6{background:var(--s6)}.sw.s7{background:var(--s7)}
 .sw.tot{background:var(--tot);height:3px;width:14px;border-radius:2px}
 .leyenda .sw{margin:0}
 h2{font-size:15px;margin:28px 0 10px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
@@ -99,10 +99,10 @@ pre{white-space:pre-wrap;font:12px/1.5 ui-monospace,Consolas,monospace;backgroun
 .eje{fill:var(--ink3);font-size:11px}
 .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .ln.tot{stroke:var(--tot);stroke-width:2.5}
-.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}
-.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}
+.ln.s1{stroke:var(--s1)}.ln.s2{stroke:var(--s2)}.ln.s3{stroke:var(--s3)}.ln.s4{stroke:var(--s4)}.ln.s5{stroke:var(--s5)}.ln.s6{stroke:var(--s6)}.ln.s7{stroke:var(--s7)}
+.ar{opacity:.12}.ar.s1{fill:var(--s1)}.ar.s2{fill:var(--s2)}.ar.s3{fill:var(--s3)}.ar.s4{fill:var(--s4)}.ar.s5{fill:var(--s5)}.ar.s6{fill:var(--s6)}.ar.s7{fill:var(--s7)}
 .dot{stroke:var(--card);stroke-width:2}
-.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}
+.dot.tot{fill:var(--tot)}.dot.s1{fill:var(--s1)}.dot.s2{fill:var(--s2)}.dot.s3{fill:var(--s3)}.dot.s4{fill:var(--s4)}.dot.s5{fill:var(--s5)}.dot.s6{fill:var(--s6)}.dot.s7{fill:var(--s7)}
 .cruz{stroke:var(--ink3);stroke-width:1}
 .tip{position:absolute;pointer-events:none;display:none;background:var(--card);color:var(--ink);border:1px solid var(--line);
   box-shadow:0 6px 20px rgba(0,0,0,.12);padding:8px 10px;border-radius:8px;font-size:12px;min-width:150px;z-index:2}
@@ -113,15 +113,15 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
 </style></head><body><main>
 <div class="top">
   <div class="marca"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="var(--bg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg></div><div><h1>Panel de trading</h1><p>Dinero simulado · paper trading</p></div></div>
-  <div class="chips"><span class="chip"><span class="vivo"></span>Actualizado 12/11 20:38</span>
-    <span class="chip">6 bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
+  <div class="chips"><span class="chip"><span class="vivo"></span>Actualizado 12/11 20:42</span>
+    <span class="chip">7 bots activos</span><button class="chip" id="tema" type="button">Tema</button></div>
 </div>
 
 <section class="panel hero" aria-label="Cartera combinada">
   <div>
     <div class="lab">Cartera combinada · 6 bots</div>
-    <div class="grande">599,34 <small>de 600,00</small></div>
-    <div class="delta neg"><span aria-hidden="true">▼</span> −0,11 % desde el inicio</div>
+    <div class="grande">599,39 <small>de 600,00</small></div>
+    <div class="delta neg"><span aria-hidden="true">▼</span> −0,10 % desde el inicio</div>
     <div class="mini">
       <div><span>Esperado a hoy</span><b>+0,06 %</b></div>
       <div><span>Peor caída</span><b>−0,1 %</b></div>
@@ -130,7 +130,7 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
     </div>
   </div>
   <div>
-    <div class="leyenda" role="group" aria-label="Mostrar u ocultar series"><button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button><button type="button" aria-pressed="true"><span class="sw s1"></span>12 criptos</button><button type="button" aria-pressed="true"><span class="sw s2"></span>BTC 4h</button><button type="button" aria-pressed="true"><span class="sw s3"></span>Acciones €</button><button type="button" aria-pressed="true"><span class="sw s4"></span>ETF 12 mercados</button><button type="button" aria-pressed="true"><span class="sw s5"></span>Oro 4h</button><button type="button" aria-pressed="true"><span class="sw s6"></span>Rebotes índices</button></div>
+    <div class="leyenda" role="group" aria-label="Mostrar u ocultar series"><button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button><button type="button" aria-pressed="true"><span class="sw s1"></span>12 criptos</button><button type="button" aria-pressed="true"><span class="sw s2"></span>BTC 4h</button><button type="button" aria-pressed="true"><span class="sw s3"></span>Acciones €</button><button type="button" aria-pressed="true"><span class="sw s4"></span>ETF 12 mercados</button><button type="button" aria-pressed="true"><span class="sw s5"></span>Oro 4h</button><button type="button" aria-pressed="true"><span class="sw s6"></span>Rebotes índices</button><button type="button" aria-pressed="true"><span class="sw s7"></span>Experimento 5 min</button></div>
     <div class="chart" id="graf-main" role="img" aria-label="Rentabilidad acumulada de la cartera y de cada bot"></div>
   </div>
 </section>
@@ -171,9 +171,9 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
 </tr><tr>
   <td><span class="sw s4"></span><b>ETF 12 mercados</b><small>Multiactivo · mensual</small></td>
   <td class="num">0</td>
-  <td class="num neg">+0,0 %</td>
+  <td class="num ">+0,0 %</td>
   <td class="num">+0,0 %<small>11 %/año</small></td>
-  <td class="num neg">+0,0 %</td>
+  <td class="num ">+0,0 %</td>
   <td class="num">−0,1 %<small>límite −18 %</small>
     <span class="barra" title="1 % del límite"><i style="width:1%"></i></span></td>
   <td class="num">0<small>sin cerrar</small></td>
@@ -183,7 +183,7 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
   <td class="num">0</td>
   <td class="num ">+0,0 %</td>
   <td class="num">+0,0 %<small>15 %/año</small></td>
-  <td class="num neg">+0,0 %</td>
+  <td class="num ">+0,0 %</td>
   <td class="num">0,0 %<small>límite −10 %</small>
     <span class="barra" title="-0 % del límite"><i style="width:-0%"></i></span></td>
   <td class="num">0<small>sin cerrar</small></td>
@@ -198,6 +198,16 @@ footer{margin-top:28px;color:var(--ink3);font-size:12px;line-height:1.6}
     <span class="barra" title="-0 % del límite"><i style="width:-0%"></i></span></td>
   <td class="num">0<small>sin cerrar</small></td>
   <td><span class="badge neutro" title="Menos de 30 días: aún no se puede juzgar"><span aria-hidden="true">●</span> Muy pronto</span></td>
+</tr><tr>
+  <td><span class="sw s7"></span><b>Experimento 5 min</b><small>BTC · 5 minutos · no cuenta</small></td>
+  <td class="num">0</td>
+  <td class="num ">+0,0 %</td>
+  <td class="num">+0,0 %<small>−90 %/año</small></td>
+  <td class="num ">+0,0 %</td>
+  <td class="num">0,0 %<small>límite −95 %</small>
+    <span class="barra" title="-0 % del límite"><i style="width:-0%"></i></span></td>
+  <td class="num">0<small>sin cerrar</small></td>
+  <td><span class="badge neutro" title="No cuenta en la cartera combinada"><span aria-hidden="true">⚗</span> Experimento</span></td>
 </tr></tbody></table></div>
 <p class="nota">“Esperado” es lo que habría ganado el bot en estos días si rindiera exactamente como en su backtest.
 En pocas semanas es normal desviarse mucho: el semáforo tiene en cuenta el tiempo transcurrido y la caída máxima histórica.</p></section>
@@ -227,9 +237,6 @@ En pocas semanas es normal desviarse mucho: el semáforo tiene en cuenta el tiem
   <details class="log"><summary>Registro del bot · funcionando desde 08/11/2026
     · última vela 2026-11-11</summary><pre>Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
 Capital simulado: 100.00 USDT  (liquidez 100.00)
---- 12/11/2026 14:50
-Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
-Capital simulado: 100.00 USDT  (liquidez 100.00)
 --- 12/11/2026 14:52
 Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
 Capital simulado: 100.00 USDT  (liquidez 100.00)
@@ -237,6 +244,9 @@ Capital simulado: 100.00 USDT  (liquidez 100.00)
 Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
 Capital simulado: 100.00 USDT  (liquidez 100.00)
 --- 12/11/2026 20:37
+Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
+Capital simulado: 100.00 USDT  (liquidez 100.00)
+--- 12/11/2026 20:41
 Ya se procesó la vela del 2026-11-11. Vuelve a ejecutarlo mañana.
 Capital simulado: 100.00 USDT  (liquidez 100.00)</pre></details>
 </div>
@@ -265,9 +275,6 @@ Capital simulado: 100.00 USDT  (liquidez 100.00)</pre></details>
   <details class="log"><summary>Registro del bot · funcionando desde 08/11/2026
     · última vela 2026-11-12 12:00:00</summary><pre>La vela de 4h de 2026-11-12 08:00:00 ya está procesada. Nada que hacer.
 Capital simulado (4h): 100.00 USDT
---- 12/11/2026 14:50
-La vela de 4h de 2026-11-12 08:00:00 ya está procesada. Nada que hacer.
-Capital simulado (4h): 100.00 USDT
 --- 12/11/2026 14:52
 La vela de 4h de 2026-11-12 08:00:00 ya está procesada. Nada que hacer.
 Capital simulado (4h): 100.00 USDT
@@ -276,6 +283,9 @@ Procesando vela de 4h de 2026-11-12 12:00:00 UTC
 Capital simulado (4h): 100.00 USDT
 --- 12/11/2026 20:38
 La vela de 4h de 2026-11-12 12:00:00 ya está procesada. Nada que hacer.
+Capital simulado (4h): 100.00 USDT
+--- 12/11/2026 20:41
+La vela de 4h de 2026-11-12 12:00:00 ya está procesada. Nada que hacer.
 Capital simulado (4h): 100.00 USDT</pre></details>
 </div>
 </details>
@@ -283,7 +293,7 @@ Capital simulado (4h): 100.00 USDT</pre></details>
 <summary>
   <span class="sw s3"></span>
   <span class="tit"><b>Acciones €</b><small>Bolsa · mensual</small></span>
-  <span class="spark" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.8], [&quot;2026-11-12 20:38&quot;, 99.37]]" data-s="3" aria-hidden="true"></span>
+  <span class="spark" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.8], [&quot;2026-11-12 20:42&quot;, 99.37]]" data-s="3" aria-hidden="true"></span>
   <span class="val"><b>99,37 <small>€</small></b><em class="neg">−0,6 %</em></span>
   <span class="badge neutro"><span aria-hidden="true">●</span> Muy pronto</span>
   <span class="chev" aria-hidden="true"></span>
@@ -296,7 +306,7 @@ Capital simulado (4h): 100.00 USDT</pre></details>
     <div class="kpi"><span>Operaciones cerradas</span><b>0</b><em>aciertos —</em></div>
     <div class="kpi"><span>Posiciones abiertas</span><b>5</b><em>liquidez 0,00</em></div>
   </div>
-  <div class="graf" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.8], [&quot;2026-11-12 20:38&quot;, 99.37]]" data-s="3" data-m="€" role="img"
+  <div class="graf" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.8], [&quot;2026-11-12 20:42&quot;, 99.37]]" data-s="3" data-m="€" role="img"
        aria-label="Evolución del capital de Acciones €"></div>
   <h3>Posiciones abiertas</h3><div class='tabla'><table><thead><tr><th>Empresa</th><th>Desde</th><th class='num'>Entrada</th><th class='num'>Precio</th><th class='num'>Stop</th><th class='num'>Valor</th><th class='num'>Resultado</th></tr></thead><tbody><tr><td><b>REP.MC</b></td><td>2026-11-11</td><td class='num'>29,80</td><td class='num'>29,90</td><td class='num'>—</td><td class='num'>20,07</td><td class='num pos'>+0,3 %</td></tr><tr><td><b>ASML.AS</b></td><td>2026-11-11</td><td class='num'>1.368,9</td><td class='num'>1.376,8</td><td class='num'>—</td><td class='num'>20,11</td><td class='num pos'>+0,6 %</td></tr><tr><td><b>MTS.MC</b></td><td>2026-11-11</td><td class='num'>60,06</td><td class='num'>58,80</td><td class='num'>—</td><td class='num'>19,58</td><td class='num neg'>−2,1 %</td></tr><tr><td><b>ENI.MI</b></td><td>2026-11-11</td><td class='num'>25,59</td><td class='num'>25,47</td><td class='num'>—</td><td class='num'>19,91</td><td class='num neg'>−0,5 %</td></tr><tr><td><b>BAYN.DE</b></td><td>2026-11-11</td><td class='num'>57,41</td><td class='num'>56,56</td><td class='num'>—</td><td class='num'>19,70</td><td class='num neg'>−1,5 %</td></tr></tbody></table></div>
   <h3>Últimas operaciones</h3><div class="vacio">Todavía no ha cerrado ninguna operación.</div>
@@ -307,7 +317,7 @@ Capital simulado (4h): 100.00 USDT</pre></details>
   MTS.MC    valor 19.58 €  entrada 60.06  (-2.1 %)
   ENI.MI    valor 19.91 €  entrada 25.59  (-0.5 %)
   BAYN.DE   valor 19.70 €  entrada 57.41  (-1.5 %)
---- 12/11/2026 20:38
+--- 12/11/2026 20:41
 La sesión del 2026-11-11 ya está procesada. Nada que hacer.
 Capital simulado (acciones): 99.37 EUR
   REP.MC    valor 20.07 €  entrada 29.8  (+0.3 %)
@@ -321,37 +331,37 @@ Capital simulado (acciones): 99.37 EUR
 <summary>
   <span class="sw s4"></span>
   <span class="tit"><b>ETF 12 mercados</b><small>Multiactivo · mensual</small></span>
-  <span class="spark" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.9], [&quot;2026-11-12 20:38&quot;, 99.97]]" data-s="4" aria-hidden="true"></span>
-  <span class="val"><b>99,97 <small>€</small></b><em class="neg">+0,0 %</em></span>
+  <span class="spark" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.9], [&quot;2026-11-12 20:42&quot;, 100.02]]" data-s="4" aria-hidden="true"></span>
+  <span class="val"><b>100,02 <small>€</small></b><em class="">+0,0 %</em></span>
   <span class="badge neutro"><span aria-hidden="true">●</span> Muy pronto</span>
   <span class="chev" aria-hidden="true"></span>
 </summary>
 <div class="cuerpo">
   <p class="desc">Cada mes se queda con los 3 mercados más fuertes (bolsas, bonos, oro, materias primas...). Backtest 2007–2026: +10 a +12 % al año, peor caída −15 a −18 %. Unos 1–2 cambios al mes.</p>
   <div class="kpis">
-    <div class="kpi"><span>Capital</span><b>99,97 <small>€</small></b><em class="neg">+0,0 % desde el inicio</em></div>
+    <div class="kpi"><span>Capital</span><b>100,02 <small>€</small></b><em class="">+0,0 % desde el inicio</em></div>
     <div class="kpi"><span>Peor caída</span><b>−0,1 %</b><em>límite backtest −18 %</em></div>
     <div class="kpi"><span>Operaciones cerradas</span><b>0</b><em>aciertos —</em></div>
     <div class="kpi"><span>Posiciones abiertas</span><b>3</b><em>liquidez 0,00</em></div>
   </div>
-  <div class="graf" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.9], [&quot;2026-11-12 20:38&quot;, 99.97]]" data-s="4" data-m="€" role="img"
+  <div class="graf" data-pts="[[&quot;2026-11-11 01:00&quot;, 99.9], [&quot;2026-11-12 20:42&quot;, 100.02]]" data-s="4" data-m="€" role="img"
        aria-label="Evolución del capital de ETF 12 mercados"></div>
-  <h3>Posiciones abiertas</h3><div class='tabla'><table><thead><tr><th>ETF</th><th>Desde</th><th class='num'>Entrada</th><th class='num'>Precio</th><th class='num'>Stop</th><th class='num'>Valor</th><th class='num'>Resultado</th></tr></thead><tbody><tr><td><b>DBC</b></td><td>2026-11-11</td><td class='num'>27,84</td><td class='num'>27,95</td><td class='num'>—</td><td class='num'>33,46</td><td class='num pos'>+0,4 %</td></tr><tr><td><b>SPY</b></td><td>2026-11-11</td><td class='num'>685,96</td><td class='num'>685,21</td><td class='num'>—</td><td class='num'>33,30</td><td class='num neg'>−0,1 %</td></tr><tr><td><b>EFA</b></td><td>2026-11-11</td><td class='num'>94,49</td><td class='num'>94,12</td><td class='num'>—</td><td class='num'>33,21</td><td class='num neg'>−0,4 %</td></tr></tbody></table></div>
+  <h3>Posiciones abiertas</h3><div class='tabla'><table><thead><tr><th>ETF</th><th>Desde</th><th class='num'>Entrada</th><th class='num'>Precio</th><th class='num'>Stop</th><th class='num'>Valor</th><th class='num'>Resultado</th></tr></thead><tbody><tr><td><b>DBC</b></td><td>2026-11-11</td><td class='num'>27,84</td><td class='num'>27,99</td><td class='num'>—</td><td class='num'>33,50</td><td class='num pos'>+0,5 %</td></tr><tr><td><b>SPY</b></td><td>2026-11-11</td><td class='num'>685,96</td><td class='num'>685,39</td><td class='num'>—</td><td class='num'>33,31</td><td class='num neg'>−0,1 %</td></tr><tr><td><b>EFA</b></td><td>2026-11-11</td><td class='num'>94,49</td><td class='num'>94,14</td><td class='num'>—</td><td class='num'>33,21</td><td class='num neg'>−0,4 %</td></tr></tbody></table></div>
   <h3>Últimas operaciones</h3><div class="vacio">Todavía no ha cerrado ninguna operación.</div>
   <details class="log"><summary>Registro del bot · funcionando desde 12/11/2026
-    · última vela 2026-11-11</summary><pre>  SPY  Bolsa EE.UU. S&amp;P 500         valor 33.31 €  (-0.1 %)
-  EFA  Bolsa desarrollada ex-EE.UU. valor 33.31 €  (-0.1 %)
---- 12/11/2026 19:08
-La sesión del 2026-11-11 ya está procesada. Nada que hacer.
-Capital simulado (ETF): 100.08 EUR
-  DBC  Materias primas              valor 33.40 €  (+0.2 %)
-  SPY  Bolsa EE.UU. S&amp;P 500         valor 33.42 €  (+0.3 %)
+    · última vela 2026-11-11</summary><pre>  SPY  Bolsa EE.UU. S&amp;P 500         valor 33.42 €  (+0.3 %)
   EFA  Bolsa desarrollada ex-EE.UU. valor 33.26 €  (-0.2 %)
 --- 12/11/2026 20:38
 La sesión del 2026-11-11 ya está procesada. Nada que hacer.
 Capital simulado (ETF): 99.97 EUR
   DBC  Materias primas              valor 33.46 €  (+0.4 %)
   SPY  Bolsa EE.UU. S&amp;P 500         valor 33.30 €  (-0.1 %)
+  EFA  Bolsa desarrollada ex-EE.UU. valor 33.21 €  (-0.4 %)
+--- 12/11/2026 20:42
+La sesión del 2026-11-11 ya está procesada. Nada que hacer.
+Capital simulado (ETF): 100.02 EUR
+  DBC  Materias primas              valor 33.50 €  (+0.5 %)
+  SPY  Bolsa EE.UU. S&amp;P 500         valor 33.31 €  (-0.1 %)
   EFA  Bolsa desarrollada ex-EE.UU. valor 33.21 €  (-0.4 %)</pre></details>
 </div>
 </details>
@@ -377,10 +387,7 @@ Capital simulado (ETF): 99.97 EUR
   <h3>Posiciones abiertas</h3><div class="vacio">Sin posiciones abiertas: en liquidez, esperando señal.</div>
   <h3>Últimas operaciones</h3><div class="vacio">Todavía no ha cerrado ninguna operación.</div>
   <details class="log"><summary>Registro del bot · funcionando desde 12/11/2026
-    · última vela 2026-11-12 12:00:00+00:00</summary><pre>Vela 4h de 2026-11-12 08:00 UTC: cierre 3949.50
-Capital simulado (oro): 100.00 €  | oro ahora 3936.60 $
---- 12/11/2026 14:50
-No hay velas de 4h nuevas. Nada que hacer.
+    · última vela 2026-11-12 12:00:00+00:00</summary><pre>No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 100.00 €  | oro ahora 3910.70 $
 --- 12/11/2026 14:53
 No hay velas de 4h nuevas. Nada que hacer.
@@ -390,7 +397,10 @@ Vela 4h de 2026-11-12 12:00 UTC: cierre 3874.60
 Capital simulado (oro): 100.00 €  | oro ahora 3876.60 $
 --- 12/11/2026 20:38
 No hay velas de 4h nuevas. Nada que hacer.
-Capital simulado (oro): 100.00 €  | oro ahora 3883.10 $</pre></details>
+Capital simulado (oro): 100.00 €  | oro ahora 3883.10 $
+--- 12/11/2026 20:42
+No hay velas de 4h nuevas. Nada que hacer.
+Capital simulado (oro): 100.00 €  | oro ahora 3883.30 $</pre></details>
 </div>
 </details>
 <details class="bot" id="bot-rebotes">
@@ -417,14 +427,44 @@ Capital simulado (oro): 100.00 €  | oro ahora 3883.10 $</pre></details>
   <details class="log"><summary>Registro del bot · funcionando desde 12/11/2026
     · última vela 2026-11-11</summary><pre>--- 12/11/2026 20:38
 Procesando cierre del 2026-11-11
+Capital simulado (rebotes): 100.00 €
+--- 12/11/2026 20:42
+La sesión del 2026-11-11 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 100.00 €</pre></details>
+</div>
+</details>
+<details class="bot" id="bot-loco">
+<summary>
+  <span class="sw s7"></span>
+  <span class="tit"><b>Experimento 5 min</b><small>BTC · 5 minutos · no cuenta</small></span>
+  <span class="spark" data-pts="[[&quot;2026-11-12 20:35&quot;, 100.0]]" data-s="7" aria-hidden="true"></span>
+  <span class="val"><b>100,00 <small>USDT</small></b><em class="">+0,0 %</em></span>
+  <span class="badge neutro"><span aria-hidden="true">⚗</span> Experimento</span>
+  <span class="chev" aria-hidden="true"></span>
+</summary>
+<div class="cuerpo">
+  <p class="desc">EXPERIMENTO: el Buy Sell Signal en velas de 5 minutos de Bitcoin, con la comisión real de Binance (0,1 %). Unas 15–25 operaciones al día. En el backtest del oro a 5 minutos perdía casi todo en 2 meses. No cuenta en la cartera combinada: es para ver en directo qué pasa al operar tanto.</p>
+  <div class="kpis">
+    <div class="kpi"><span>Capital</span><b>100,00 <small>USDT</small></b><em class="">+0,0 % desde el inicio</em></div>
+    <div class="kpi"><span>Peor caída</span><b>0,0 %</b><em>límite backtest −95 %</em></div>
+    <div class="kpi"><span>Operaciones cerradas</span><b>0</b><em>aciertos —</em></div>
+    <div class="kpi"><span>Posiciones abiertas</span><b>0</b><em>liquidez 100,00</em></div>
+  </div>
+  <div class="graf" data-pts="[[&quot;2026-11-12 20:35&quot;, 100.0]]" data-s="7" data-m="USDT" role="img"
+       aria-label="Evolución del capital de Experimento 5 min"></div>
+  <h3>Posiciones abiertas</h3><div class="vacio">Sin posiciones abiertas: en liquidez, esperando señal.</div>
+  <h3>Últimas operaciones</h3><div class="vacio">Todavía no ha cerrado ninguna operación.</div>
+  <details class="log"><summary>Registro del bot · funcionando desde 12/11/2026
+    · última vela 2026-11-12 19:35:00+00:00</summary><pre>--- 12/11/2026 20:42
+Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 100.00 USDT</pre></details>
 </div>
 </details>
 <footer>Los bots funcionan solos en la nube (GitHub): cada hora, y cada ~10 minutos con la bolsa europea abierta. Esta página se recarga sola cada 2 minutos.
 Todo es dinero simulado (100 por bot; cripto en USDT y el resto en euros, sumados como si fueran lo mismo). Revisión prevista hacia febrero de 2027:
 si los resultados se parecen al backtest, hablamos de dinero real.</footer>
 </main>
-<script type="application/json" id="datos">{"inicial": 600.0, "total": [["2026-11-07 01:00", 600.0], ["2026-11-08 01:00", 600.0], ["2026-11-08 09:00", 600.0], ["2026-11-08 13:00", 600.0], ["2026-11-08 17:00", 600.0], ["2026-11-08 21:00", 600.0], ["2026-11-09 01:00", 600.0], ["2026-11-09 05:00", 600.0], ["2026-11-09 09:00", 600.0], ["2026-11-09 13:00", 600.0], ["2026-11-09 17:00", 600.0], ["2026-11-09 21:00", 600.0], ["2026-11-10 01:00", 600.0], ["2026-11-10 05:00", 600.0], ["2026-11-10 09:00", 600.0], ["2026-11-10 13:00", 600.0], ["2026-11-10 17:00", 600.0], ["2026-11-10 21:00", 600.0], ["2026-11-11 01:00", 599.7], ["2026-11-11 05:00", 599.7], ["2026-11-11 09:00", 599.7], ["2026-11-11 13:00", 599.7], ["2026-11-11 21:00", 599.7], ["2026-11-12 05:00", 599.7], ["2026-11-12 09:00", 599.7], ["2026-11-12 13:00", 599.7], ["2026-11-12 20:38", 599.34]], "bots": [{"n": "12 criptos", "p": [["2026-11-07 01:00", 100.0], ["2026-11-08 01:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-11 01:00", 100.0]]}, {"n": "BTC 4h", "p": [["2026-11-08 09:00", 100.0], ["2026-11-08 13:00", 100.0], ["2026-11-08 17:00", 100.0], ["2026-11-08 21:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-09 05:00", 100.0], ["2026-11-09 09:00", 100.0], ["2026-11-09 13:00", 100.0], ["2026-11-09 17:00", 100.0], ["2026-11-09 21:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-10 05:00", 100.0], ["2026-11-10 09:00", 100.0], ["2026-11-10 13:00", 100.0], ["2026-11-10 17:00", 100.0], ["2026-11-10 21:00", 100.0], ["2026-11-11 01:00", 100.0], ["2026-11-11 05:00", 100.0], ["2026-11-11 09:00", 100.0], ["2026-11-11 13:00", 100.0], ["2026-11-11 21:00", 100.0], ["2026-11-12 05:00", 100.0], ["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Acciones \u20ac", "p": [["2026-11-11 01:00", 99.8], ["2026-11-12 20:38", 99.37]]}, {"n": "ETF 12 mercados", "p": [["2026-11-11 01:00", 99.9], ["2026-11-12 20:38", 99.97]]}, {"n": "Oro 4h", "p": [["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Rebotes \u00edndices", "p": [["2026-11-11 01:00", 100.0]]}]}</script>
+<script type="application/json" id="datos">{"inicial": 600.0, "total": [["2026-11-07 01:00", 600.0], ["2026-11-08 01:00", 600.0], ["2026-11-08 09:00", 600.0], ["2026-11-08 13:00", 600.0], ["2026-11-08 17:00", 600.0], ["2026-11-08 21:00", 600.0], ["2026-11-09 01:00", 600.0], ["2026-11-09 05:00", 600.0], ["2026-11-09 09:00", 600.0], ["2026-11-09 13:00", 600.0], ["2026-11-09 17:00", 600.0], ["2026-11-09 21:00", 600.0], ["2026-11-10 01:00", 600.0], ["2026-11-10 05:00", 600.0], ["2026-11-10 09:00", 600.0], ["2026-11-10 13:00", 600.0], ["2026-11-10 17:00", 600.0], ["2026-11-10 21:00", 600.0], ["2026-11-11 01:00", 599.7], ["2026-11-11 05:00", 599.7], ["2026-11-11 09:00", 599.7], ["2026-11-11 13:00", 599.7], ["2026-11-11 21:00", 599.7], ["2026-11-12 05:00", 599.7], ["2026-11-12 09:00", 599.7], ["2026-11-12 13:00", 599.7], ["2026-11-12 20:42", 599.39]], "bots": [{"n": "12 criptos", "p": [["2026-11-07 01:00", 100.0], ["2026-11-08 01:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-11 01:00", 100.0]]}, {"n": "BTC 4h", "p": [["2026-11-08 09:00", 100.0], ["2026-11-08 13:00", 100.0], ["2026-11-08 17:00", 100.0], ["2026-11-08 21:00", 100.0], ["2026-11-09 01:00", 100.0], ["2026-11-09 05:00", 100.0], ["2026-11-09 09:00", 100.0], ["2026-11-09 13:00", 100.0], ["2026-11-09 17:00", 100.0], ["2026-11-09 21:00", 100.0], ["2026-11-10 01:00", 100.0], ["2026-11-10 05:00", 100.0], ["2026-11-10 09:00", 100.0], ["2026-11-10 13:00", 100.0], ["2026-11-10 17:00", 100.0], ["2026-11-10 21:00", 100.0], ["2026-11-11 01:00", 100.0], ["2026-11-11 05:00", 100.0], ["2026-11-11 09:00", 100.0], ["2026-11-11 13:00", 100.0], ["2026-11-11 21:00", 100.0], ["2026-11-12 05:00", 100.0], ["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Acciones \u20ac", "p": [["2026-11-11 01:00", 99.8], ["2026-11-12 20:42", 99.37]]}, {"n": "ETF 12 mercados", "p": [["2026-11-11 01:00", 99.9], ["2026-11-12 20:42", 100.02]]}, {"n": "Oro 4h", "p": [["2026-11-12 09:00", 100.0], ["2026-11-12 13:00", 100.0]]}, {"n": "Rebotes \u00edndices", "p": [["2026-11-11 01:00", 100.0]]}, {"n": "Experimento 5 min", "p": [["2026-11-12 20:35", 100.0]]}]}</script>
 <script>
 (function(){
 var NS='http://www.w3.org/2000/svg';
