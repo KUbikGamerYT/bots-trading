@@ -32,6 +32,11 @@ BOTS = [
                   "+14 a +20 % al año, peor caída −44 %; en 2003–2009 lo hizo peor que comprar todas. "
                   "Números algo inflados (faltan empresas que quebraron). 1–2 cambios al mes.",
          ret_anual=0.15, dd=-0.44, moneda="€", activo="Empresa"),
+    dict(id="etf", nombre="Bot ETF · tendencias en 12 mercados (€)", estado="estado_bot_etf.json",
+         capital="capital_etf.csv", ops="operaciones_etf.csv", registro="registro_bot_etf.txt",
+         esperado="Cada mes se queda con los 3 mercados más fuertes (bolsas, bonos, oro, materias primas...). "
+                  "Backtest 2007–2026: +10 a +12 % al año, peor caída −15 a −18 %. Unos 1–2 cambios al mes.",
+         ret_anual=0.11, dd=-0.18, moneda="€", activo="ETF"),
 ]
 
 
@@ -267,7 +272,7 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel de los bots</title><meta http-equiv="refresh" content="120">
 <style>{CSS}</style></head><body><main>
 <header><h1>Panel de los bots de trading</h1>
-<p>Dinero simulado, no real. Entre los {len(rs)} bots: <b>{eur(total)}</b> de {100 * len(rs)} iniciales
+<p>Dinero simulado, no real. <b>Cartera combinada</b> (los {len(rs)} bots juntos, la opción más estable en el backtest): <b>{eur(total)}</b> de {100 * len(rs)} iniciales
 ({pct(total / (100 * len(rs)) - 1)}), sumando USDT y euros como si fueran lo mismo. Actualizado el {ahora.strftime('%d/%m/%Y a las %H:%M')}.</p></header>
 {aviso}{''.join(tarjeta(r) for r in rs)}
 <footer>Los bots funcionan solos en la nube (GitHub) y este panel se actualiza cada hora (cada ~10 minutos con la bolsa abierta) y se recarga solo cada 2 minutos.

@@ -43,11 +43,15 @@ jobs:
         run: |
           { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot_acciones.py; } >> registro_bot_acciones.txt 2>&1 || echo "El bot de acciones falló (ver registro_bot_acciones.txt)"
 
+      - name: Bot ETF (12 mercados)
+        run: |
+          { echo "--- $(date '+%d/%m/%Y %H:%M')"; python paper_bot_etf.py; } >> registro_bot_etf.txt 2>&1 || echo "El bot ETF falló (ver registro_bot_etf.txt)"
+
       - name: Panel
         run: |
           python generar_panel.py
-          for f in registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt; do tail -n 600 "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done
-          tail -n 8 registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt
+          for f in registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt; do tail -n 600 "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done
+          tail -n 8 registro_bot.txt registro_bot_4h.txt registro_bot_acciones.txt registro_bot_etf.txt
 
       - name: Guardar resultados
         run: |
