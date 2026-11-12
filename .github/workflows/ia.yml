@@ -1,0 +1,51 @@
+name: Agente IA (decisión semanal)
+
+on:
+  schedule:
+    - cron: "30 6 * * 1"     # lunes 6:30 UTC (7:30-8:30 en Madrid)
+  workflow_dispatch:         # botón "Run workflow" para lanzarlo a mano
+    inputs:
+      forzar:
+        description: "Repetir aunque ya haya decidido esta semana"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bots                # no pisarse con el workflow horario (comparten archivos)
+  cancel-in-progress: false
+
+jobs:
+  decidir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TZ: Europe/Madrid
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      TRADINGAGENTS_NO_UPDATE_CHECK: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar TradingAgents (versión fija v0.7.1)
+        run: pip install pandas yfinance "tradingagents @ git+https://github.com/TauricResearch/TradingAgents@9fa1196fffbcfd9de5146d2dd2869df84ab99838"
+
+      - name: Decisión de la IA
+        run: |
+          FORZAR=""; [ "${{ inputs.forzar }}" = "true" ] && FORZAR="--forzar"
+          { echo "--- $(date '+%d/%m/%Y %H:%M') DECISIÓN SEMANAL"; python paper_bot_ia.py --decidir $FORZAR; } >> registro_bot_ia.txt 2>&1 || echo "El agente IA falló (ver registro_bot_ia.txt)"
+          tail -n 30 registro_bot_ia.txt
+
+      - name: Guardar resultados
+        run: |
+          git config user.name "bot-trading"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Agente IA: decisión $(date '+%d/%m/%Y %H:%M')"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
