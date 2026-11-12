@@ -160,6 +160,38 @@ def step(st: dict, ind: dict[str, pd.Series], price: dict[str, float], log=print
     return st
 
 
+def analisis(st, ind, price, unidad="días"):
+    """Explica para el panel qué mira el bot en cada moneda y por qué opera o no."""
+    filas = []
+    for s, r in ind.items():
+        px = float(price.get(s, r.close))
+        if s in st["positions"]:
+            p = st["positions"][s]
+            filas.append([s, "cartera", f"Comprada a {p['entry']:.6g}, ahora {px:.6g} ({(px / p['entry'] - 1) * 100:+.1f} %). "
+                          f"Vende si toca el stop {p['stop']:.6g} o si cierra por debajo del mínimo de {P['exit_n']} {unidad} "
+                          f"({r.xl:.6g})."])
+            continue
+        if pd.isna(r.slow):
+            filas.append([s, "no", "Aún no hay historial suficiente para calcular la tendencia."]); continue
+        tend = r.fast > r.slow
+        falta = (r.hh / r.close - 1) * 100
+        if tend and r.close > r.hh:
+            filas.append([s, "si", f"Señal de compra: tendencia alcista y cierre {r.close:.6g} por encima del máximo de "
+                          f"{P['entry_n']} {unidad} ({r.hh:.6g})."])
+        elif tend:
+            filas.append([s, "cerca" if falta < 5 else "no", f"Tendencia alcista (media 50 > media 200), pero el precio "
+                          f"{r.close:.6g} aún no supera el máximo de {P['entry_n']} {unidad} ({r.hh:.6g}): le falta un {falta:.1f} %."])
+        else:
+            filas.append([s, "no", f"Tendencia bajista (media 50 {r.fast:.6g} por debajo de la media 200 {r.slow:.6g}): "
+                          f"no compra aunque rompa máximos."])
+    orden = {"si": 0, "cartera": 1, "cerca": 2, "no": 3}
+    filas.sort(key=lambda f: orden[f[1]])
+    n_t = sum(1 for s, r in ind.items() if pd.notna(r.slow) and r.fast > r.slow)
+    resumen = (f"{n_t} de {len(ind)} en tendencia alcista. Compra solo si además el precio rompe el máximo de "
+               f"{P['entry_n']} {unidad}.")
+    st["analisis"] = dict(fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"), resumen=resumen, filas=filas)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=100.0)
@@ -201,6 +233,7 @@ def main():
 
     eq = st["cash"] + sum(p["units"] * price.get(s, p["entry"]) for s, p in st["positions"].items())
     st["prices"] = {k: float(v) for k, v in price.items()}  # para el panel
+    analisis(st, ind, price)
     save_state(st)
     print(f"\nCapital simulado: {eq:.2f} {a.quote}  (liquidez {st['cash']:.2f})")
     for s, p in st["positions"].items():

@@ -69,6 +69,25 @@ def fuerza(c):
     return s.sort_values(ascending=False)
 
 
+def analisis(st, c, mes):
+    f = fuerza(c)
+    top = f[f > 0].head(TOP_N)
+    filas = []
+    for i, (s, v) in enumerate(f.items()):
+        dentro = s in st["positions"]
+        if s in top.index:
+            estado, txt = ("cartera", "Entre los 3 más fuertes: se mantiene.") if dentro else ("si", "Entre los 3 más fuertes: entraría en la próxima revisión.")
+        elif dentro:
+            estado, txt = "no", "Ha salido de los 3 más fuertes: se vendería en la próxima revisión."
+        else:
+            estado, txt = ("cerca" if i < TOP_N + 2 and v > 0 else "no",
+                           "Fuerza negativa: nunca compra algo que esté bajando." if v <= 0 else "No llega al top 3.")
+        filas.append([f"{s} · {NOMBRE[s]}", estado, f"Fuerza media 1/3/6/12 meses {v * 100:+.1f} % (puesto {i + 1}). {txt}"])
+    sig = (pd.Timestamp(mes + "-01") + pd.DateOffset(months=1)).strftime("%d/%m/%Y")
+    st["analisis"] = dict(fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"), filas=filas,
+                          resumen=f"Solo opera una vez al mes (próxima revisión desde el {sig}). Ranking con meses cerrados.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=100.0)
@@ -126,6 +145,7 @@ def main():
         append_csv(EQUITY, dict(fecha=bar, capital=round(equity(), 2), liquidez=round(st["cash"], 2),
                                 posiciones=len(pos)))
     st["prices"] = {s: precio[s] for s in pos if s in precio}
+    analisis(st, c, mes)
     save_state(st)
     print(f"Capital simulado (ETF): {equity():.2f} EUR")
     for s, p in pos.items():

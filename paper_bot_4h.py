@@ -68,6 +68,7 @@ def main():
         pb.append_csv(pb.EQUITY, dict(fecha=bar, capital=round(eq, 2), liquidez=round(st["cash"], 2),
                                       posiciones=len(st["positions"])))
     st["prices"] = {k: float(v) for k, v in price.items()}  # para el panel
+    pb.analisis(st, ind, price, unidad="velas de 4h")
     pb.save_state(st)
     eq = st["cash"] + sum(p["units"] * price[s] for s, p in st["positions"].items())
     print(f"Capital simulado (4h): {eq:.2f} {a.quote}")

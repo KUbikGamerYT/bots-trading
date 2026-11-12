@@ -115,6 +115,28 @@ def procesar(st, row, cuando):
             abrir(st, row, cuando, -1)
 
 
+def analisis(st, d, nombre="Oro", vela="4h"):
+    r = d.iloc[-1]
+    c = d.Close
+    ef = c.ewm(span=FAST, adjust=False).mean().iloc[-1]
+    es = c.ewm(span=SLOW, adjust=False).mean().iloc[-1]
+    t = st["trade"]
+    if t:
+        lado = "largo (apuesta a que sube)" if t["dir"] > 0 else "corto (apuesta a que baja)"
+        txt = (f"Posición en {lado} desde {t['entry']:.2f}. Stop {t['sl']:.2f}, objetivo final {t['tps'][2]:.2f}. "
+               f"Cierra antes si sale la señal contraria.")
+        filas = [[nombre, "cartera", txt]]
+    else:
+        arriba = ef > es
+        txt = (f"Media rápida (EMA 5) {ef:.2f} {'por encima' if arriba else 'por debajo'} de la lenta (EMA 13) {es:.2f}. "
+               f"Necesita que se crucen {'hacia abajo con vela roja para ponerse corto' if arriba else 'hacia arriba con vela verde para comprar'}. "
+               f"Diferencia {abs(ef / es - 1) * 100:.2f} %.")
+        filas = [[nombre, "cerca" if abs(ef / es - 1) < 0.002 else "no", txt]]
+    st["analisis"] = dict(fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"), filas=filas,
+                          resumen=f"Opera cuando las medias de 5 y 13 velas de {vela} se cruzan con una vela que lo confirma. "
+                                  f"Última vela cerrada: {d.index[-1].strftime('%d/%m %H:%M')} UTC, cierre {float(r.Close):.2f}.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=100.0)
@@ -153,6 +175,7 @@ def main():
         st["prices"] = {SYM: ultimo}
     else:
         st["cash"], st["positions"], st["prices"] = st["equity"], {}, {}
+    analisis(st, d)
     st["actualizado"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with open(STATE, "w") as f:
         json.dump(st, f, indent=2, default=str)

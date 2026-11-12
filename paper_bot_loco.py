@@ -68,6 +68,7 @@ def main():
         st["prices"] = {"BTC": ultimo}
     else:
         st["cash"], st["positions"], st["prices"] = st["equity"], {}, {}
+    ob.analisis(st, d, nombre="Bitcoin", vela="5 minutos")
     st["actualizado"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with open(ob.STATE, "w") as f:
         json.dump(st, f, indent=2, default=str)

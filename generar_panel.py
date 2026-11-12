@@ -10,7 +10,7 @@ y escribe panel.html, una página autónoma (no necesita internet) con:
 Uso:  python generar_panel.py
 """
 from __future__ import annotations
-import csv, html, json, os
+import csv, html, json, os, re
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -244,6 +244,31 @@ def combinada(rs):
     return sorted(porhora.values())
 
 
+ETQ = {"si": ("ok", "Señal de compra"), "cartera": ("ok", "En cartera"), "cerca": ("warn", "Cerca"),
+       "no": ("neutro", "Sin señal")}
+
+
+def bloque_analisis(st):
+    a = st.get("analisis") or {}
+    filas = a.get("filas") or []
+    if not filas:
+        return '<div class="vacio">El análisis aparecerá en la próxima ejecución del bot.</div>'
+    html = f'<p class="an-res">{esc(a.get("resumen", ""))}</p><div class="an-lista">'
+    for activo, estado, texto in filas:
+        cls, txt = ETQ.get(estado, ("neutro", estado))
+        texto = re.sub(r"^#+\s*", "", str(texto).replace("**", ""), flags=re.M)
+        if len(texto) > 320:
+            cuerpo = (f'<details class="an-mas"><summary>{esc(texto[:220].rsplit(" ", 1)[0])}… <b>leer todo</b></summary>'
+                      f'<div class="an-txt">{esc(texto)}</div></details>')
+        else:
+            cuerpo = f'<div class="an-txt">{esc(texto)}</div>'
+        html += (f'<div class="an"><div class="an-cab"><b>{esc(activo)}</b>'
+                 f'<span class="badge {cls}">{esc(txt)}</span></div>{cuerpo}</div>')
+    upd = fecha_iso(a.get("fecha", ""))
+    pie = f'<p class="an-pie">Actualizado {esc(upd.astimezone(MADRID).strftime("%d/%m %H:%M"))}</p>' if upd else ""
+    return html + "</div>" + pie
+
+
 def ficha(i, r):
     b = r["bot"]
     corto, mercado = CORTO.get(b["id"], (b["nombre"], ""))
@@ -299,6 +324,7 @@ def ficha(i, r):
   </div>
   <div class="graf" data-pts="{datos}" data-s="{i + 1}" data-m="{esc(mon)}" role="img"
        aria-label="Evolución del capital de {esc(corto)}"></div>
+  <h3>Por qué opera o no</h3>{bloque_analisis(r["st"])}
   <h3>Posiciones abiertas</h3>{pos}
   <h3>Últimas operaciones</h3>{ops}
   <details class="log"><summary>Registro del bot · funcionando desde {esc(r["inicio"].astimezone(MADRID).strftime("%d/%m/%Y"))}
@@ -394,6 +420,16 @@ details.bot[open] .chev{transform:rotate(-135deg)}
 .kpi span{display:block;color:var(--ink3);font-size:12px}.kpi b{font-size:19px}.kpi b small{font-size:12px;color:var(--ink3);font-weight:500}
 .kpi em{display:block;font-style:normal;font-size:12px;color:var(--ink3)}
 h3{font-size:13px;margin:18px 0 6px;color:var(--ink2)}
+.an-res{color:var(--ink2);font-size:13px;margin:0 0 10px}
+.an-lista{display:flex;flex-direction:column;gap:8px}
+.an{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card2)}
+.an-cab{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px;font-size:14px}
+.an-txt{font-size:13px;color:var(--ink2);white-space:pre-line;overflow-wrap:anywhere}
+.an-mas>summary{font-size:13px;color:var(--ink2);cursor:pointer;list-style:none}
+.an-mas>summary::-webkit-details-marker{display:none}
+.an-mas>summary b{color:var(--accent);font-weight:600}
+.an-mas[open]>summary{display:none}
+.an-pie{color:var(--ink3);font-size:12px;margin:6px 0 0}
 .vacio{color:var(--ink3);font-size:13px;padding:12px;border:1px dashed var(--line);border-radius:10px}
 details.log{margin-top:14px}details.log summary{cursor:pointer;color:var(--ink3);font-size:12px}
 pre{white-space:pre-wrap;font:12px/1.5 ui-monospace,Consolas,monospace;background:var(--card2);padding:12px;border-radius:8px;color:var(--ink2);max-height:280px;overflow:auto;margin:8px 0 0}
