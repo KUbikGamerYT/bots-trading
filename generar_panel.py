@@ -37,6 +37,12 @@ BOTS = [
          esperado="Cada mes se queda con los 3 mercados más fuertes (bolsas, bonos, oro, materias primas...). "
                   "Backtest 2007–2026: +10 a +12 % al año, peor caída −15 a −18 %. Unos 1–2 cambios al mes.",
          ret_anual=0.11, dd=-0.18, moneda="€", activo="ETF"),
+    dict(id="oro", nombre="Bot oro 4h · Buy Sell Signal (€)", estado="estado_bot_oro.json",
+         capital="capital_oro.csv", ops="operaciones_oro.csv", registro="registro_bot_oro.txt",
+         esperado="Tu indicador de TradingView (EMA 5/13, SL 0,5 ATR, TP 1:1, 2:1 y 3:1), compras y cortos, "
+                  "arriesgando un 1 % por operación. Backtest jun 2024–nov 2026: +40 % en total, peor caída −7 %, "
+                  "unas 7 operaciones al mes. Pocos datos y con el oro muy alcista: hay que confirmarlo.",
+         ret_anual=0.15, dd=-0.10, moneda="€", activo="Activo"),
 ]
 
 
@@ -161,7 +167,7 @@ def tarjeta(r):
             px = fnum(r["precios"].get(s), ent)
             filas += (f"<tr><td><b>{html.escape(s)}</b></td><td>{html.escape(str(p.get('time', '')))}</td>"
                       f"<td>{ent:.6g}</td><td>{px:.6g}</td><td>{f'{stop:.6g}' if stop else '—'}</td>"
-                      f"<td>{eur(uds * px)}</td><td class='{'pos' if px >= ent else 'neg'}'>{pct(px / ent - 1)}</td></tr>")
+                      f"<td>{eur(abs(uds * px))}{' (corto)' if uds < 0 else ''}</td><td class='{'pos' if (px - ent) * uds >= 0 else 'neg'}'>{pct((px / ent - 1) * (1 if uds >= 0 else -1))}</td></tr>")
         pos = (f"<div class='tabla'><table><thead><tr><th>{b.get('activo', 'Moneda')}</th><th>Desde</th><th>Entrada</th><th>Precio</th>"
                f"<th>Stop</th><th>Valor</th><th>Resultado</th></tr></thead><tbody>{filas}</tbody></table></div>")
     else:
