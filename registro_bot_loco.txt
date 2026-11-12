@@ -7,3 +7,6 @@ Capital simulado (loco): 100.00 USDT
 --- 12/11/2026 20:53
 Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 100.00 USDT
+--- 12/11/2026 21:43
+Velas de 5 min procesadas: 10 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 100.00 USDT

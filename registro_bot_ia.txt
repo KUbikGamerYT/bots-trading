@@ -40,3 +40,5 @@ Decisión semanal con datos hasta el 2026-11-11: S&P 500, Oro
   Oro      nota de la IA: Underweight
            **Rating**: Underweight **Executive Summary**: Se recomienda reducir la exposición en GLD mediante una toma de beneficios parcial o una posición bajista controlada al 2.5% de la cartera. El stop loss debe situarse estrictamente en 378.89 con un horiz
 Capital simulado (agente IA): 100.00 €
+--- 12/11/2026 21:43
+Capital simulado (agente IA): 100.00 €
