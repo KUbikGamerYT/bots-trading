@@ -1,0 +1,10 @@
+--- 12/11/2026 13:36
+Procesando sesión del 2026-11-11
+  Revisión mensual. Fuerza: DBC +23.3 %, SPY +7.8 %, EFA +6.5 %, IWM +6.3 %, VNQ +5.4 %, QQQ +5.1 %, TIP +3.4 %, IEF +3.1 %, TLT +2.8 %, LQD +2.6 %, EEM +1.9 %, GLD -4.7 %
+  COMPRA DBC  (Materias primas, en Trading 212: CMOD) por 33.33 €
+  COMPRA SPY  (Bolsa EE.UU. S&P 500, en Trading 212: CSPX/VUAA) por 33.33 €
+  COMPRA EFA  (Bolsa desarrollada ex-EE.UU., en Trading 212: IWDA (aprox.)) por 33.33 €
+Capital simulado (ETF): 99.90 EUR
+  DBC  Materias primas              valor 33.30 €  (-0.1 %)
+  SPY  Bolsa EE.UU. S&P 500         valor 33.30 €  (-0.1 %)
+  EFA  Bolsa desarrollada ex-EE.UU. valor 33.30 €  (-0.1 %)
