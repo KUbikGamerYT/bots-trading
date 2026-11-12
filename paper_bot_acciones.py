@@ -71,6 +71,36 @@ def elegir(c):
     return mom[ok].sort_values(ascending=False).head(TOP_N), mom
 
 
+def analisis(st, c, mes):
+    top, mom = elegir(c)
+    sma = c.iloc[-SMA_N:].mean()
+    ult = c.iloc[-1]
+    ranking = mom.dropna().sort_values(ascending=False)
+    puesto = {x: i + 1 for i, x in enumerate(ranking.index)}
+    filas = []
+    for s in list(top.index) + [x for x in st["positions"] if x not in top.index]:
+        if s not in c.columns or pd.isna(mom.get(s)):
+            filas.append([s, "cartera", "En cartera (sin datos de precio hoy)."]); continue
+        dentro = s in st["positions"]
+        estado = "cartera" if dentro and s in top.index else ("si" if s in top.index else "no")
+        txt = (f"Sube {mom[s] * 100:+.0f} % en 12 meses (puesto {puesto.get(s, '—')} de {len(ranking)})"
+               f" y está {'por encima' if ult[s] > sma[s] else 'por debajo'} de su media de 200 sesiones.")
+        if dentro and s in top.index:
+            txt += " Sigue entre las 5 más fuertes: se mantiene."
+        elif s in top.index:
+            txt += " Entraría en la próxima revisión mensual."
+        else:
+            txt += " Ya no está entre las 5: se vendería en la próxima revisión."
+        filas.append([s, estado, txt])
+    for s in [x for x in ranking.index if x not in top.index][:3]:
+        motivo = "por debajo de su media de 200 sesiones" if ult[s] <= sma[s] else "no le llega para el top 5"
+        filas.append([s, "cerca", f"Sube {mom[s] * 100:+.0f} % en 12 meses, pero {motivo}."])
+    sig = (pd.Timestamp(mes + "-01") + pd.DateOffset(months=1)).strftime("%d/%m/%Y")
+    st["analisis"] = dict(fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"), filas=filas,
+                          resumen=f"Solo opera una vez al mes. Próxima revisión: primera sesión desde el {sig}. "
+                                  f"Así está hoy el ranking de las 5 más fuertes.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=100.0)
@@ -133,6 +163,7 @@ def main():
         append_csv(EQUITY, dict(fecha=bar, capital=round(equity(), 2), liquidez=round(st["cash"], 2),
                                 posiciones=len(pos)))
     st["prices"] = {s: precio[s] for s in pos if s in precio}
+    analisis(st, c, mes)
     save_state(st)
     print(f"Capital simulado (acciones): {equity():.2f} EUR")
     for s, p in pos.items():

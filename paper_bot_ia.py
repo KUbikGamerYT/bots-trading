@@ -80,8 +80,26 @@ def preguntar_ia(ticker, fecha):
     cfg["output_language"] = "Spanish"
     ta = TradingAgentsGraph(selected_analysts=("market", "social", "news"), config=cfg)
     state, nota = ta.propagate(ticker, fecha, asset_type=TIPO[ticker])
-    texto = str(state.get("final_trade_decision", "") or "")
-    return nota, " ".join(texto.split())[:400]
+    texto = str(state.get("final_trade_decision", "") or "").strip()
+    return nota, texto
+
+
+ACCION = {"Buy": "compra / mantiene 1/3", "Overweight": "compra / mantiene 1/3", "Hold": "no toca nada",
+          "Underweight": "vende / no compra", "Sell": "vende / no compra"}
+
+
+def guardar_analisis(st, s, nota, texto, fecha):
+    """Guarda el último análisis de la IA por activo para mostrarlo en el panel."""
+    a = st.setdefault("analisis", dict(resumen="", filas=[]))
+    filas = [f for f in a.get("filas", []) if f[0] != NOMBRE[s]]
+    estado = "si" if nota in COMPRAR else ("cerca" if nota == "Hold" else "no")
+    if s in st["positions"] and nota not in VENDER:
+        estado = "cartera"
+    acc = ACCION.get(nota, "error: se reintenta mañana")
+    filas.append([NOMBRE[s], estado, f"Nota de la IA: {nota} ({acc}). Análisis del {fecha}:\n\n{texto[:2500]}"])
+    filas.sort(key=lambda f: [NOMBRE[x] for x in TICKERS].index(f[0]))
+    a.update(filas=filas, fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+             resumen="Último análisis del equipo de IAs para cada activo (se renueva una vez por semana).")
 
 
 def pendientes(st, forzar=False):
@@ -101,8 +119,9 @@ def decidir(st, px, fecha, activos, log=print):
             nota, resumen = "ERROR", f"{type(e).__name__}: {e}"[:300]
         log(f"  {NOMBRE[s]:<8} nota de la IA: {nota}")
         if resumen:
-            log(f"           {resumen[:250]}")
-        append_csv(DECISIONES, dict(fecha=fecha, simbolo=s, nota=nota, resumen=resumen))
+            log(f"           {' '.join(resumen.split())[:250]}")
+        append_csv(DECISIONES, dict(fecha=fecha, simbolo=s, nota=nota, resumen=" ".join(resumen.split())[:400]))
+        guardar_analisis(st, s, nota, resumen, fecha)
         if nota in ("ERROR", "REVIEW"):
             log("           (se reintentará en la próxima ejecución diaria)")
             continue

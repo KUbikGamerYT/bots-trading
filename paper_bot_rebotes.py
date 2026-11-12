@@ -95,6 +95,31 @@ def paso(st, c, fecha, log=print):
     return equity()
 
 
+def analisis(st, c):
+    px, r2 = c.iloc[-1], c.apply(rsi).iloc[-1]
+    s5, s200 = c.iloc[-5:].mean(), c.iloc[-200:].mean()
+    filas = []
+    for s in TICKERS:
+        if pd.isna(px[s]):
+            continue
+        tend = px[s] > s200[s]
+        if s in st["positions"]:
+            filas.append([NOMBRE[s], "cartera", f"Comprado tras la caída. Vende cuando cierre por encima de su media de "
+                          f"5 sesiones ({s5[s]:.2f}); ahora {px[s]:.2f}."])
+        elif not tend:
+            filas.append([NOMBRE[s], "no", f"Por debajo de su media de 200 sesiones (tendencia bajista): no compra caídas aquí."])
+        elif r2[s] < RSI_MAX:
+            filas.append([NOMBRE[s], "si", f"RSI(2) {r2[s]:.0f} < {RSI_MAX} en tendencia alcista: caída fuerte, señal de compra."])
+        else:
+            filas.append([NOMBRE[s], "cerca" if r2[s] < 30 else "no",
+                          f"Tendencia alcista, pero RSI(2) {r2[s]:.0f}: necesita bajar de {RSI_MAX} (2-3 días de caídas fuertes)."])
+    orden = {"si": 0, "cartera": 1, "cerca": 2, "no": 3}
+    filas.sort(key=lambda f: orden[f[1]])
+    st["analisis"] = dict(fecha=datetime.now(timezone.utc).isoformat(timespec="seconds"), filas=filas,
+                          resumen="Compra índices en tendencia alcista que caen fuerte 2-3 días (RSI 2 por debajo de 10) "
+                                  "y vende en el rebote. Datos del último cierre.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--capital", type=float, default=100.0)
@@ -120,6 +145,7 @@ def main():
         st["last_bar"] = bar
         append_csv(EQUITY, dict(fecha=bar, capital=round(eq, 2), liquidez=round(st["cash"], 2), posiciones=len(st["positions"])))
     st["prices"] = {s: float(ultimo[s]) for s in st["positions"] if pd.notna(ultimo[s])}
+    analisis(st, c)
     st["actualizado"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with open(STATE, "w") as f:
         json.dump(st, f, indent=2, default=str)
