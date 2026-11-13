@@ -63,3 +63,31 @@ Capital simulado (loco): 98.44 USDT
   CIERRE corto a 68803.90 (TP3 (3:1))  resultado +0.57 €
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 1
 Capital simulado (loco): 98.24 USDT
+--- 13/11/2026 22:24
+  COMPRA oro a 68714.01  SL 68563.06  TP1 68864.96  TP2 69015.90  TP3 69166.85  (posición 98.24 €)
+  CIERRE largo a 68627.11 (señal contraria)  resultado -0.32 €
+  VENTA (corto) oro a 68627.11  SL 68805.13  TP1 68449.09  TP2 68271.07  TP3 68093.05  (posición 97.92 €)
+  CIERRE corto a 68693.94 (señal contraria)  resultado -0.29 €
+  COMPRA oro a 68693.94  SL 68511.11  TP1 68876.77  TP2 69059.60  TP3 69242.42  (posición 97.63 €)
+  CIERRE largo a 68614.62 (señal contraria)  resultado -0.31 €
+  VENTA (corto) oro a 68614.62  SL 68796.45  TP1 68432.79  TP2 68250.96  TP3 68069.13  (posición 97.32 €)
+  CIERRE corto a 68796.45 (stop loss)  resultado -0.45 €
+  COMPRA oro a 68860.09  SL 68510.68  TP1 69209.50  TP2 69558.92  TP3 69908.33  (posición 96.87 €)
+  CIERRE largo a 68609.61 (señal contraria)  resultado -0.55 €
+  VENTA (corto) oro a 68609.61  SL 68836.27  TP1 68382.95  TP2 68156.28  TP3 67929.62  (posición 96.32 €)
+  CIERRE corto a 68783.52 (señal contraria)  resultado -0.44 €
+  COMPRA oro a 68783.52  SL 68585.72  TP1 68981.32  TP2 69179.12  TP3 69376.92  (posición 95.88 €)
+  TP1 alcanzado (68981.32)
+  CIERRE largo a 68846.83 (señal contraria)  resultado -0.10 €
+  VENTA (corto) oro a 68846.83  SL 68924.67  TP1 68768.99  TP2 68691.14  TP3 68613.30  (posición 95.78 €)
+  CIERRE corto a 68918.91 (señal contraria)  resultado -0.29 €
+  COMPRA oro a 68918.91  SL 68755.34  TP1 69082.48  TP2 69246.04  TP3 69409.61  (posición 95.49 €)
+  TP1 alcanzado (69082.48)
+  CIERRE largo a 68942.18 (señal contraria)  resultado -0.16 €
+  VENTA (corto) oro a 68942.18  SL 69066.45  TP1 68817.91  TP2 68693.64  TP3 68569.38  (posición 95.33 €)
+  TP1 alcanzado (68817.91)
+  TP2 alcanzado (68693.64)
+  TP3 alcanzado (68569.38)
+  CIERRE corto a 68569.38 (TP3 (3:1))  resultado +0.32 €
+Velas de 5 min procesadas: 73 · operaciones cerradas en esta pasada: 10
+Capital simulado (loco): 95.65 USDT
