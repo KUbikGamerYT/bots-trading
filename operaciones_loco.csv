@@ -1,3 +1,4 @@
 simbolo,entrada,salida,precio_entrada,precio_salida,beneficio,r,motivo
 BTC largo,2026-11-12 21:20,2026-11-12 22:00,71604.83,71516.11,-0.3239,-1.56,señal contraria
 BTC corto,2026-11-12 22:00,2026-11-12 23:20,71516.11,71250.83,0.1704,1.38,TP3 (3:1)
+BTC corto,2026-11-13 00:10,2026-11-13 00:35,71300.0,70821.12,0.4709,2.11,TP3 (3:1)

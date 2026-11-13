@@ -344,3 +344,7 @@ Capital simulado: 100.00 USDT  (liquidez 100.00)
 Procesando vela diaria del 2026-11-12
 
 Capital simulado: 100.00 USDT  (liquidez 100.00)
+--- 13/11/2026 07:30
+Ya se procesó la vela del 2026-11-12. Vuelve a ejecutarlo mañana.
+
+Capital simulado: 100.00 USDT  (liquidez 100.00)
