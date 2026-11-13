@@ -1,47 +1,47 @@
 {
   "cash": 100.0,
   "positions": {},
-  "last_bar": "2026-11-11",
+  "last_bar": "2026-11-12",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-12T22:27:49+00:00",
+  "actualizado": "2026-11-13T00:07:36+00:00",
   "analisis": {
-    "fecha": "2026-11-12T22:27:49+00:00",
+    "fecha": "2026-11-13T00:07:36+00:00",
     "filas": [
+      [
+        "Bonos EE.UU. 20+",
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 22: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+      ],
       [
         "S&P 500",
         "no",
-        "Tendencia alcista, pero RSI(2) 76: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 80: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
         "no",
-        "Tendencia alcista, pero RSI(2) 78: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 81: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Peque\u00f1as EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 72: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 46: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 65: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 66: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
         "no",
-        "Tendencia alcista, pero RSI(2) 78: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
       [
         "Oro",
         "no",
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
-      ],
-      [
-        "Bonos EE.UU. 20+",
-        "no",
-        "Tendencia alcista, pero RSI(2) 42: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "IBEX 35",

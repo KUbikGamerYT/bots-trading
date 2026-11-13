@@ -70,3 +70,5 @@ Decisión semanal con datos hasta el 2026-11-11: Bitcoin, S&P 500, Oro
 Capital simulado (agente IA): 100.00 €
 --- 12/11/2026 23:27
 Capital simulado (agente IA): 100.00 €
+--- 13/11/2026 01:07
+Capital simulado (agente IA): 100.00 €
