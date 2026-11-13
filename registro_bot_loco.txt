@@ -58,3 +58,8 @@ Capital simulado (loco): 100.39 USDT
   TP2 alcanzado (68985.57)
 Velas de 5 min procesadas: 102 · operaciones cerradas en esta pasada: 8
 Capital simulado (loco): 98.44 USDT
+--- 13/11/2026 16:18
+  TP3 alcanzado (68803.90)
+  CIERRE corto a 68803.90 (TP3 (3:1))  resultado +0.57 €
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 1
+Capital simulado (loco): 98.24 USDT
