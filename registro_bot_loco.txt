@@ -94,3 +94,16 @@ Capital simulado (loco): 95.65 USDT
 --- 13/11/2026 22:55
 Velas de 5 min procesadas: 7 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 95.65 USDT
+--- 14/11/2026 03:13
+  VENTA (corto) oro a 68254.01  SL 68549.66  TP1 67958.36  TP2 67662.70  TP3 67367.05  (posición 95.65 €)
+  TP1 alcanzado (67958.36)
+  CIERRE corto a 68276.33 (señal contraria)  resultado -0.22 €
+  COMPRA oro a 68276.33  SL 68082.23  TP1 68470.43  TP2 68664.54  TP3 68858.64  (posición 95.43 €)
+  CIERRE largo a 68230.77 (señal contraria)  resultado -0.25 €
+  VENTA (corto) oro a 68230.77  SL 68321.57  TP1 68139.97  TP2 68049.17  TP3 67958.37  (posición 95.18 €)
+  CIERRE corto a 68321.57 (stop loss)  resultado -0.32 €
+  COMPRA oro a 68312.63  SL 68254.01  TP1 68371.25  TP2 68429.88  TP3 68488.50  (posición 94.86 €)
+  CIERRE largo a 68254.01 (stop loss)  resultado -0.27 €
+  VENTA (corto) oro a 68255.99  SL 68356.78  TP1 68155.20  TP2 68054.41  TP3 67953.62  (posición 94.59 €)
+Velas de 5 min procesadas: 51 · operaciones cerradas en esta pasada: 4
+Capital simulado (loco): 94.70 USDT

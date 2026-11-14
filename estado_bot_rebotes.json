@@ -1,37 +1,37 @@
 {
   "cash": 100.0,
   "positions": {},
-  "last_bar": "2026-11-12",
+  "last_bar": "2026-11-13",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-13T21:55:27+00:00",
+  "actualizado": "2026-11-14T02:13:54+00:00",
   "analisis": {
-    "fecha": "2026-11-13T21:55:27+00:00",
+    "fecha": "2026-11-14T02:13:54+00:00",
     "filas": [
       [
         "Bonos EE.UU. 20+",
         "cerca",
-        "Tendencia alcista, pero RSI(2) 22: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 21: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "S&P 500",
         "no",
-        "Tendencia alcista, pero RSI(2) 80: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 81: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
         "no",
-        "Tendencia alcista, pero RSI(2) 81: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 52: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Peque\u00f1as EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 46: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 49: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 66: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 82: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
@@ -46,12 +46,12 @@
       [
         "IBEX 35",
         "no",
-        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 79: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Euro Stoxx 50",
         "no",
-        "Tendencia alcista, pero RSI(2) 92: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 69: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."
