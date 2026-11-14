@@ -1,20 +1,20 @@
 {
   "cash": 100.0,
   "positions": {},
-  "last_bar": "2026-11-13 20:00:00",
+  "last_bar": "2026-11-14 04:00:00",
   "start": "2026-11-08T12:41:16.122462+00:00",
   "prices": {
-    "BTC": 68178.0
+    "BTC": 67375.69
   },
-  "actualizado": "2026-11-14T02:13:32+00:00",
+  "actualizado": "2026-11-14T10:05:55+00:00",
   "analisis": {
-    "fecha": "2026-11-14T02:13:32+00:00",
+    "fecha": "2026-11-14T10:05:55+00:00",
     "resumen": "0 de 1 en tendencia alcista. Compra solo si adem\u00e1s el precio rompe el m\u00e1ximo de 55 velas de 4h.",
     "filas": [
       [
         "BTC",
         "no",
-        "Tendencia bajista (media 50 74074.8 por debajo de la media 200 79070.3): no compra aunque rompa m\u00e1ximos."
+        "Tendencia bajista (media 50 73704.1 por debajo de la media 200 78902.7): no compra aunque rompa m\u00e1ximos."
       ]
     ]
   }
