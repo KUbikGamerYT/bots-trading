@@ -6,14 +6,14 @@
   "cash": 100.0,
   "positions": {},
   "prices": {},
-  "actualizado": "2026-11-14T10:06:21+00:00",
+  "actualizado": "2026-11-14T16:34:36+00:00",
   "analisis": {
-    "fecha": "2026-11-14T10:06:21+00:00",
+    "fecha": "2026-11-14T16:34:36+00:00",
     "filas": [
       [
         "Oro",
         "no",
-        "Media r\u00e1pida (EMA 5) 3889.23 por debajo de la lenta (EMA 13) 3921.05. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 0.81 %."
+        "Media r\u00e1pida (EMA 5) 3889.21 por debajo de la lenta (EMA 13) 3921.03. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 0.81 %."
       ]
     ],
     "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 13/11 20:00 UTC, cierre 3886.30."
