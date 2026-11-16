@@ -114,3 +114,5 @@ Capital simulado (agente IA): 100.00 €
 --- 16/11/2026 17:16 DECISIÓN SEMANAL
 Los 3 activos ya tienen decisión esta semana. Nada que hacer.
 Capital simulado (agente IA): 100.00 €
+--- 16/11/2026 17:41
+Capital simulado (agente IA): 100.00 €
