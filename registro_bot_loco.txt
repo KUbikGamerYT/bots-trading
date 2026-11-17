@@ -320,3 +320,32 @@ Capital simulado (loco): 83.18 USDT
   CIERRE largo a 64680.36 (stop loss)  resultado -0.44 €
 Velas de 5 min procesadas: 35 · operaciones cerradas en esta pasada: 1
 Capital simulado (loco): 82.74 USDT
+--- 17/11/2026 14:05
+  VENTA (corto) oro a 64860.00  SL 64983.21  TP1 64736.79  TP2 64613.58  TP3 64490.37  (posición 82.74 €)
+  CIERRE corto a 64983.21 (stop loss)  resultado -0.32 €
+  VENTA (corto) oro a 64904.05  SL 64997.16  TP1 64810.94  TP2 64717.84  TP3 64624.73  (posición 82.42 €)
+  TP1 alcanzado (64810.94)
+  TP2 alcanzado (64717.84)
+  TP3 alcanzado (64624.73)
+  CIERRE corto a 64624.73 (TP3 (3:1))  resultado +0.19 €
+  COMPRA oro a 64708.16  SL 64575.33  TP1 64840.99  TP2 64973.81  TP3 65106.64  (posición 82.61 €)
+  CIERRE largo a 64575.33 (stop loss)  resultado -0.33 €
+  COMPRA oro a 64710.74  SL 64565.62  TP1 64855.86  TP2 65000.98  TP3 65146.10  (posición 82.27 €)
+  CIERRE largo a 64565.62 (stop loss)  resultado -0.35 €
+  VENTA (corto) oro a 64615.75  SL 64706.34  TP1 64525.16  TP2 64434.57  TP3 64343.98  (posición 81.92 €)
+  TP1 alcanzado (64525.16)
+  TP2 alcanzado (64434.57)
+  TP3 alcanzado (64343.98)
+  CIERRE corto a 64343.98 (TP3 (3:1))  resultado +0.18 €
+  COMPRA oro a 64524.61  SL 64343.10  TP1 64706.12  TP2 64887.63  TP3 65069.14  (posición 82.10 €)
+  CIERRE largo a 64343.10 (stop loss)  resultado -0.40 €
+  VENTA (corto) oro a 64288.00  SL 64479.21  TP1 64096.79  TP2 63905.58  TP3 63714.37  (posición 81.71 €)
+  TP1 alcanzado (64096.79)
+  CIERRE corto a 64479.21 (stop loss)  resultado -0.41 €
+  COMPRA oro a 64432.01  SL 64261.89  TP1 64602.13  TP2 64772.25  TP3 64942.37  (posición 81.30 €)
+  TP1 alcanzado (64602.13)
+  TP2 alcanzado (64772.25)
+  TP3 alcanzado (64942.37)
+  CIERRE largo a 64942.37 (TP3 (3:1))  resultado +0.48 €
+Velas de 5 min procesadas: 113 · operaciones cerradas en esta pasada: 8
+Capital simulado (loco): 81.78 USDT
