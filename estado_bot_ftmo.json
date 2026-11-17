@@ -3,7 +3,7 @@
   "last_bar": "2026-11-16",
   "v4h": 100.0,
   "btc_dentro": false,
-  "ultima_vez": "2026-11-17T13:05:20.337860+00:00",
+  "ultima_vez": "2026-11-17T16:38:11.615673+00:00",
   "cobrado": 0.0,
   "cobros": 0,
   "fase": 1,
@@ -38,22 +38,22 @@
     }
   ],
   "prices": {
-    "SPY": 739.9500122070312,
-    "^STOXX50E": 6291.35986328125
+    "SPY": 730.4450073242188,
+    "^STOXX50E": 6214.830078125
   },
-  "cash": 6248.500000000001,
+  "cash": 6248.5,
   "analisis": {
-    "fecha": "2026-11-17T13:05:20+00:00",
+    "fecha": "2026-11-17T16:38:11+00:00",
     "filas": [
       [
         "Situaci\u00f3n",
         "cerca",
-        "Fase 1 (objetivo +10 %). Cuenta: 9.970 $, faltan 1.030 $ para el objetivo (11.000 $). D\u00edas con operaciones en esta fase: 1 (m\u00ednimo 4)."
+        "Fase 1 (objetivo +10 %). Cuenta: 9.924 $, faltan 1.076 $ para el objetivo (11.000 $). D\u00edas con operaciones en esta fase: 1 (m\u00ednimo 4)."
       ],
       [
         "L\u00edmites",
         "info",
-        "Hoy no puede bajar de 9.500 $ (margen 470 $). Nunca de 9.000 $ (margen 970 $)."
+        "Hoy no puede bajar de 9.500 $ (margen 424 $). Nunca de 9.000 $ (margen 924 $)."
       ],
       [
         "Intentos",
@@ -88,5 +88,5 @@
     ],
     "resumen": "Simulaci\u00f3n de la prueba FTMO de 10.000 $ con el bot combinado (BTC 4h + \u00edndices y oro). Backtest: ~40-65 % de aprobar las 2 fases en 12 meses, unos 7-8 meses de media."
   },
-  "actualizado": "2026-11-17T13:05:20+00:00"
+  "actualizado": "2026-11-17T16:38:11+00:00"
 }

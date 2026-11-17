@@ -4,22 +4,22 @@
   "last_bar": "2026-11-16",
   "start": "2026-11-08T12:41:06.217836+00:00",
   "prices": {
-    "BTC": 65094.94,
-    "ETH": 1825.94,
-    "BNB": 594.29,
-    "XRP": 0.9739,
-    "ADA": 0.1552,
-    "DOGE": 0.05955,
-    "LTC": 45.38,
-    "LINK": 9.336,
-    "TRX": 0.3059,
-    "XLM": 0.1411,
-    "BCH": 212.7,
-    "DOT": 0.74
+    "BTC": 63845.0,
+    "ETH": 1776.71,
+    "BNB": 585.5,
+    "XRP": 0.9581,
+    "ADA": 0.1517,
+    "DOGE": 0.05831,
+    "LTC": 44.26,
+    "LINK": 9.103,
+    "TRX": 0.3079,
+    "XLM": 0.1375,
+    "BCH": 207.3,
+    "DOT": 0.725
   },
-  "actualizado": "2026-11-17T13:05:16+00:00",
+  "actualizado": "2026-11-17T16:38:04+00:00",
   "analisis": {
-    "fecha": "2026-11-17T13:05:16+00:00",
+    "fecha": "2026-11-17T16:38:04+00:00",
     "resumen": "9 de 12 en tendencia alcista. Compra solo si adem\u00e1s el precio rompe el m\u00e1ximo de 55 d\u00edas.",
     "filas": [
       [
