@@ -4,9 +4,9 @@
   "last_bar": "2026-11-16",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-17T00:46:23+00:00",
+  "actualizado": "2026-11-17T03:41:23+00:00",
   "analisis": {
-    "fecha": "2026-11-17T00:46:23+00:00",
+    "fecha": "2026-11-17T03:41:23+00:00",
     "filas": [
       [
         "S&P 500",
@@ -29,6 +29,11 @@
         "Tendencia alcista, pero RSI(2) 27: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
+        "Euro Stoxx 50",
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 26: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+      ],
+      [
         "Emergentes",
         "no",
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
@@ -46,12 +51,7 @@
       [
         "IBEX 35",
         "no",
-        "Tendencia alcista, pero RSI(2) 79: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
-        "Euro Stoxx 50",
-        "no",
-        "Tendencia alcista, pero RSI(2) 69: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 42: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."

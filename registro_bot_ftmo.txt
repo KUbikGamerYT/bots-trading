@@ -4,3 +4,5 @@ Procesando cierre del 2026-11-16 (fase 1)
   COMPRA S&P 500        a 739.95  por 1875 $ (sobre su media de 200)
   COMPRA Euro Stoxx 50  a 6386.86  por 1875 $ (sobre su media de 200)
 Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,998.50 $, intento 1
+--- 17/11/2026 04:40
+Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,987.19 $, intento 1
