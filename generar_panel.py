@@ -50,6 +50,13 @@ BOTS = [
                   "que siguen en tendencia alcista y vende en el rebote. Backtest 2010–2026: ~70 % de aciertos, "
                   "+6 a +7 % al año, peor caída −14 %, unas 3–4 operaciones al mes.",
          ret_anual=0.065, dd=-0.15, moneda="€", activo="Índice"),
+    dict(id="ftmo", nombre="Prueba FTMO · cuenta 10.000 $ (simulada)", estado="estado_bot_ftmo.json",
+         capital="capital_ftmo.csv", ops="operaciones_ftmo.csv", registro="registro_bot_ftmo.txt",
+         esperado="Simula la prueba de fondeo de FTMO (fase 1 +10 %, fase 2 +5 %, sin perder 500 $ en un día ni bajar "
+                  "de 9.000 $) con el bot combinado: 75 % sigue al bot BTC 4h y 75 % tendencia en S&P 500, Nasdaq, oro y "
+                  "Euro Stoxx. Backtest: 40-65 % de aprobar en 12 meses, unos 7-8 meses de media. Si suspende, empieza "
+                  "otra (155 € simulados). No cuenta en la cartera combinada.",
+         ret_anual=0.15, dd=-0.10, experimento=True, moneda="$", activo="Mercado", inicial=10000.0),
     dict(id="loco", nombre="Experimento · BTC 5 minutos", estado="estado_bot_loco.json",
          capital="capital_loco.csv", ops="operaciones_loco.csv", registro="registro_bot_loco.txt",
          esperado="EXPERIMENTO: el Buy Sell Signal en velas de 5 minutos de Bitcoin, con la comisión real de Binance "
@@ -70,6 +77,7 @@ CORTO = {"diario": ("12 criptos", "Cripto · diario"), "4h": ("BTC 4h", "Cripto 
          "acciones": ("Acciones €", "Bolsa · mensual"), "etf": ("ETF 12 mercados", "Multiactivo · mensual"),
          "oro": ("Oro 4h", "Materias primas · 4 horas"),
          "rebotes": ("Rebotes índices", "Índices · RSI 2 diario"),
+         "ftmo": ("Prueba FTMO", "BTC 4h + índices · reglas FTMO · no cuenta"),
          "loco": ("Experimento 5 min", "BTC · 5 minutos · no cuenta"),
          "ia": ("Agente IA", "BTC, S&P 500, oro · semanal · no cuenta")}
 INICIAL = 100.0
@@ -141,6 +149,7 @@ def fecha_iso(s):
 
 
 def resumen(bot, ahora):
+    INICIAL = bot.get("inicial", 100.0)
     st = read_json(bot["estado"]) or {}
     cap = read_csv(bot["capital"])
     ops = read_csv(bot["ops"])
@@ -245,7 +254,7 @@ def combinada(rs):
 
 
 ETQ = {"si": ("ok", "Señal de compra"), "cartera": ("ok", "En cartera"), "cerca": ("warn", "Cerca"),
-       "no": ("neutro", "Sin señal")}
+       "no": ("neutro", "Sin señal"), "info": ("neutro", "Info")}
 
 
 def bloque_analisis(st):
@@ -320,7 +329,7 @@ def ficha(i, r):
     <div class="kpi"><span>Capital</span><b>{eur(r["actual"])} <small>{esc(mon)}</small></b><em class="{color}">{pct(r["rent"])} desde el inicio</em></div>
     <div class="kpi"><span>Peor caída</span><b>{pct(r["dd"]) if r["dd"] < -0.0005 else "0,0 %"}</b><em>límite backtest {pct(b["dd"], True, 0)}</em></div>
     <div class="kpi"><span>Operaciones cerradas</span><b>{r["n_ops"]}</b><em>aciertos {pct(r["aciertos"], False, 0) if r["aciertos"] is not None else "—"}</em></div>
-    <div class="kpi"><span>Posiciones abiertas</span><b>{len(r["posiciones"])}</b><em>liquidez {eur(fnum(r["st"].get("cash"), INICIAL))}</em></div>
+    <div class="kpi"><span>Posiciones abiertas</span><b>{len(r["posiciones"])}</b><em>liquidez {eur(fnum(r["st"].get("cash"), b.get("inicial", INICIAL)))}</em></div>
   </div>
   <div class="graf" data-pts="{datos}" data-s="{i + 1}" data-m="{esc(mon)}" role="img"
        aria-label="Evolución del capital de {esc(corto)}"></div>
@@ -573,7 +582,7 @@ def main():
         pico = max(pico, v)
         dd_tot = min(dd_tot, v / pico - 1)
     datos = dict(inicial=inicial, total=serie_json(comb),
-                 bots=[dict(n=CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0], p=serie_json(r["puntos"])) for r in todos])
+                 bots=[dict(n=CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0], p=serie_json([(d, v * 100.0 / r["bot"].get("inicial", 100.0)) for d, v in r["puntos"]])) for r in todos])
     leyenda = '<button type="button" aria-pressed="true"><span class="sw tot"></span>Cartera combinada</button>' + "".join(
         f'<button type="button" aria-pressed="true"><span class="sw s{i + 1}"></span>{esc(CORTO.get(r["bot"]["id"], (r["bot"]["nombre"],))[0])}</button>'
         for i, r in enumerate(todos))
