@@ -88,3 +88,8 @@ Capital simulado (rebotes): 100.00 €
 --- 17/11/2026 22:43
 La sesión del 2026-11-16 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 100.00 €
+--- 18/11/2026 00:39
+Procesando cierre del 2026-11-17
+  COMPRA Pequeñas EE.UU.        a 244.80  por 33.33 €  (RSI2 8.0: caída fuerte en tendencia alcista)
+Capital simulado (rebotes): 99.98 €
+  Pequeñas EE.UU.        valor 33.32 €  (-0.0 %)

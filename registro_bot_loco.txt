@@ -377,3 +377,6 @@ Capital simulado (loco): 80.11 USDT
   CIERRE largo a 64243.74 (TP3 (3:1))  resultado +0.37 €
 Velas de 5 min procesadas: 61 · operaciones cerradas en esta pasada: 5
 Capital simulado (loco): 79.18 USDT
+--- 18/11/2026 00:39
+Velas de 5 min procesadas: 23 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 79.18 USDT

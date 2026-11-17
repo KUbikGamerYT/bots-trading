@@ -1,32 +1,41 @@
 {
-  "cash": 100.0,
-  "positions": {},
-  "last_bar": "2026-11-16",
+  "cash": 66.66666666666666,
+  "positions": {
+    "IWM": {
+      "units": 0.13616758905448723,
+      "entry": 244.79638337427755,
+      "time": "2026-11-17",
+      "stop": 0
+    }
+  },
+  "last_bar": "2026-11-17",
   "start": "2026-11-12T19:38:36.588794+00:00",
-  "prices": {},
-  "actualizado": "2026-11-17T21:43:20+00:00",
+  "prices": {
+    "IWM": 244.67404635110202
+  },
+  "actualizado": "2026-11-17T23:39:33+00:00",
   "analisis": {
-    "fecha": "2026-11-17T21:43:20+00:00",
+    "fecha": "2026-11-17T23:39:33+00:00",
     "filas": [
+      [
+        "Peque\u00f1as EE.UU.",
+        "cartera",
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (249.56); ahora 244.67."
+      ],
       [
         "S&P 500",
         "cerca",
-        "Tendencia alcista, pero RSI(2) 19: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 11: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
         "cerca",
-        "Tendencia alcista, pero RSI(2) 16: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
-        "Peque\u00f1as EE.UU.",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 16: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 13: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "cerca",
-        "Tendencia alcista, pero RSI(2) 27: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 13: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Euro Stoxx 50",
@@ -46,7 +55,7 @@
       [
         "Bonos EE.UU. 20+",
         "no",
-        "Tendencia alcista, pero RSI(2) 48: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 79: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "IBEX 35",
