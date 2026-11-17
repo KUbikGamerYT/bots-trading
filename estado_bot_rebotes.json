@@ -1,37 +1,32 @@
 {
   "cash": 100.0,
   "positions": {},
-  "last_bar": "2026-11-13",
+  "last_bar": "2026-11-16",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-16T20:17:39+00:00",
+  "actualizado": "2026-11-17T00:31:42+00:00",
   "analisis": {
-    "fecha": "2026-11-16T20:17:39+00:00",
+    "fecha": "2026-11-17T00:31:42+00:00",
     "filas": [
       [
-        "Bonos EE.UU. 20+",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 21: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
         "S&P 500",
-        "no",
-        "Tendencia alcista, pero RSI(2) 81: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 19: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
-        "no",
-        "Tendencia alcista, pero RSI(2) 52: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 16: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Peque\u00f1as EE.UU.",
-        "no",
-        "Tendencia alcista, pero RSI(2) 49: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 16: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
-        "no",
-        "Tendencia alcista, pero RSI(2) 82: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 27: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
@@ -42,6 +37,11 @@
         "Oro",
         "no",
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+      ],
+      [
+        "Bonos EE.UU. 20+",
+        "no",
+        "Tendencia alcista, pero RSI(2) 48: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "IBEX 35",
