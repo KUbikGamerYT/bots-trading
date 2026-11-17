@@ -1,0 +1,21 @@
+name: descargar-datos-valor
+on:
+  push:
+    branches: [claude/project-thread-kg81y5]
+    paths: [.github/workflows/descargar_valor.yml, valor/descargar_valor.py]
+permissions:
+  contents: write
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install yfinance pandas requests
+      - run: python valor/descargar_valor.py
+      - run: |
+          ls -la datos_valor
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add datos_valor; git commit -m "Datos para backtest de inversión en valor"; git pull --rebase; git push
