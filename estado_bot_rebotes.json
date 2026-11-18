@@ -13,14 +13,24 @@
   "prices": {
     "IWM": 244.67404635110202
   },
-  "actualizado": "2026-11-17T23:39:33+00:00",
+  "actualizado": "2026-11-18T03:37:44+00:00",
   "analisis": {
-    "fecha": "2026-11-17T23:39:33+00:00",
+    "fecha": "2026-11-18T03:37:44+00:00",
     "filas": [
+      [
+        "IBEX 35",
+        "si",
+        "RSI(2) 8 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+      ],
+      [
+        "Euro Stoxx 50",
+        "si",
+        "RSI(2) 5 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+      ],
       [
         "Peque\u00f1as EE.UU.",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (249.56); ahora 244.67."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (249.56); ahora 244.63."
       ],
       [
         "S&P 500",
@@ -38,11 +48,6 @@
         "Tendencia alcista, pero RSI(2) 13: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
-        "Euro Stoxx 50",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 26: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
         "Emergentes",
         "no",
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
@@ -55,12 +60,7 @@
       [
         "Bonos EE.UU. 20+",
         "no",
-        "Tendencia alcista, pero RSI(2) 79: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
-        "IBEX 35",
-        "no",
-        "Tendencia alcista, pero RSI(2) 42: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 78: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."

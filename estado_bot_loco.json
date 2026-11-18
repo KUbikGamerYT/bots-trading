@@ -1,21 +1,21 @@
 {
-  "equity": 79.1787468790473,
+  "equity": 79.4177347285447,
   "trade": null,
-  "last_bar": "2026-11-17 23:30:00+00:00",
+  "last_bar": "2026-11-18 03:30:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
-  "cash": 79.1787468790473,
+  "cash": 79.4177347285447,
   "positions": {},
   "prices": {},
-  "actualizado": "2026-11-17T23:39:35+00:00",
+  "actualizado": "2026-11-18T03:37:46+00:00",
   "analisis": {
-    "fecha": "2026-11-17T23:39:35+00:00",
+    "fecha": "2026-11-18T03:37:46+00:00",
     "filas": [
       [
         "Bitcoin",
         "cerca",
-        "Media r\u00e1pida (EMA 5) 64961.49 por encima de la lenta (EMA 13) 64870.97. Necesita que se crucen hacia abajo con vela roja para ponerse corto. Diferencia 0.14 %."
+        "Media r\u00e1pida (EMA 5) 64470.25 por encima de la lenta (EMA 13) 64439.97. Necesita que se crucen hacia abajo con vela roja para ponerse corto. Diferencia 0.05 %."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 17/11 23:30 UTC, cierre 64911.12."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 18/11 03:30 UTC, cierre 64533.19."
   }
 }
