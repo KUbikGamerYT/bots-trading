@@ -117,3 +117,6 @@ Vela 4h de 2026-11-18 00:00 UTC: cierre 3790.00
 Vela 4h de 2026-11-18 04:00 UTC: cierre 3776.00
 Vela 4h de 2026-11-18 08:00 UTC: cierre 3766.50
 Capital simulado (oro): 100.00 €  | oro ahora 3753.00 $
+--- 18/11/2026 17:07
+Vela 4h de 2026-11-18 12:00 UTC: cierre 3757.60
+Capital simulado (oro): 100.00 €  | oro ahora 3757.60 $
