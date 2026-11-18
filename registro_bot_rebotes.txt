@@ -109,3 +109,7 @@ Capital simulado (rebotes): 100.17 €
 La sesión del 2026-11-17 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 100.17 €
   Pequeñas EE.UU.        valor 33.51 €  (+0.5 %)
+--- 18/11/2026 23:56
+La sesión del 2026-11-17 ya está procesada. Nada que hacer.
+Capital simulado (rebotes): 100.17 €
+  Pequeñas EE.UU.        valor 33.50 €  (+0.5 %)

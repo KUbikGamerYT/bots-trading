@@ -1,47 +1,47 @@
 {
-  "equity": 75.87788719734334,
+  "equity": 75.91179417422768,
   "trade": {
     "dir": -1,
-    "entry": 62898.11,
-    "sl": 63252.334406580056,
+    "entry": 62115.57,
+    "sl": 62580.724382155546,
     "tps": [
-      62543.885593419946,
-      62189.66118683989,
-      61835.436780259835
+      61650.415617844454,
+      61185.26123568891,
+      60720.10685353336
     ],
     "hit": [
-      true,
+      false,
       false,
       false
     ],
-    "notional": 75.87788719734334,
-    "risk_pct": 0.005631717814415331,
-    "time": "2026-11-18 19:00"
+    "notional": 75.91179417422768,
+    "risk_pct": 0.007488531171098422,
+    "time": "2026-11-18 22:45"
   },
-  "last_bar": "2026-11-18 21:15:00+00:00",
+  "last_bar": "2026-11-18 22:50:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
-  "cash": 151.75577439468668,
+  "cash": 151.82358834845536,
   "positions": {
     "BTC": {
-      "units": -0.0012063619590054987,
-      "entry": 62898.11,
-      "stop": 63252.334406580056,
-      "time": "2026-11-18 19:00"
+      "units": -0.001222105732495535,
+      "entry": 62115.57,
+      "stop": 62580.724382155546,
+      "time": "2026-11-18 22:45"
     }
   },
   "prices": {
-    "BTC": 62608.0
+    "BTC": 62219.6
   },
-  "actualizado": "2026-11-18T21:20:15+00:00",
+  "actualizado": "2026-11-18T22:56:42+00:00",
   "analisis": {
-    "fecha": "2026-11-18T21:20:15+00:00",
+    "fecha": "2026-11-18T22:56:42+00:00",
     "filas": [
       [
         "Bitcoin",
         "cartera",
-        "Posici\u00f3n en corto (apuesta a que baja) desde 62898.11. Stop 63252.33, objetivo final 61835.44. Cierra antes si sale la se\u00f1al contraria."
+        "Posici\u00f3n en corto (apuesta a que baja) desde 62115.57. Stop 62580.72, objetivo final 60720.11. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 18/11 21:15 UTC, cierre 62622.01."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 18/11 22:50 UTC, cierre 62339.41."
   }
 }
