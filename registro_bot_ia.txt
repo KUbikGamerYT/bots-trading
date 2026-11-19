@@ -176,3 +176,5 @@ Decisión semanal con datos hasta el 2026-11-18: Bitcoin, S&P 500, Oro
            GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
            (se reintentará en la próxima ejecución diaria)
 Capital simulado (agente IA): 100.00 €
+--- 19/11/2026 17:35
+Capital simulado (agente IA): 100.00 €
