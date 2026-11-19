@@ -29,3 +29,5 @@ Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,904.93 $, intento 1
 Procesando cierre del 2026-11-18 (fase 1)
   VENTA  S&P 500        a 730.20  resultado -25.45 $
 Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,903.57 $, intento 1
+--- 19/11/2026 13:49
+Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,910.51 $, intento 1

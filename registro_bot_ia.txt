@@ -150,3 +150,5 @@ Capital simulado (agente IA): 100.00 €
 Capital simulado (agente IA): 100.00 €
 --- 19/11/2026 04:10
 Capital simulado (agente IA): 100.00 €
+--- 19/11/2026 13:50
+Capital simulado (agente IA): 100.00 €
