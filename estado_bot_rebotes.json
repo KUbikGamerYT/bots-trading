@@ -1,51 +1,65 @@
 {
-  "cash": 66.66666666666666,
+  "cash": 0.0,
   "positions": {
     "IWM": {
       "units": 0.13616758905448723,
       "entry": 244.79638337427755,
       "time": "2026-11-17",
       "stop": 0
+    },
+    "^STOXX50E": {
+      "units": 0.005420309881633093,
+      "entry": 6157.467331787109,
+      "time": "2026-11-18",
+      "stop": 0
+    },
+    "^IBEX": {
+      "units": 0.001717551835585655,
+      "entry": 19382.987431640624,
+      "time": "2026-11-18",
+      "stop": 0
     }
   },
-  "last_bar": "2026-11-17",
+  "last_bar": "2026-11-18",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
-    "IWM": 246.05229303095848
+    "IWM": 246.4844973808862,
+    "^STOXX50E": 6154.39013671875,
+    "^IBEX": 19373.30078125
   },
-  "actualizado": "2026-11-18T22:56:41+00:00",
+  "actualizado": "2026-11-19T03:10:46+00:00",
   "analisis": {
-    "fecha": "2026-11-18T22:56:41+00:00",
+    "fecha": "2026-11-19T03:10:46+00:00",
     "filas": [
       [
-        "IBEX 35",
+        "S&P 500",
         "si",
-        "RSI(2) 8 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+        "RSI(2) 9 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
       ],
       [
-        "Euro Stoxx 50",
+        "Desarrollados ex-EE.UU.",
         "si",
-        "RSI(2) 5 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+        "RSI(2) 6 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
       ],
       [
         "Peque\u00f1as EE.UU.",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (249.56); ahora 244.63."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (248.01); ahora 245.72."
       ],
       [
-        "S&P 500",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 11: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "IBEX 35",
+        "cartera",
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19786.16); ahora 19373.30."
+      ],
+      [
+        "Euro Stoxx 50",
+        "cartera",
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6300.14); ahora 6154.39."
       ],
       [
         "Nasdaq 100",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 13: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
-        "Desarrollados ex-EE.UU.",
-        "cerca",
-        "Tendencia alcista, pero RSI(2) 13: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "no",
+        "Tendencia alcista, pero RSI(2) 37: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
@@ -60,7 +74,7 @@
       [
         "Bonos EE.UU. 20+",
         "no",
-        "Tendencia alcista, pero RSI(2) 78: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 93: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."
