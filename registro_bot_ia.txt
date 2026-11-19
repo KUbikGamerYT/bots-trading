@@ -152,3 +152,27 @@ Capital simulado (agente IA): 100.00 €
 Capital simulado (agente IA): 100.00 €
 --- 19/11/2026 13:50
 Capital simulado (agente IA): 100.00 €
+--- 19/11/2026 16:58 DECISIÓN SEMANAL
+Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-18: Bitcoin, S&P 500, Oro
+  Bitcoin  nota de la IA: ERROR
+           GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+           (se reintentará en la próxima ejecución diaria)
+  S&P 500  nota de la IA: Sell
+           **Rating**: Sell **Executive Summary**: Se recomienda reducir la exposición a SPY mediante una posición corta o venta parcial del 3% al 5% del portafolio. Se debe establecer un stop loss protector en 745.04 para mitigar la alta volatilidad (ATR de 11
+  Oro      nota de la IA: ERROR
+           GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+           (se reintentará en la próxima ejecución diaria)
+Capital simulado (agente IA): 100.00 €
