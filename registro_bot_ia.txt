@@ -203,3 +203,6 @@ Decisión semanal con datos hasta el 2026-11-19: Bitcoin, Oro
            **Rating**: Sell **Executive Summary**: Ejecutar la salida total o una posición corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posición estándar ponderada por el ATR (6.90) con un stop loss en 349.
 Capital simulado (agente IA): 99.97 €
   Bitcoin  valor 33.30 €  (-0.1 %)
+--- 20/11/2026 16:53
+Capital simulado (agente IA): 99.67 €
+  Bitcoin  valor 33.00 €  (-1.0 %)
