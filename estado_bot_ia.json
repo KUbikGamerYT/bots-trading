@@ -1,23 +1,32 @@
 {
-  "cash": 100.0,
-  "positions": {},
+  "cash": 66.66666666666666,
+  "positions": {
+    "BTC-USD": {
+      "units": 0.0006102053305079463,
+      "entry": 54626.42108613841,
+      "time": "2026-11-19",
+      "stop": 0
+    }
+  },
   "last_bar": "2026-11-20",
-  "ultima_decision": "2026-11-19T16:34:21+00:00",
+  "ultima_decision": "2026-11-20T15:50:26+00:00",
   "start": "2026-11-12T20:02:09.612120+00:00",
-  "prices": {},
-  "actualizado": "2026-11-20T11:19:35+00:00",
+  "prices": {
+    "BTC-USD": 54571.849236901515
+  },
+  "actualizado": "2026-11-20T15:50:26+00:00",
   "decididos": {
-    "BTC-USD": "2026-11-12T21:37:05+00:00",
+    "BTC-USD": "2026-11-20T15:46:33+00:00",
     "SPY": "2026-11-19T16:25:41+00:00",
-    "GLD": "2026-11-12T21:39:30+00:00"
+    "GLD": "2026-11-20T15:50:26+00:00"
   },
   "analisis": {
     "resumen": "\u00daltimo an\u00e1lisis del equipo de IAs para cada activo (se renueva una vez por semana).",
     "filas": [
       [
         "Bitcoin",
-        "no",
-        "Nota de la IA: ERROR (error: se reintenta ma\u00f1ana). An\u00e1lisis del 2026-11-18:\n\nGoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        "si",
+        "Nota de la IA: Overweight (compra / mantiene 1/3). An\u00e1lisis del 2026-11-19:\n\n**Rating**: Overweight\n\n**Executive Summary**: Inicie una acumulaci\u00f3n escalonada en BTC-USD utilizando el 50% de una asignaci\u00f3n est\u00e1ndar aprovechando la zona actual de los 60,400 a 61,900 USD. Implemente un stop loss estricta por debajo del soporte psicol\u00f3gico de los 60,000 USD (en 57,805.91 USD usando el ATR de 2,597.91 USD) y busque la toma de beneficios parciales cerca de la EMA de 10 periodos en los 66,690 USD.\n\n**Investment Thesis**: La tesis se inclina fuertemente hacia la oportunidad t\u00e1ctica de valor asim\u00e9trica defendida por el analista agresivo y respaldada por el plan del Research Manager. Aunque el analista conservador y el neutral advierten leg\u00edtimamente sobre la inercia bajista del MACD (-4,420.15) y la fuerte ca\u00edda desde los 80,405 USD de noviembre, la evidencia t\u00e9cnica de sobreventa extrema con un RSI en 20.58 y la prueba milim\u00e9trica de la banda inferior de Bollinger en 60,418.87 USD superan los riesgos de corto plazo. Esto crea una alta probabilidad de un rebote t\u00e9cnico hacia los 66,690 USD. Lo que cambiar\u00eda esta tesis es una ruptura confirmada y sostenida por debajo del soporte de los 57,805.91 USD, lo que invalidar\u00eda el escenario de rebote y activar\u00eda una salida r\u00e1pida.\n\n**Price Target**: 66690.0\n\n**Time Horizon**: 3-6 semanas"
       ],
       [
         "S&P 500",
@@ -27,9 +36,9 @@
       [
         "Oro",
         "no",
-        "Nota de la IA: ERROR (error: se reintenta ma\u00f1ana). An\u00e1lisis del 2026-11-18:\n\nGoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        "Nota de la IA: Sell (vende / no compra). An\u00e1lisis del 2026-11-19:\n\n**Rating**: Sell\n\n**Executive Summary**: Ejecutar la salida total o una posici\u00f3n corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posici\u00f3n est\u00e1ndar ponderada por el ATR (6.90) con un stop loss en 349.08 y un precio de entrada de referencia en 335.18. El horizonte temporal recomendado es de 1 a 3 meses.\n\n**Investment Thesis**: La tesis vendedora se impone de manera decisiva al contar con el respaldo de m\u00faltiples evidencias t\u00e9cnicas y macroecon\u00f3micas aportadas en el debate. GLD opera profundamente por debajo de la media m\u00f3vil de 200 periodos (406.42) y el VWMA en 359.93 confirma salidas institucionales masivas. Aunque el RSI se encuentra en 28.02 y el precio perfora la banda inferior de Bollinger en 339.94, la postura conservadora y neutral que aboga por un rebote inmediato ignora la presi\u00f3n bajista implacable de la Reserva Federal, un d\u00f3lar fuerte y un MACD profundamente negativo en -8.94. Intentar anticipar un suelo sin confirmaci\u00f3n t\u00e9cnica equivale a ignorar el momentum actual de destrucci\u00f3n de valor. Lo que cambiar\u00eda esta postura ser\u00eda una ruptura sostenida y por encima de la EMA de 10 periodos (353.38) acompa\u00f1ada de volumen institucional comprador.\n\n**Price Target**: not provided\n\n**Time Horizon**: 1-3 months"
       ]
     ],
-    "fecha": "2026-11-19T16:34:21+00:00"
+    "fecha": "2026-11-20T15:50:26+00:00"
   }
 }

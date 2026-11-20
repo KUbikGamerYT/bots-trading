@@ -186,3 +186,20 @@ Capital simulado (agente IA): 100.00 €
 Capital simulado (agente IA): 100.00 €
 --- 20/11/2026 12:19
 Capital simulado (agente IA): 100.00 €
+--- 20/11/2026 16:41 DECISIÓN SEMANAL
+Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-19: Bitcoin, Oro
+  Bitcoin  nota de la IA: Overweight
+           **Rating**: Overweight **Executive Summary**: Inicie una acumulación escalonada en BTC-USD utilizando el 50% de una asignación estándar aprovechando la zona actual de los 60,400 a 61,900 USD. Implemente un stop loss estricta por debajo del soporte ps
+  COMPRA Bitcoin  a 54626.42 €  por 33.33 €
+  Oro      nota de la IA: Sell
+           **Rating**: Sell **Executive Summary**: Ejecutar la salida total o una posición corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posición estándar ponderada por el ATR (6.90) con un stop loss en 349.
+Capital simulado (agente IA): 99.97 €
+  Bitcoin  valor 33.30 €  (-0.1 %)
