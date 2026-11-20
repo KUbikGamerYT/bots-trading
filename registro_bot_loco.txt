@@ -1,10 +1,3 @@
---- 12/11/2026 20:42
-Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
-Capital simulado (loco): 100.00 USDT
---- 12/11/2026 20:49
-Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
-Capital simulado (loco): 100.00 USDT
---- 12/11/2026 20:53
 Velas de 5 min procesadas: 1 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 100.00 USDT
 --- 12/11/2026 21:43
@@ -585,3 +578,23 @@ Capital simulado (loco): 68.89 USDT
   COMPRA oro a 58836.65  SL 58394.63  TP1 59278.67  TP2 59720.70  TP3 60162.72  (posición 68.89 €)
 Velas de 5 min procesadas: 49 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 68.61 USDT
+--- 20/11/2026 23:29
+  CIERRE largo a 58427.57 (señal contraria)  resultado -0.62 €
+  VENTA (corto) oro a 58427.57  SL 58717.27  TP1 58137.87  TP2 57848.17  TP3 57558.47  (posición 68.28 €)
+  CIERRE corto a 58629.15 (señal contraria)  resultado -0.37 €
+  COMPRA oro a 58629.15  SL 58297.55  TP1 58960.75  TP2 59292.35  TP3 59623.96  (posición 67.90 €)
+  CIERRE largo a 58297.55 (stop loss)  resultado -0.52 €
+  VENTA (corto) oro a 58228.88  SL 58908.53  TP1 57549.23  TP2 56869.57  TP3 56189.92  (posición 57.73 €)
+  CIERRE corto a 58589.78 (señal contraria)  resultado -0.47 €
+  COMPRA oro a 58589.78  SL 58073.37  TP1 59106.19  TP2 59622.61  TP3 60139.02  (posición 66.91 €)
+  CIERRE largo a 58472.89 (señal contraria)  resultado -0.27 €
+  VENTA (corto) oro a 58472.89  SL 58835.68  TP1 58110.10  TP2 57747.31  TP3 57384.51  (posición 66.64 €)
+  CIERRE corto a 58595.83 (señal contraria)  resultado -0.27 €
+  COMPRA oro a 58595.83  SL 58333.70  TP1 58857.96  TP2 59120.10  TP3 59382.23  (posición 66.37 €)
+  CIERRE largo a 58379.42 (señal contraria)  resultado -0.38 €
+  VENTA (corto) oro a 58379.42  SL 58733.89  TP1 58024.95  TP2 57670.48  TP3 57316.01  (posición 65.99 €)
+  CIERRE corto a 58639.83 (señal contraria)  resultado -0.43 €
+  COMPRA oro a 58639.83  SL 58220.24  TP1 59059.42  TP2 59479.02  TP3 59898.61  (posición 65.57 €)
+  TP1 alcanzado (59059.42)
+Velas de 5 min procesadas: 30 · operaciones cerradas en esta pasada: 8
+Capital simulado (loco): 66.12 USDT
