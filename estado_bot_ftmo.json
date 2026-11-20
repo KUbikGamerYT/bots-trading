@@ -3,7 +3,7 @@
   "last_bar": "2026-11-19",
   "v4h": 100.0,
   "btc_dentro": false,
-  "ultima_vez": "2026-11-19T23:05:20.093651+00:00",
+  "ultima_vez": "2026-11-20T02:58:54.471320+00:00",
   "cobrado": 0.0,
   "cobros": 0,
   "fase": 1,
@@ -33,21 +33,21 @@
     }
   ],
   "prices": {
-    "^STOXX50E": 6154.39013671875
+    "^STOXX50E": 6113.85986328125
   },
-  "cash": 8096.512725721141,
+  "cash": 8096.51272572114,
   "analisis": {
-    "fecha": "2026-11-19T23:05:20+00:00",
+    "fecha": "2026-11-20T02:58:54+00:00",
     "filas": [
       [
         "Situaci\u00f3n",
         "cerca",
-        "Fase 1 (objetivo +10 %). Cuenta: 9.903 $, faltan 1.097 $ para el objetivo (11.000 $). D\u00edas con operaciones en esta fase: 2 (m\u00ednimo 4)."
+        "Fase 1 (objetivo +10 %). Cuenta: 9.891 $, faltan 1.109 $ para el objetivo (11.000 $). D\u00edas con operaciones en esta fase: 2 (m\u00ednimo 4)."
       ],
       [
         "L\u00edmites",
         "info",
-        "Hoy no puede bajar de 9.403 $ (margen 500 $). Nunca de 9.000 $ (margen 903 $)."
+        "Hoy no puede bajar de 9.403 $ (margen 488 $). Nunca de 9.000 $ (margen 891 $)."
       ],
       [
         "Intentos",
@@ -77,10 +77,10 @@
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado: \u00faltimo cierre 6154.39, media de 200 sesiones 6126.71."
+        "Comprado: \u00faltimo cierre 6113.86, media de 200 sesiones 6126.51."
       ]
     ],
     "resumen": "Simulaci\u00f3n de la prueba FTMO de 10.000 $ con el bot combinado (BTC 4h + \u00edndices y oro). Backtest: ~40-65 % de aprobar las 2 fases en 12 meses, unos 7-8 meses de media."
   },
-  "actualizado": "2026-11-19T23:05:20+00:00"
+  "actualizado": "2026-11-20T02:58:54+00:00"
 }

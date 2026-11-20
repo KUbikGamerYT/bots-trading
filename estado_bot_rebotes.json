@@ -24,12 +24,12 @@
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
     "IWM": 240.81011984889327,
-    "^STOXX50E": 6154.39013671875,
-    "^IBEX": 19373.30078125
+    "^STOXX50E": 6113.85986328125,
+    "^IBEX": 19186.19921875
   },
-  "actualizado": "2026-11-19T23:05:53+00:00",
+  "actualizado": "2026-11-20T02:59:11+00:00",
   "analisis": {
-    "fecha": "2026-11-19T23:05:53+00:00",
+    "fecha": "2026-11-20T02:59:11+00:00",
     "filas": [
       [
         "S&P 500",
@@ -49,12 +49,12 @@
       [
         "IBEX 35",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19667.72); ahora 19373.30."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19630.30); ahora 19186.20."
       ],
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6251.22); ahora 6154.39."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6243.11); ahora 6113.86."
       ],
       [
         "Nasdaq 100",
