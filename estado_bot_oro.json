@@ -1,21 +1,21 @@
 {
   "equity": 100.0,
   "trade": null,
-  "last_bar": "2026-11-20 08:00:00+00:00",
+  "last_bar": "2026-11-20 12:00:00+00:00",
   "start": "2026-11-12T13:22:10.669641+00:00",
   "cash": 100.0,
   "positions": {},
   "prices": {},
-  "actualizado": "2026-11-20T15:52:58+00:00",
+  "actualizado": "2026-11-20T19:58:43+00:00",
   "analisis": {
-    "fecha": "2026-11-20T15:52:58+00:00",
+    "fecha": "2026-11-20T19:58:43+00:00",
     "filas": [
       [
         "Oro",
         "no",
-        "Media r\u00e1pida (EMA 5) 3598.41 por debajo de la lenta (EMA 13) 3667.55. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 1.89 %."
+        "Media r\u00e1pida (EMA 5) 3582.90 por debajo de la lenta (EMA 13) 3651.01. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 1.87 %."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 20/11 08:00 UTC, cierre 3575.70."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 20/11 12:00 UTC, cierre 3551.90."
   }
 }
