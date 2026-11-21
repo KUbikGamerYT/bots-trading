@@ -218,3 +218,7 @@ Capital simulado (agente IA): 99.48 €
 --- 21/11/2026 10:36
 Capital simulado (agente IA): 98.86 €
   Bitcoin  valor 32.20 €  (-3.4 %)
+--- 21/11/2026 15:51 DECISIÓN SEMANAL
+Los 3 activos ya tienen decisión esta semana. Nada que hacer.
+Capital simulado (agente IA): 100.17 €
+  Bitcoin  valor 33.50 €  (+0.5 %)
