@@ -23,41 +23,41 @@
   "last_bar": "2026-11-20",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
-    "IWM": 240.86295530647394,
-    "^STOXX50E": 6113.85986328125,
-    "^IBEX": 19186.19921875
+    "IWM": 233.92566477698335,
+    "^STOXX50E": 5941.9501953125,
+    "^IBEX": 18873.099609375
   },
-  "actualizado": "2026-11-21T01:22:11+00:00",
+  "actualizado": "2026-11-21T09:36:09+00:00",
   "analisis": {
-    "fecha": "2026-11-21T01:22:11+00:00",
+    "fecha": "2026-11-21T09:36:09+00:00",
     "filas": [
-      [
-        "S&P 500",
-        "si",
-        "RSI(2) 4 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
-      ],
-      [
-        "Desarrollados ex-EE.UU.",
-        "si",
-        "RSI(2) 5 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
-      ],
       [
         "Peque\u00f1as EE.UU.",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (243.92); ahora 240.86."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (242.53); ahora 233.93."
       ],
       [
         "IBEX 35",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19463.52); ahora 19186.20."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19400.90); ahora 18873.10."
       ],
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6188.51); ahora 6113.86."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6154.13); ahora 5941.95."
+      ],
+      [
+        "S&P 500",
+        "no",
+        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
       [
         "Nasdaq 100",
+        "no",
+        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+      ],
+      [
+        "Desarrollados ex-EE.UU.",
         "no",
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
@@ -74,7 +74,7 @@
       [
         "Bonos EE.UU. 20+",
         "no",
-        "Tendencia alcista, pero RSI(2) 96: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 99: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."

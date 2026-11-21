@@ -1,2 +1,3 @@
 simbolo,entrada,salida,precio_entrada,precio_salida,beneficio,motivo,fase
 S&P 500,2026-11-16,2026-11-18,739.95,730.2,-25.45,cierra por debajo de su media de 200,1
+Euro Stoxx 50,2026-11-16,2026-11-20,6386.86,5941.95,-131.31,cierra por debajo de su media de 200,1
