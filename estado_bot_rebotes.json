@@ -20,41 +20,41 @@
       "stop": 0
     }
   },
-  "last_bar": "2026-11-19",
+  "last_bar": "2026-11-20",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
-    "IWM": 233.8230090860299,
-    "^STOXX50E": 5941.9501953125,
-    "^IBEX": 18873.099609375
+    "IWM": 240.86295530647394,
+    "^STOXX50E": 6113.85986328125,
+    "^IBEX": 19186.19921875
   },
-  "actualizado": "2026-11-20T22:29:16+00:00",
+  "actualizado": "2026-11-21T01:22:11+00:00",
   "analisis": {
-    "fecha": "2026-11-20T22:29:16+00:00",
+    "fecha": "2026-11-21T01:22:11+00:00",
     "filas": [
       [
         "S&P 500",
         "si",
-        "RSI(2) 2 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+        "RSI(2) 4 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "si",
-        "RSI(2) 3 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
+        "RSI(2) 5 < 10 en tendencia alcista: ca\u00edda fuerte, se\u00f1al de compra."
       ],
       [
         "Peque\u00f1as EE.UU.",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (245.98); ahora 240.81."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (243.92); ahora 240.86."
       ],
       [
         "IBEX 35",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19630.30); ahora 19186.20."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19463.52); ahora 19186.20."
       ],
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6243.11); ahora 6113.86."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6188.51); ahora 6113.86."
       ],
       [
         "Nasdaq 100",

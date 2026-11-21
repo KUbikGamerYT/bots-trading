@@ -431,3 +431,11 @@ Capital simulado (acciones): 90.83 EUR
   MTS.MC    valor 17.20 €  entrada 60.06  (-14.0 %)
   ENI.MI    valor 18.88 €  entrada 25.59  (-5.6 %)
   BAYN.DE   valor 18.59 €  entrada 57.41  (-7.1 %)
+--- 21/11/2026 02:21
+La sesión del 2026-11-19 ya está procesada. Nada que hacer.
+Capital simulado (acciones): 94.63 EUR
+  REP.MC    valor 19.23 €  entrada 29.8  (-3.9 %)
+  ASML.AS   valor 18.82 €  entrada 1369  (-5.9 %)
+  MTS.MC    valor 18.23 €  entrada 60.06  (-8.9 %)
+  ENI.MI    valor 19.30 €  entrada 25.59  (-3.5 %)
+  BAYN.DE   valor 19.05 €  entrada 57.41  (-4.8 %)
