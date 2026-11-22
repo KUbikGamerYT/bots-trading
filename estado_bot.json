@@ -1,86 +1,86 @@
 {
   "cash": 100.0,
   "positions": {},
-  "last_bar": "2026-11-20",
+  "last_bar": "2026-11-21",
   "start": "2026-11-08T12:41:06.217836+00:00",
   "prices": {
-    "BTC": 60080.01,
-    "ETH": 1678.58,
-    "BNB": 547.95,
-    "XRP": 0.9274,
-    "ADA": 0.1442,
-    "DOGE": 0.05504,
-    "LTC": 39.65,
-    "LINK": 8.582,
-    "TRX": 0.3054,
-    "XLM": 0.1284,
-    "BCH": 198.4,
-    "DOT": 0.651
+    "BTC": 59449.63,
+    "ETH": 1670.15,
+    "BNB": 543.07,
+    "XRP": 0.9218,
+    "ADA": 0.1425,
+    "DOGE": 0.05457,
+    "LTC": 39.47,
+    "LINK": 8.555,
+    "TRX": 0.3053,
+    "XLM": 0.1274,
+    "BCH": 197.8,
+    "DOT": 0.645
   },
-  "actualizado": "2026-11-21T23:02:23+00:00",
+  "actualizado": "2026-11-22T02:58:31+00:00",
   "analisis": {
-    "fecha": "2026-11-21T23:02:23+00:00",
-    "resumen": "9 de 12 en tendencia alcista. Compra solo si adem\u00e1s el precio rompe el m\u00e1ximo de 55 d\u00edas.",
+    "fecha": "2026-11-22T02:58:31+00:00",
+    "resumen": "8 de 12 en tendencia alcista. Compra solo si adem\u00e1s el precio rompe el m\u00e1ximo de 55 d\u00edas.",
     "filas": [
       [
         "BTC",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 58951.5 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (86530): le falta un 46.8 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 60215.8 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (86530): le falta un 43.7 %."
       ],
       [
         "ETH",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 1623.09 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (2726.94): le falta un 68.0 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 1685.63 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (2726.94): le falta un 61.8 %."
       ],
       [
         "BNB",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 540.84 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (795.43): le falta un 47.1 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 548.61 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (795.43): le falta un 45.0 %."
       ],
       [
         "XRP",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 0.9107 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (1.5274): le falta un 67.7 %."
+        "Tendencia bajista (media 50 1.23666 por debajo de la media 200 1.24221): no compra aunque rompa m\u00e1ximos."
       ],
       [
         "ADA",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 0.1431 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (0.2704): le falta un 89.0 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 0.1444 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (0.2704): le falta un 87.3 %."
       ],
       [
         "DOGE",
         "no",
-        "Tendencia bajista (media 50 0.0764188 por debajo de la media 200 0.0830233): no compra aunque rompa m\u00e1ximos."
+        "Tendencia bajista (media 50 0.0756662 por debajo de la media 200 0.0827256): no compra aunque rompa m\u00e1ximos."
       ],
       [
         "LTC",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 40.65 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (72.58): le falta un 78.5 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 39.81 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (71.28): le falta un 79.1 %."
       ],
       [
         "LINK",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 8.545 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (15.452): le falta un 80.8 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 8.612 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (15.452): le falta un 79.4 %."
       ],
       [
         "TRX",
         "no",
-        "Tendencia bajista (media 50 0.324564 por debajo de la media 200 0.332387): no compra aunque rompa m\u00e1ximos."
+        "Tendencia bajista (media 50 0.323978 por debajo de la media 200 0.33219): no compra aunque rompa m\u00e1ximos."
       ],
       [
         "XLM",
         "no",
-        "Tendencia bajista (media 50 0.171088 por debajo de la media 200 0.181496): no compra aunque rompa m\u00e1ximos."
+        "Tendencia bajista (media 50 0.169362 por debajo de la media 200 0.181344): no compra aunque rompa m\u00e1ximos."
       ],
       [
         "BCH",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 194.8 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (336.1): le falta un 72.5 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 199.7 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (332.4): le falta un 66.4 %."
       ],
       [
         "DOT",
         "no",
-        "Tendencia alcista (media 50 > media 200), pero el precio 0.663 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (1.268): le falta un 91.3 %."
+        "Tendencia alcista (media 50 > media 200), pero el precio 0.655 a\u00fan no supera el m\u00e1ximo de 55 d\u00edas (1.268): le falta un 93.6 %."
       ]
     ]
   }
