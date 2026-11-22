@@ -1,18 +1,3 @@
-  CIERRE largo a 68846.83 (señal contraria)  resultado -0.10 €
-  VENTA (corto) oro a 68846.83  SL 68924.67  TP1 68768.99  TP2 68691.14  TP3 68613.30  (posición 95.78 €)
-  CIERRE corto a 68918.91 (señal contraria)  resultado -0.29 €
-  COMPRA oro a 68918.91  SL 68755.34  TP1 69082.48  TP2 69246.04  TP3 69409.61  (posición 95.49 €)
-  TP1 alcanzado (69082.48)
-  CIERRE largo a 68942.18 (señal contraria)  resultado -0.16 €
-  VENTA (corto) oro a 68942.18  SL 69066.45  TP1 68817.91  TP2 68693.64  TP3 68569.38  (posición 95.33 €)
-  TP1 alcanzado (68817.91)
-  TP2 alcanzado (68693.64)
-  TP3 alcanzado (68569.38)
-  CIERRE corto a 68569.38 (TP3 (3:1))  resultado +0.32 €
-Velas de 5 min procesadas: 73 · operaciones cerradas en esta pasada: 10
-Capital simulado (loco): 95.65 USDT
---- 13/11/2026 22:55
-Velas de 5 min procesadas: 7 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 95.65 USDT
 --- 14/11/2026 03:13
   VENTA (corto) oro a 68254.01  SL 68549.66  TP1 67958.36  TP2 67662.70  TP3 67367.05  (posición 95.65 €)
@@ -598,3 +583,18 @@ Capital simulado (loco): 66.22 USDT
   CIERRE corto a 59847.52 (TP3 (3:1))  resultado +0.24 €
 Velas de 5 min procesadas: 47 · operaciones cerradas en esta pasada: 7
 Capital simulado (loco): 64.90 USDT
+--- 22/11/2026 12:03
+  VENTA (corto) oro a 59201.01  SL 59522.95  TP1 58879.07  TP2 58557.12  TP3 58235.18  (posición 64.90 €)
+  TP1 alcanzado (58879.07)
+  CIERRE corto a 59182.25 (señal contraria)  resultado -0.11 €
+  COMPRA oro a 59182.25  SL 59006.68  TP1 59357.82  TP2 59533.38  TP3 59708.95  (posición 64.79 €)
+  CIERRE largo a 59006.68 (stop loss)  resultado -0.32 €
+  VENTA (corto) oro a 59039.25  SL 59235.07  TP1 58843.43  TP2 58647.61  TP3 58451.80  (posición 64.47 €)
+  CIERRE corto a 59178.43 (señal contraria)  resultado -0.28 €
+  COMPRA oro a 59178.43  SL 59060.87  TP1 59295.99  TP2 59413.55  TP3 59531.10  (posición 64.19 €)
+  TP1 alcanzado (59295.99)
+  TP2 alcanzado (59413.55)
+  TP3 alcanzado (59531.10)
+  CIERRE largo a 59531.10 (TP3 (3:1))  resultado +0.25 €
+Velas de 5 min procesadas: 97 · operaciones cerradas en esta pasada: 4
+Capital simulado (loco): 64.44 USDT
