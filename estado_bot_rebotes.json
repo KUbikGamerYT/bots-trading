@@ -1,12 +1,6 @@
 {
-  "cash": 0.0,
+  "cash": 33.14712950566875,
   "positions": {
-    "IWM": {
-      "units": 0.13616758905448723,
-      "entry": 244.79638337427755,
-      "time": "2026-11-17",
-      "stop": 0
-    },
     "^STOXX50E": {
       "units": 0.005420309881633093,
       "entry": 6157.467331787109,
@@ -20,46 +14,45 @@
       "stop": 0
     }
   },
-  "last_bar": "2026-11-20",
+  "last_bar": "2026-11-23",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
-    "IWM": 243.73673193206957,
-    "^STOXX50E": 6074.47021484375,
-    "^IBEX": 19181.099609375
+    "^STOXX50E": 5941.9501953125,
+    "^IBEX": 18873.099609375
   },
-  "actualizado": "2026-11-23T22:08:08+00:00",
+  "actualizado": "2026-11-23T23:08:24+00:00",
   "analisis": {
-    "fecha": "2026-11-23T22:08:08+00:00",
+    "fecha": "2026-11-23T23:08:24+00:00",
     "filas": [
-      [
-        "Peque\u00f1as EE.UU.",
-        "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (242.53); ahora 233.93."
-      ],
       [
         "IBEX 35",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19400.90); ahora 18873.10."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19186.20); ahora 18873.10."
       ],
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6154.13); ahora 5941.95."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6072.85); ahora 5941.95."
       ],
       [
         "S&P 500",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+      ],
+      [
+        "Peque\u00f1as EE.UU.",
+        "no",
+        "Tendencia alcista, pero RSI(2) 66: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 63: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
