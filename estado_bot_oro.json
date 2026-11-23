@@ -1,21 +1,47 @@
 {
   "equity": 100.0,
-  "trade": null,
-  "last_bar": "2026-11-23 04:00:00+00:00",
+  "trade": {
+    "dir": 1,
+    "entry": 3669.89990234375,
+    "sl": 3587.691012246543,
+    "tps": [
+      3752.108792440957,
+      3834.3176825381643,
+      3916.5265726353714
+    ],
+    "hit": [
+      false,
+      false,
+      false
+    ],
+    "notional": 44.64115618157977,
+    "risk_pct": 0.022400853506850456,
+    "time": "2026-11-23 12:00"
+  },
+  "last_bar": "2026-11-23 12:00:00+00:00",
   "start": "2026-11-12T13:22:10.669641+00:00",
-  "cash": 100.0,
-  "positions": {},
-  "prices": {},
-  "actualizado": "2026-11-23T08:53:51+00:00",
+  "cash": 55.35884381842023,
+  "positions": {
+    "ORO": {
+      "units": 0.012164134545759701,
+      "entry": 3669.89990234375,
+      "stop": 3587.691012246543,
+      "time": "2026-11-23 12:00"
+    }
+  },
+  "prices": {
+    "ORO": 3655.10009765625
+  },
+  "actualizado": "2026-11-23T18:28:40+00:00",
   "analisis": {
-    "fecha": "2026-11-23T08:53:51+00:00",
+    "fecha": "2026-11-23T18:28:40+00:00",
     "filas": [
       [
         "Oro",
-        "no",
-        "Media r\u00e1pida (EMA 5) 3589.62 por debajo de la lenta (EMA 13) 3611.98. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 0.62 %."
+        "cartera",
+        "Posici\u00f3n en largo (apuesta a que sube) desde 3669.90. Stop 3587.69, objetivo final 3916.53. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 23/11 04:00 UTC, cierre 3617.30."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 23/11 12:00 UTC, cierre 3669.90."
   }
 }
