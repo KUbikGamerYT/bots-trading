@@ -356,3 +356,6 @@ Vela 4h de 2026-11-24 12:00 UTC: cierre 3568.00
   CIERRE largo a 3587.69 (stop loss)  resultado -1.02 €
   VENTA (corto) oro a 3568.00  SL 3674.97  TP1 3461.03  TP2 3354.07  TP3 3247.10  (posición 33.02 €)
 Capital simulado (oro): 98.98 €  | oro ahora 3568.00 $
+--- 24/11/2026 17:23
+No hay velas de 4h nuevas. Nada que hacer.
+Capital simulado (oro): 99.00 €  | oro ahora 3566.60 $
