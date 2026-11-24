@@ -299,3 +299,6 @@ Capital simulado (agente IA): 100.49 €
 --- 24/11/2026 06:09
 Capital simulado (agente IA): 100.50 €
   Bitcoin  valor 33.83 €  (+1.5 %)
+--- 24/11/2026 07:08
+Capital simulado (agente IA): 100.45 €
+  Bitcoin  valor 33.78 €  (+1.4 %)
