@@ -20,9 +20,9 @@
     "^STOXX50E": 5941.9501953125,
     "^IBEX": 18873.099609375
   },
-  "actualizado": "2026-11-23T23:08:24+00:00",
+  "actualizado": "2026-11-24T00:08:15+00:00",
   "analisis": {
-    "fecha": "2026-11-23T23:08:24+00:00",
+    "fecha": "2026-11-24T00:08:15+00:00",
     "filas": [
       [
         "IBEX 35",
@@ -37,22 +37,22 @@
       [
         "S&P 500",
         "no",
-        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 65: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
         "no",
-        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
       [
         "Peque\u00f1as EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 66: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 63: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 58: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
