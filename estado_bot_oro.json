@@ -1,47 +1,47 @@
 {
-  "equity": 100.0,
+  "equity": 98.98214353752736,
   "trade": {
-    "dir": 1,
-    "entry": 3669.89990234375,
-    "sl": 3587.691012246543,
+    "dir": -1,
+    "entry": 3568.0,
+    "sl": 3674.9665228507247,
     "tps": [
-      3752.108792440957,
-      3834.3176825381643,
-      3916.5265726353714
+      3461.0334771492753,
+      3354.0669542985506,
+      3247.100431447826
     ],
     "hit": [
       false,
       false,
       false
     ],
-    "notional": 44.64115618157977,
-    "risk_pct": 0.022400853506850456,
-    "time": "2026-11-23 12:00"
+    "notional": 33.01671202631834,
+    "risk_pct": 0.029979406628566335,
+    "time": "2026-11-24 12:00"
   },
-  "last_bar": "2026-11-24 08:00:00+00:00",
+  "last_bar": "2026-11-24 12:00:00+00:00",
   "start": "2026-11-12T13:22:10.669641+00:00",
-  "cash": 55.35884381842023,
+  "cash": 131.9988555638457,
   "positions": {
     "ORO": {
-      "units": 0.012164134545759701,
-      "entry": 3669.89990234375,
-      "stop": 3587.691012246543,
-      "time": "2026-11-23 12:00"
+      "units": -0.009253562787645274,
+      "entry": 3568.0,
+      "stop": 3674.9665228507247,
+      "time": "2026-11-24 12:00"
     }
   },
   "prices": {
-    "ORO": 3580.39990234375
+    "ORO": 3568.0
   },
-  "actualizado": "2026-11-24T15:53:11+00:00",
+  "actualizado": "2026-11-24T16:08:16+00:00",
   "analisis": {
-    "fecha": "2026-11-24T15:53:11+00:00",
+    "fecha": "2026-11-24T16:08:16+00:00",
     "filas": [
       [
         "Oro",
         "cartera",
-        "Posici\u00f3n en largo (apuesta a que sube) desde 3669.90. Stop 3587.69, objetivo final 3916.53. Cierra antes si sale la se\u00f1al contraria."
+        "Posici\u00f3n en corto (apuesta a que baja) desde 3568.00. Stop 3674.97, objetivo final 3247.10. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 24/11 08:00 UTC, cierre 3635.10."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 24/11 12:00 UTC, cierre 3568.00."
   }
 }
