@@ -17,27 +17,27 @@
   "last_bar": "2026-11-23",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {
-    "^STOXX50E": 5941.9501953125,
-    "^IBEX": 18873.099609375
+    "^STOXX50E": 6074.47021484375,
+    "^IBEX": 19181.099609375
   },
-  "actualizado": "2026-11-24T02:08:07+00:00",
+  "actualizado": "2026-11-24T03:08:09+00:00",
   "analisis": {
-    "fecha": "2026-11-24T02:08:07+00:00",
+    "fecha": "2026-11-24T03:08:09+00:00",
     "filas": [
       [
         "IBEX 35",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19186.20); ahora 18873.10."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (19247.80); ahora 19181.10."
       ],
       [
         "Euro Stoxx 50",
         "cartera",
-        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6072.85); ahora 5941.95."
+        "Comprado tras la ca\u00edda. Vende cuando cierre por encima de su media de 5 sesiones (6099.36); ahora 6074.47."
       ],
       [
         "S&P 500",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 65: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
@@ -52,7 +52,7 @@
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 58: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
@@ -67,7 +67,7 @@
       [
         "Bonos EE.UU. 20+",
         "no",
-        "Tendencia alcista, pero RSI(2) 97: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 99: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ]
     ],
     "resumen": "Compra \u00edndices en tendencia alcista que caen fuerte 2-3 d\u00edas (RSI 2 por debajo de 10) y vende en el rebote. Datos del \u00faltimo cierre."
