@@ -1,6 +1,3 @@
---- 16/11/2026 02:50
-  CIERRE corto a 65034.00 (señal contraria)  resultado -0.26 €
-  COMPRA oro a 65034.00  SL 64913.63  TP1 65154.37  TP2 65274.74  TP3 65395.12  (posición 87.85 €)
   TP1 alcanzado (65154.37)
   TP2 alcanzado (65274.74)
   TP3 alcanzado (65395.12)
@@ -598,3 +595,6 @@ Capital simulado (loco): 59.56 USDT
 --- 24/11/2026 06:08
 Velas de 5 min procesadas: 5 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 59.64 USDT
+--- 24/11/2026 06:09
+Velas de 5 min procesadas: 0 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 59.66 USDT
