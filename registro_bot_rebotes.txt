@@ -386,3 +386,8 @@ La sesión del 2026-11-23 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 98.79 €
   Euro Stoxx 50          valor 32.82 €  (-1.7 %)
   IBEX 35                valor 32.83 €  (-1.4 %)
+--- 24/11/2026 11:23
+La sesión del 2026-11-23 ya está procesada. Nada que hacer.
+Capital simulado (rebotes): 98.70 €
+  Euro Stoxx 50          valor 32.77 €  (-1.8 %)
+  IBEX 35                valor 32.77 €  (-1.6 %)
