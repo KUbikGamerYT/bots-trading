@@ -1,6 +1,3 @@
-  VENTA (corto) oro a 64935.78  SL 65136.63  TP1 64734.93  TP2 64534.08  TP3 64333.23  (posición 86.77 €)
-  TP1 alcanzado (64734.93)
-  TP2 alcanzado (64534.08)
   TP3 alcanzado (64333.23)
   CIERRE corto a 64333.23 (TP3 (3:1))  resultado +0.63 €
   COMPRA oro a 64626.99  SL 64517.20  TP1 64736.78  TP2 64846.58  TP3 64956.37  (posición 87.40 €)
@@ -598,3 +595,6 @@ Capital simulado (loco): 59.71 USDT
 --- 24/11/2026 08:53
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 59.74 USDT
+--- 24/11/2026 09:07
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 59.88 USDT
