@@ -1,9 +1,9 @@
 {
   "start": "2026-11-17T00:45:55.426962+00:00",
-  "last_bar": "2026-11-23",
+  "last_bar": "2026-11-24",
   "v4h": 100.0,
   "btc_dentro": false,
-  "ultima_vez": "2026-11-24T22:09:21.018618+00:00",
+  "ultima_vez": "2026-11-24T23:07:40.693217+00:00",
   "cobrado": 0.0,
   "cobros": 0,
   "fase": 1,
@@ -15,7 +15,7 @@
     "2026-11-19",
     "2026-11-21"
   ],
-  "dia": "2026-11-24",
+  "dia": "2026-11-25",
   "inicio_dia": 9839.893955185975,
   "ultima_op": "2026-11-21",
   "intentos": 1,
@@ -29,7 +29,7 @@
   "prices": {},
   "cash": 9839.893955185975,
   "analisis": {
-    "fecha": "2026-11-24T22:09:21+00:00",
+    "fecha": "2026-11-24T23:07:40+00:00",
     "filas": [
       [
         "Situaci\u00f3n",
@@ -54,25 +54,25 @@
       [
         "S&P 500",
         "no",
-        "Fuera: \u00faltimo cierre 722.29, media de 200 sesiones 731.44."
+        "Fuera: \u00faltimo cierre 718.78, media de 200 sesiones 731.66."
       ],
       [
         "Nasdaq 100",
         "no",
-        "Fuera: \u00faltimo cierre 651.03, media de 200 sesiones 683.98."
+        "Fuera: \u00faltimo cierre 638.10, media de 200 sesiones 684.17."
       ],
       [
         "Oro",
         "no",
-        "Fuera: \u00faltimo cierre 333.02, media de 200 sesiones 404.15."
+        "Fuera: \u00faltimo cierre 325.45, media de 200 sesiones 403.46."
       ],
       [
         "Euro Stoxx 50",
         "no",
-        "Fuera: \u00faltimo cierre 6074.47, media de 200 sesiones 6126.36."
+        "Fuera: \u00faltimo cierre 6074.47, media de 200 sesiones 6126.80."
       ]
     ],
     "resumen": "Simulaci\u00f3n de la prueba FTMO de 10.000 $ con el bot combinado (BTC 4h + \u00edndices y oro). Backtest: ~40-65 % de aprobar las 2 fases en 12 meses, unos 7-8 meses de media."
   },
-  "actualizado": "2026-11-24T22:09:21+00:00"
+  "actualizado": "2026-11-24T23:07:40+00:00"
 }
