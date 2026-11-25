@@ -1,6 +1,3 @@
-  CIERRE corto a 58022.02 (señal contraria)  resultado -0.27 €
-  COMPRA oro a 58022.02  SL 57887.47  TP1 58156.57  TP2 58291.12  TP3 58425.67  (posición 66.25 €)
-  CIERRE largo a 57932.98 (señal contraria)  resultado -0.23 €
   VENTA (corto) oro a 57932.98  SL 58099.65  TP1 57766.31  TP2 57599.64  TP3 57432.97  (posición 66.01 €)
   CIERRE corto a 58005.11 (señal contraria)  resultado -0.21 €
   COMPRA oro a 58005.11  SL 57847.30  TP1 58162.92  TP2 58320.73  TP3 58478.54  (posición 65.80 €)
@@ -597,4 +594,7 @@ Capital simulado (loco): 57.60 USDT
   TP3 alcanzado (59857.81)
   CIERRE largo a 59857.81 (TP3 (3:1))  resultado +1.10 €
 Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 1
+Capital simulado (loco): 58.10 USDT
+--- 25/11/2026 20:07
+Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 58.10 USDT

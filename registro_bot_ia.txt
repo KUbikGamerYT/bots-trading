@@ -1,6 +1,3 @@
-Decisión semanal con datos hasta el 2026-11-11: S&P 500, Oro
-  S&P 500  nota de la IA: Hold
-           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en SPY sin incrementar exposición por el momento. Esperar a una ruptura confirmada por encima de la media móvil de 50 periodos en 764.55 antes de comprometer nuevo capital. Gestion
   Oro      nota de la IA: Underweight
            **Rating**: Underweight **Executive Summary**: Se recomienda reducir la exposición en GLD mediante una toma de beneficios parcial o una posición bajista controlada al 2.5% de la cartera. El stop loss debe situarse estrictamente en 378.89 con un horiz
 Capital simulado (agente IA): 100.00 €
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 99.50 €
 --- 25/11/2026 19:08
 Capital simulado (agente IA): 99.79 €
   Bitcoin  valor 33.12 €  (-0.6 %)
+--- 25/11/2026 20:07
+Capital simulado (agente IA): 99.91 €
+  Bitcoin  valor 33.24 €  (-0.3 %)
