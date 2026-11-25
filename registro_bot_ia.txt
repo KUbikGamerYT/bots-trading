@@ -1,6 +1,3 @@
-Decisión semanal con datos hasta el 2026-11-11
-  Bitcoin  nota de la IA: Underweight
-           **Rating**: Underweight **Executive Summary**: Recomendamos reducir la exposición existente en BTC-USD entre un 30% y un 50%, ejecutando salidas tácticas en rebotes hacia la EMA de 10 periodos en $75,721.48. Se debe fijar un nivel de invalidación est
   S&P 500  nota de la IA: ERROR
            GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this e
   Oro      nota de la IA: ERROR
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 99.15 €
 --- 25/11/2026 17:53
 Capital simulado (agente IA): 99.08 €
   Bitcoin  valor 32.42 €  (-2.8 %)
+--- 25/11/2026 18:07
+Capital simulado (agente IA): 99.53 €
+  Bitcoin  valor 32.86 €  (-1.4 %)
