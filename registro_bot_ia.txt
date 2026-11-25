@@ -1,6 +1,3 @@
---- 12/11/2026 21:43
-Capital simulado (agente IA): 100.00 €
---- 12/11/2026 22:35 DECISIÓN SEMANAL
 Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 403: Forbidden
 Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
 Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 99.91 €
 --- 25/11/2026 21:08
 Capital simulado (agente IA): 99.91 €
   Bitcoin  valor 33.24 €  (-0.3 %)
+--- 25/11/2026 21:09
+Capital simulado (agente IA): 99.93 €
+  Bitcoin  valor 33.26 €  (-0.2 %)

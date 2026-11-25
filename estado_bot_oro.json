@@ -30,11 +30,11 @@
     }
   },
   "prices": {
-    "ORO": 3574.199951171875
+    "ORO": 3574.699951171875
   },
-  "actualizado": "2026-11-25T20:07:59+00:00",
+  "actualizado": "2026-11-25T20:09:39+00:00",
   "analisis": {
-    "fecha": "2026-11-25T20:07:59+00:00",
+    "fecha": "2026-11-25T20:09:39+00:00",
     "filas": [
       [
         "Oro",
@@ -42,6 +42,6 @@
         "Posici\u00f3n en corto (apuesta a que baja) desde 3568.00. Stop 3674.97, objetivo final 3247.10. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 25/11 16:00 UTC, cierre 3574.20."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 4h se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 25/11 16:00 UTC, cierre 3574.70."
   }
 }
