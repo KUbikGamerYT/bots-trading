@@ -4,11 +4,11 @@
   "last_bar": "2026-11-25 00:00:00",
   "start": "2026-11-08T12:41:16.122462+00:00",
   "prices": {
-    "BTC": 58740.94
+    "BTC": 58740.8
   },
-  "actualizado": "2026-11-25T07:37:40+00:00",
+  "actualizado": "2026-11-25T07:52:37+00:00",
   "analisis": {
-    "fecha": "2026-11-25T07:37:40+00:00",
+    "fecha": "2026-11-25T07:52:37+00:00",
     "resumen": "0 de 1 en tendencia alcista. Compra solo si adem\u00e1s el precio rompe el m\u00e1ximo de 55 velas de 4h.",
     "filas": [
       [
