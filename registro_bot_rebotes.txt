@@ -582,3 +582,6 @@ Capital simulado (rebotes): 98.98 €
 --- 25/11/2026 02:08
 La sesión del 2026-11-24 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 98.98 €
+--- 25/11/2026 03:08
+La sesión del 2026-11-24 ya está procesada. Nada que hacer.
+Capital simulado (rebotes): 98.98 €
