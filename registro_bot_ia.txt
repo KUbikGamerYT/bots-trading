@@ -1,6 +1,3 @@
-Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
-Research Manager: structured-output invocation failed (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}); retrying once as free text
-Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 403: Forbidden
 Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
 Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
 Research Manager: structured-output invocation failed (503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}); retrying once as free text
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 99.31 €
 --- 25/11/2026 16:53
 Capital simulado (agente IA): 99.14 €
   Bitcoin  valor 32.47 €  (-2.6 %)
+--- 25/11/2026 17:08
+Capital simulado (agente IA): 99.20 €
+  Bitcoin  valor 32.53 €  (-2.4 %)
