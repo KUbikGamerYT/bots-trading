@@ -598,3 +598,16 @@ Capital simulado (agente IA): 99.08 €
 --- 25/11/2026 18:07
 Capital simulado (agente IA): 99.53 €
   Bitcoin  valor 32.86 €  (-1.4 %)
+--- 25/11/2026 18:30 DECISIÓN SEMANAL
+Crumb fetch rate-limited (HTTP 429), continuing without crumb
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-24: S&P 500
+  S&P 500  nota de la IA: ERROR
+           GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+           (se reintentará en la próxima ejecución diaria)
+Capital simulado (agente IA): 99.50 €
+  Bitcoin  valor 32.84 €  (-1.5 %)

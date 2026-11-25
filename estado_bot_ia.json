@@ -9,12 +9,12 @@
     }
   },
   "last_bar": "2026-11-25",
-  "ultima_decision": "2026-11-20T15:50:26+00:00",
+  "ultima_decision": "2026-11-25T17:34:17+00:00",
   "start": "2026-11-12T20:02:09.612120+00:00",
   "prices": {
-    "BTC-USD": 53853.642895681616
+    "BTC-USD": 53814.328402896426
   },
-  "actualizado": "2026-11-25T17:07:59+00:00",
+  "actualizado": "2026-11-25T17:34:17+00:00",
   "decididos": {
     "BTC-USD": "2026-11-20T15:46:33+00:00",
     "SPY": "2026-11-19T16:25:41+00:00",
@@ -31,7 +31,7 @@
       [
         "S&P 500",
         "no",
-        "Nota de la IA: Sell (vende / no compra). An\u00e1lisis del 2026-11-18:\n\n**Rating**: Sell\n\n**Executive Summary**: Se recomienda reducir la exposici\u00f3n a SPY mediante una posici\u00f3n corta o venta parcial del 3% al 5% del portafolio. Se debe establecer un stop loss protector en 745.04 para mitigar la alta volatilidad (ATR de 11.29), con un horizonte temporal a corto plazo enfocado en la ruptura de la media de 200 sesiones.\n\n**Investment Thesis**: El an\u00e1lisis demuestra la superioridad de los argumentos bajistas, respaldados por un MACD profundamente negativo en -7.31, un RSI en 36.64 que indica fuerte debilidad y la cotizaci\u00f3n rozando peligrosamente el soporte cr\u00edtico de la media de 200 sesiones (730.02) y la banda inferior de Bollinger (727.91). Aunque el analista conservador advierte sobre el riesgo de latigazos debido a la alta volatilidad (ATR 11.29), la presi\u00f3n vendedora predominante justifica la toma de posiciones bajistas con una gesti\u00f3n de riesgo ajustada. Lo que cambiar\u00eda esta tesis ser\u00eda una recuperaci\u00f3n confirmada por encima de la media de 50 sesiones (762.28) acompa\u00f1ada de un aumento sustancial en el volumen de compra institucional.\n\n**Price Target**: 715.0\n\n**Time Horizon**: 1-3 months"
+        "Nota de la IA: ERROR (error: se reintenta ma\u00f1ana). An\u00e1lisis del 2026-11-24:\n\nGoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
       ],
       [
         "Oro",
@@ -39,6 +39,6 @@
         "Nota de la IA: Sell (vende / no compra). An\u00e1lisis del 2026-11-19:\n\n**Rating**: Sell\n\n**Executive Summary**: Ejecutar la salida total o una posici\u00f3n corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posici\u00f3n est\u00e1ndar ponderada por el ATR (6.90) con un stop loss en 349.08 y un precio de entrada de referencia en 335.18. El horizonte temporal recomendado es de 1 a 3 meses.\n\n**Investment Thesis**: La tesis vendedora se impone de manera decisiva al contar con el respaldo de m\u00faltiples evidencias t\u00e9cnicas y macroecon\u00f3micas aportadas en el debate. GLD opera profundamente por debajo de la media m\u00f3vil de 200 periodos (406.42) y el VWMA en 359.93 confirma salidas institucionales masivas. Aunque el RSI se encuentra en 28.02 y el precio perfora la banda inferior de Bollinger en 339.94, la postura conservadora y neutral que aboga por un rebote inmediato ignora la presi\u00f3n bajista implacable de la Reserva Federal, un d\u00f3lar fuerte y un MACD profundamente negativo en -8.94. Intentar anticipar un suelo sin confirmaci\u00f3n t\u00e9cnica equivale a ignorar el momentum actual de destrucci\u00f3n de valor. Lo que cambiar\u00eda esta postura ser\u00eda una ruptura sostenida y por encima de la EMA de 10 periodos (353.38) acompa\u00f1ada de volumen institucional comprador.\n\n**Price Target**: not provided\n\n**Time Horizon**: 1-3 months"
       ]
     ],
-    "fecha": "2026-11-20T15:50:26+00:00"
+    "fecha": "2026-11-25T17:34:17+00:00"
   }
 }
