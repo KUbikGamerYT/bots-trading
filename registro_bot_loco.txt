@@ -1,6 +1,3 @@
-  TP3 alcanzado (61548.66)
-  CIERRE corto a 61548.66 (TP3 (3:1))  resultado +0.41 €
-Velas de 5 min procesadas: 46 · operaciones cerradas en esta pasada: 6
 Capital simulado (loco): 71.90 USDT
 --- 20/11/2026 12:19
   COMPRA oro a 62271.03  SL 61749.47  TP1 62792.59  TP2 63314.15  TP3 63835.71  (posición 71.90 €)
@@ -597,4 +594,7 @@ Capital simulado (loco): 58.71 USDT
   TP3 alcanzado (58491.47)
   CIERRE corto a 58491.47 (TP3 (3:1))  resultado +0.36 €
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 1
+Capital simulado (loco): 58.87 USDT
+--- 25/11/2026 12:53
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 58.87 USDT
