@@ -1,47 +1,47 @@
 {
-  "equity": 55.44080240637032,
+  "equity": 55.01148647113196,
   "trade": {
     "dir": 1,
-    "entry": 60588.0,
-    "sl": 60422.453648634604,
+    "entry": 60631.52,
+    "sl": 60437.44561627195,
     "tps": [
-      60753.546351365396,
-      60919.09270273079,
-      61084.63905409619
+      60825.59438372804,
+      61019.66876745609,
+      61213.743151184135
     ],
     "hit": [
       false,
       false,
       false
     ],
-    "notional": 55.44080240637032,
-    "risk_pct": 0.002732329031580442,
-    "time": "2026-11-26 16:45"
+    "notional": 55.01148647113196,
+    "risk_pct": 0.0032008827047061675,
+    "time": "2026-11-26 17:00"
   },
-  "last_bar": "2026-11-26 16:45:00+00:00",
+  "last_bar": "2026-11-26 17:00:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
   "cash": 0.0,
   "positions": {
     "BTC": {
-      "units": 0.0009150459233902805,
-      "entry": 60588.0,
-      "stop": 60422.453648634604,
-      "time": "2026-11-26 16:45"
+      "units": 0.0009073083846674462,
+      "entry": 60631.52,
+      "stop": 60437.44561627195,
+      "time": "2026-11-26 17:00"
     }
   },
   "prices": {
-    "BTC": 60516.02
+    "BTC": 60613.02
   },
-  "actualizado": "2026-11-26T16:53:14+00:00",
+  "actualizado": "2026-11-26T17:07:58+00:00",
   "analisis": {
-    "fecha": "2026-11-26T16:53:14+00:00",
+    "fecha": "2026-11-26T17:07:58+00:00",
     "filas": [
       [
         "Bitcoin",
         "cartera",
-        "Posici\u00f3n en largo (apuesta a que sube) desde 60588.00. Stop 60422.45, objetivo final 61084.64. Cierra antes si sale la se\u00f1al contraria."
+        "Posici\u00f3n en largo (apuesta a que sube) desde 60631.52. Stop 60437.45, objetivo final 61213.74. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 26/11 16:45 UTC, cierre 60588.00."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 26/11 17:00 UTC, cierre 60631.52."
   }
 }
