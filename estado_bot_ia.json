@@ -1,44 +1,35 @@
 {
-  "cash": 66.66666666666666,
-  "positions": {
-    "BTC-USD": {
-      "units": 0.0006102053305079463,
-      "entry": 54626.42108613841,
-      "time": "2026-11-19",
-      "stop": 0
-    }
-  },
+  "cash": 100.26576231839502,
+  "positions": {},
   "last_bar": "2026-11-26",
-  "ultima_decision": "2026-11-25T17:34:17+00:00",
+  "ultima_decision": "2026-11-26T17:16:08+00:00",
   "start": "2026-11-12T20:02:09.612120+00:00",
-  "prices": {
-    "BTC-USD": 55164.29845542145
-  },
-  "actualizado": "2026-11-26T17:09:22+00:00",
+  "prices": {},
+  "actualizado": "2026-11-26T17:16:08+00:00",
   "decididos": {
-    "BTC-USD": "2026-11-20T15:46:33+00:00",
-    "SPY": "2026-11-19T16:25:41+00:00",
-    "GLD": "2026-11-20T15:50:26+00:00"
+    "BTC-USD": "2026-11-26T17:14:02+00:00",
+    "SPY": "2026-11-26T17:15:10+00:00",
+    "GLD": "2026-11-26T17:16:08+00:00"
   },
   "analisis": {
     "resumen": "\u00daltimo an\u00e1lisis del equipo de IAs para cada activo (se renueva una vez por semana).",
     "filas": [
       [
         "Bitcoin",
-        "si",
-        "Nota de la IA: Overweight (compra / mantiene 1/3). An\u00e1lisis del 2026-11-19:\n\n**Rating**: Overweight\n\n**Executive Summary**: Inicie una acumulaci\u00f3n escalonada en BTC-USD utilizando el 50% de una asignaci\u00f3n est\u00e1ndar aprovechando la zona actual de los 60,400 a 61,900 USD. Implemente un stop loss estricta por debajo del soporte psicol\u00f3gico de los 60,000 USD (en 57,805.91 USD usando el ATR de 2,597.91 USD) y busque la toma de beneficios parciales cerca de la EMA de 10 periodos en los 66,690 USD.\n\n**Investment Thesis**: La tesis se inclina fuertemente hacia la oportunidad t\u00e1ctica de valor asim\u00e9trica defendida por el analista agresivo y respaldada por el plan del Research Manager. Aunque el analista conservador y el neutral advierten leg\u00edtimamente sobre la inercia bajista del MACD (-4,420.15) y la fuerte ca\u00edda desde los 80,405 USD de noviembre, la evidencia t\u00e9cnica de sobreventa extrema con un RSI en 20.58 y la prueba milim\u00e9trica de la banda inferior de Bollinger en 60,418.87 USD superan los riesgos de corto plazo. Esto crea una alta probabilidad de un rebote t\u00e9cnico hacia los 66,690 USD. Lo que cambiar\u00eda esta tesis es una ruptura confirmada y sostenida por debajo del soporte de los 57,805.91 USD, lo que invalidar\u00eda el escenario de rebote y activar\u00eda una salida r\u00e1pida.\n\n**Price Target**: 66690.0\n\n**Time Horizon**: 3-6 semanas"
+        "no",
+        "Nota de la IA: Underweight (vende / no compra). An\u00e1lisis del 2026-11-25:\n\n**Rating**: Underweight\n\n**Executive Summary**: Reducir progresivamente la exposicion en BTC-USD para mitigar el riesgo de perforacion del soporte critico en la zona de $55,000 - $57,000. Se recomienda mantener una postura Underweight y evitar nuevas compras hasta que el activo confirme un cambio estructural recuperando al menos la EMA de 10 periodos. El horizonte temporal sugerido es de corto a mediano plazo.\n\n**Investment Thesis**: La tesis bajista se impone de manera contundente tras evaluar los argumentos de los analistas. Aunque el analista agresivo destaca un RSI en 27.52 y la cercania a la banda inferior de Bollinger en $54,604.86 como indicios de sobreventa extrema, este escenario contrasta fuertemente con la tendencia macroestructural. El precio spot de BTC-USD en $60,378.20 se mantiene holgadamente por debajo de la SMA de 50 ($75,134.17) y de la SMA de 200 ($72,028.46), respaldado ademas por un MACD profundamente bajista en -4,692.42. Intentar capturar un rebote en este entorno equivale a atrapar un cuchillo cayendo, especialmente con un ATR elevado de $3,017.82 que refleja alta volatilidad y riesgo de cola. El analista conservador y el analista neutral aciertan al se\u00f1alar que los indicadores de sobreventa pueden prolongarse indefinidamente en regimenes bajistas. Por tanto, la prioridad es la preservacion de capital recortando posiciones de forma escalonada, evitando ventas precipitadas pero sin asumir el riesgo de compras de contrartendencia sin confirmacion tecnica.\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 meses"
       ],
       [
         "S&P 500",
-        "no",
-        "Nota de la IA: ERROR (error: se reintenta ma\u00f1ana). An\u00e1lisis del 2026-11-24:\n\nGoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        "cerca",
+        "Nota de la IA: Hold (no toca nada). An\u00e1lisis del 2026-11-25:\n\n**Rating**: Hold\n\n**Executive Summary**: Mantener la postura actual en SPY sin realizar nuevas compras, operando con cautela ante la alta volatilidad. Evitar la entrada agresiva hasta que el precio logre recuperar de manera decisiva las medias m\u00f3viles de corto plazo y se confirme un giro alcista.\n\n**Investment Thesis**: El an\u00e1lisis t\u00e9cnico muestra una fuerte discrepancia entre la perspectiva de largo plazo y el momentum bajista de corto plazo. Por un lado, el analista agresivo argumenta que el RSI en 39.85, la banda inferior de Bollinger en 700.42 y la proximidad de la SMA de 200 en 730.77 ofrecen una oportunidad cl\u00e1sica de acumulaci\u00f3n por sobreventa y soporte estructural. Por otro lado, los analistas conservador y neutral advierten acertadamente sobre el riesgo derivado de un ATR elevado de 15.57, un MACD en -12.93 y una cotizaci\u00f3n por debajo de la EMA de 10 (725.34) y la SMA de 50 (757.85). Dado que la evidencia de presi\u00f3n vendedora de corto plazo neutraliza el atractivo de los soportes y no existe una confirmaci\u00f3n t\u00e9cnica clara de giro alcista, la recomendaci\u00f3n equilibrada y prudente es mantener una postura de espera activa sin incrementar exposici\u00f3n. Lo que cambiar\u00eda esta tesis es la consolidaci\u00f3n de una vela de giro sobre los niveles clave con una neutralizaci\u00f3n del MACD bajista.\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 months"
       ],
       [
         "Oro",
         "no",
-        "Nota de la IA: Sell (vende / no compra). An\u00e1lisis del 2026-11-19:\n\n**Rating**: Sell\n\n**Executive Summary**: Ejecutar la salida total o una posici\u00f3n corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posici\u00f3n est\u00e1ndar ponderada por el ATR (6.90) con un stop loss en 349.08 y un precio de entrada de referencia en 335.18. El horizonte temporal recomendado es de 1 a 3 meses.\n\n**Investment Thesis**: La tesis vendedora se impone de manera decisiva al contar con el respaldo de m\u00faltiples evidencias t\u00e9cnicas y macroecon\u00f3micas aportadas en el debate. GLD opera profundamente por debajo de la media m\u00f3vil de 200 periodos (406.42) y el VWMA en 359.93 confirma salidas institucionales masivas. Aunque el RSI se encuentra en 28.02 y el precio perfora la banda inferior de Bollinger en 339.94, la postura conservadora y neutral que aboga por un rebote inmediato ignora la presi\u00f3n bajista implacable de la Reserva Federal, un d\u00f3lar fuerte y un MACD profundamente negativo en -8.94. Intentar anticipar un suelo sin confirmaci\u00f3n t\u00e9cnica equivale a ignorar el momentum actual de destrucci\u00f3n de valor. Lo que cambiar\u00eda esta postura ser\u00eda una ruptura sostenida y por encima de la EMA de 10 periodos (353.38) acompa\u00f1ada de volumen institucional comprador.\n\n**Price Target**: not provided\n\n**Time Horizon**: 1-3 months"
+        "Nota de la IA: Underweight (vende / no compra). An\u00e1lisis del 2026-11-25:\n\n**Rating**: Underweight\n\n**Executive Summary**: Reducir gradualmente la exposici\u00f3n actual en GLD para mitigar el riesgo de la tendencia bajista estructural. Se recomienda una salida t\u00e1ctica y escalonada evitando ventas precipitadas en m\u00ednimos, estableciendo stop-loss din\u00e1micos ajustados a la volatilidad del ATR.\n\n**Investment Thesis**: La tesis bajista se sustenta en la debilidad estructural evidenciada por un precio de GLD en $327.45, muy por debajo de sus medias m\u00f3viles de 50 ($371.04) y 200 sesiones ($403.83), adem\u00e1s de salidas institucionales masivas por 2,200 millones de d\u00f3lares. Si bien el RSI en 31.71 y la cercan\u00eda a la banda inferior de Bollinger en $319.64 sugieren un posible rebote t\u00e9cnico a corto plazo que desaconseja una liquidaci\u00f3n masiva e inmediata, el entorno macroecon\u00f3mico restrictivo con tasas duras de la Fed y la fortaleza del d\u00f3lar inclinan la balanza hacia una reducci\u00f3n prudente y escalonada de la exposici\u00f3n (Underweight).\n\n**Price Target**: not provided\n\n**Time Horizon**: 3-6 months"
       ]
     ],
-    "fecha": "2026-11-25T17:34:17+00:00"
+    "fecha": "2026-11-26T17:16:08+00:00"
   }
 }

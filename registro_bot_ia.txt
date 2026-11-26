@@ -598,3 +598,28 @@ Capital simulado (agente IA): 100.33 €
 --- 26/11/2026 18:09
 Capital simulado (agente IA): 100.33 €
   Bitcoin  valor 33.66 €  (+1.0 %)
+--- 26/11/2026 18:12 DECISIÓN SEMANAL
+Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · SPY: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 404: Not Found
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
+Decisión semanal con datos hasta el 2026-11-25: Bitcoin, S&P 500, Oro
+  Bitcoin  nota de la IA: Underweight
+           **Rating**: Underweight **Executive Summary**: Reducir progresivamente la exposicion en BTC-USD para mitigar el riesgo de perforacion del soporte critico en la zona de $55,000 - $57,000. Se recomienda mantener una postura Underweight y evitar nuevas 
+  VENTA  Bitcoin  a 55061.95 €  resultado +0.27 €
+  S&P 500  nota de la IA: Hold
+           **Rating**: Hold **Executive Summary**: Mantener la postura actual en SPY sin realizar nuevas compras, operando con cautela ante la alta volatilidad. Evitar la entrada agresiva hasta que el precio logre recuperar de manera decisiva las medias móviles
+  Oro      nota de la IA: Underweight
+           **Rating**: Underweight **Executive Summary**: Reducir gradualmente la exposición actual en GLD para mitigar el riesgo de la tendencia bajista estructural. Se recomienda una salida táctica y escalonada evitando ventas precipitadas en mínimos, estable
+Capital simulado (agente IA): 100.27 €
