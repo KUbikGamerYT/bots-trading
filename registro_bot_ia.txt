@@ -1,7 +1,4 @@
 Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
-Reddit RSS fetch failed for r/wallstreetbets+stocks+investing · GLD: HTTP Error 404: Not Found
-Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
-Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
 Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
 Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
 Decisión semanal con datos hasta el 2026-11-18: Bitcoin, S&P 500, Oro
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 100.44 €
 --- 26/11/2026 13:53
 Capital simulado (agente IA): 100.48 €
   Bitcoin  valor 33.81 €  (+1.4 %)
+--- 26/11/2026 14:08
+Capital simulado (agente IA): 100.45 €
+  Bitcoin  valor 33.79 €  (+1.4 %)
