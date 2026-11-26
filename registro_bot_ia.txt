@@ -1,6 +1,3 @@
---- 20/11/2026 12:19
-Capital simulado (agente IA): 100.00 €
---- 20/11/2026 16:41 DECISIÓN SEMANAL
 Reddit RSS fetch failed for r/Bitcoin+CryptoCurrency+CryptoMarkets · BTC: HTTP Error 404: Not Found
 Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
 Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 100.37 €
 --- 26/11/2026 15:53
 Capital simulado (agente IA): 100.39 €
   Bitcoin  valor 33.72 €  (+1.2 %)
+--- 26/11/2026 16:07
+Capital simulado (agente IA): 100.02 €
+  Bitcoin  valor 33.36 €  (+0.1 %)

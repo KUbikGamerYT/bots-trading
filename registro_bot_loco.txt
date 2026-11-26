@@ -1,6 +1,3 @@
-Capital simulado (loco): 59.56 USDT
---- 24/11/2026 06:08
-Velas de 5 min procesadas: 5 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 59.64 USDT
 --- 24/11/2026 06:09
 Velas de 5 min procesadas: 0 · operaciones cerradas en esta pasada: 0
@@ -596,5 +593,8 @@ Capital simulado (loco): 56.21 USDT
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 1
 Capital simulado (loco): 56.00 USDT
 --- 26/11/2026 15:53
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 56.00 USDT
+--- 26/11/2026 16:07
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 56.00 USDT
