@@ -1,6 +1,3 @@
-           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en SPY sin realizar nuevas compras ni reducciones de tamaño. Se recomienda supervisar de cerca el comportamiento del precio frente a la media móvil de 50 días (764.55) y la banda i
-  Oro      nota de la IA: Hold
-           **Rating**: Hold **Executive Summary**: Mantener la asignación actual en GLD sin incrementar la exposición larga. Esperar una confirmación técnica clara: ya sea la ruptura sostenida por encima de la media móvil de 50 periodos, o una confirmación de q
 Capital simulado (agente IA): 100.00 €
 --- 12/11/2026 23:27
 Capital simulado (agente IA): 100.00 €
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 100.31 €
 --- 26/11/2026 02:09
 Capital simulado (agente IA): 100.32 €
   Bitcoin  valor 33.66 €  (+1.0 %)
+--- 26/11/2026 03:08
+Capital simulado (agente IA): 100.43 €
+  Bitcoin  valor 33.77 €  (+1.3 %)
