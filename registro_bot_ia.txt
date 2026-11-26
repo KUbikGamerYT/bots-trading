@@ -1,6 +1,3 @@
-  Bitcoin  nota de la IA: Overweight
-           **Rating**: Overweight **Executive Summary**: Inicie una acumulación escalonada en BTC-USD utilizando el 50% de una asignación estándar aprovechando la zona actual de los 60,400 a 61,900 USD. Implemente un stop loss estricta por debajo del soporte ps
-  COMPRA Bitcoin  a 54626.42 €  por 33.33 €
   Oro      nota de la IA: Sell
            **Rating**: Sell **Executive Summary**: Ejecutar la salida total o una posición corta en GLD para capitalizar la fuerte tendencia bajista estructural. Asignar el equivalente a una posición estándar ponderada por el ATR (6.90) con un stop loss en 349.
 Capital simulado (agente IA): 99.97 €
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 100.24 €
 --- 26/11/2026 16:53
 Capital simulado (agente IA): 100.31 €
   Bitcoin  valor 33.64 €  (+0.9 %)
+--- 26/11/2026 17:08
+Capital simulado (agente IA): 100.35 €
+  Bitcoin  valor 33.69 €  (+1.1 %)
