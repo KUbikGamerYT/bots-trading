@@ -1,6 +1,3 @@
-Capital simulado (rebotes): 96.76 €
-  Pequeñas EE.UU.        valor 31.78 €  (-4.7 %)
-  Euro Stoxx 50          valor 32.42 €  (-2.9 %)
   IBEX 35                valor 32.56 €  (-2.2 %)
 --- 23/11/2026 19:28
 La sesión del 2026-11-20 ya está procesada. Nada que hacer.
@@ -596,5 +593,8 @@ Capital simulado (rebotes): 98.98 €
 La sesión del 2026-11-25 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 98.98 €
 --- 26/11/2026 11:08
+La sesión del 2026-11-25 ya está procesada. Nada que hacer.
+Capital simulado (rebotes): 98.98 €
+--- 26/11/2026 11:23
 La sesión del 2026-11-25 ya está procesada. Nada que hacer.
 Capital simulado (rebotes): 98.98 €
