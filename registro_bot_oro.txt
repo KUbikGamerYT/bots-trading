@@ -1,6 +1,3 @@
---- 16/11/2026 02:50
-Vela 4h de 2026-11-15 20:00 UTC: cierre 3903.40
-Capital simulado (oro): 100.00 €  | oro ahora 3876.90 $
 --- 16/11/2026 10:26
 Vela 4h de 2026-11-16 00:00 UTC: cierre 3876.80
 Vela 4h de 2026-11-16 04:00 UTC: cierre 3859.70
@@ -596,5 +593,8 @@ Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
 No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
 --- 26/11/2026 12:54
+No hay velas de 4h nuevas. Nada que hacer.
+Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
+--- 26/11/2026 13:08
 No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
