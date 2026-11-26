@@ -1,6 +1,3 @@
-Vendor 'fred' not configured for get_macro_indicators; trying next vendor.
-Optional macro_data unavailable for get_macro_indicators: FRED_API_KEY environment variable is not set. Get a free key at https://fred.stlouisfed.org/docs/api/api_key.html.
-Decisión semanal con datos hasta el 2026-11-19: Bitcoin, Oro
   Bitcoin  nota de la IA: Overweight
            **Rating**: Overweight **Executive Summary**: Inicie una acumulación escalonada en BTC-USD utilizando el 50% de una asignación estándar aprovechando la zona actual de los 60,400 a 61,900 USD. Implemente un stop loss estricta por debajo del soporte ps
   COMPRA Bitcoin  a 54626.42 €  por 33.33 €
@@ -598,3 +595,6 @@ Capital simulado (agente IA): 100.09 €
 --- 26/11/2026 16:38
 Capital simulado (agente IA): 100.24 €
   Bitcoin  valor 33.57 €  (+0.7 %)
+--- 26/11/2026 16:53
+Capital simulado (agente IA): 100.31 €
+  Bitcoin  valor 33.64 €  (+0.9 %)
