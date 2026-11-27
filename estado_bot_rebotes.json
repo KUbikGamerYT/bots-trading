@@ -4,9 +4,9 @@
   "last_bar": "2026-11-26",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-27T01:08:11+00:00",
+  "actualizado": "2026-11-27T02:08:10+00:00",
   "analisis": {
-    "fecha": "2026-11-27T01:08:11+00:00",
+    "fecha": "2026-11-27T02:08:10+00:00",
     "filas": [
       [
         "S&P 500",
@@ -46,7 +46,7 @@
       [
         "IBEX 35",
         "no",
-        "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
+        "Tendencia alcista, pero RSI(2) 64: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Euro Stoxx 50",
