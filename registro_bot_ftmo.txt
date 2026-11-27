@@ -576,3 +576,6 @@ Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,839.89 $, intento 1
 Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,839.89 $, intento 1
 --- 27/11/2026 23:07
 Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,839.89 $, intento 1
+--- 28/11/2026 00:07
+Procesando cierre del 2026-11-27 (fase 1)
+Prueba FTMO: Fase 1 (objetivo +10 %), cuenta 9,839.89 $, intento 1
