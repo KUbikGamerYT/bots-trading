@@ -1,6 +1,3 @@
---- 25/11/2026 04:09
-Velas de 5 min procesadas: 0 · operaciones cerradas en esta pasada: 0
-Capital simulado (loco): 59.94 USDT
 --- 25/11/2026 05:08
   COMPRA oro a 59361.87  SL 58970.96  TP1 59752.78  TP2 60143.70  TP3 60534.61  (posición 59.94 €)
   CIERRE largo a 59238.00 (señal contraria)  resultado -0.24 €
@@ -598,3 +595,6 @@ Capital simulado (loco): 52.06 USDT
 --- 27/11/2026 13:23
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 52.08 USDT
+--- 27/11/2026 13:38
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 52.10 USDT
