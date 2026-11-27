@@ -1,6 +1,3 @@
---- 24/11/2026 12:53
-  TP1 alcanzado (60000.03)
-  TP2 alcanzado (60124.06)
   TP3 alcanzado (60248.09)
   CIERRE largo a 60248.09 (TP3 (3:1))  resultado +0.25 €
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 1
@@ -598,3 +595,6 @@ Capital simulado (loco): 54.48 USDT
   TP1 alcanzado (60513.05)
 Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 54.60 USDT
+--- 27/11/2026 01:08
+Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 54.50 USDT
