@@ -1,6 +1,3 @@
---- 24/11/2026 06:08
-No hay velas de 4h nuevas. Nada que hacer.
-Capital simulado (oro): 99.54 €  | oro ahora 3631.90 $
 --- 24/11/2026 06:09
 No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 99.51 €  | oro ahora 3629.90 $
@@ -596,5 +593,8 @@ Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
 No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
 --- 27/11/2026 11:08
+No hay velas de 4h nuevas. Nada que hacer.
+Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $
+--- 27/11/2026 11:22
 No hay velas de 4h nuevas. Nada que hacer.
 Capital simulado (oro): 98.50 €  | oro ahora 3620.40 $

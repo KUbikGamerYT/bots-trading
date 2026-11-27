@@ -3,7 +3,7 @@
   "last_bar": "2026-11-26",
   "v4h": 100.0,
   "btc_dentro": false,
-  "ultima_vez": "2026-11-27T10:07:47.116010+00:00",
+  "ultima_vez": "2026-11-27T10:22:44.461194+00:00",
   "cobrado": 0.0,
   "cobros": 0,
   "fase": 1,
@@ -29,7 +29,7 @@
   "prices": {},
   "cash": 9839.893955185975,
   "analisis": {
-    "fecha": "2026-11-27T10:07:47+00:00",
+    "fecha": "2026-11-27T10:22:44+00:00",
     "filas": [
       [
         "Situaci\u00f3n",
@@ -74,5 +74,5 @@
     ],
     "resumen": "Simulaci\u00f3n de la prueba FTMO de 10.000 $ con el bot combinado (BTC 4h + \u00edndices y oro). Backtest: ~40-65 % de aprobar las 2 fases en 12 meses, unos 7-8 meses de media."
   },
-  "actualizado": "2026-11-27T10:07:47+00:00"
+  "actualizado": "2026-11-27T10:22:44+00:00"
 }
