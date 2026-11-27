@@ -1,6 +1,3 @@
---- 25/11/2026 06:08
-  TP1 alcanzado (58980.47)
-Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 59.71 USDT
 --- 25/11/2026 07:08
 Velas de 5 min procesadas: 12 · operaciones cerradas en esta pasada: 0
@@ -596,5 +593,8 @@ Capital simulado (loco): 52.10 USDT
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 52.20 USDT
 --- 27/11/2026 14:08
+Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
+Capital simulado (loco): 52.20 USDT
+--- 27/11/2026 14:23
 Velas de 5 min procesadas: 3 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 52.20 USDT
