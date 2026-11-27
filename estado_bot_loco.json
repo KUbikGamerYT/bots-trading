@@ -18,7 +18,7 @@
     "risk_pct": 0.0024796790835276824,
     "time": "2026-11-27 07:10"
   },
-  "last_bar": "2026-11-27 07:15:00+00:00",
+  "last_bar": "2026-11-27 07:30:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
   "cash": 0.0,
   "positions": {
@@ -30,11 +30,11 @@
     }
   },
   "prices": {
-    "BTC": 61841.39
+    "BTC": 61618.75
   },
-  "actualizado": "2026-11-27T07:23:02+00:00",
+  "actualizado": "2026-11-27T07:38:10+00:00",
   "analisis": {
-    "fecha": "2026-11-27T07:23:02+00:00",
+    "fecha": "2026-11-27T07:38:10+00:00",
     "filas": [
       [
         "Bitcoin",
@@ -42,6 +42,6 @@
         "Posici\u00f3n en largo (apuesta a que sube) desde 61796.57. Stop 61643.33, objetivo final 62256.28. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 27/11 07:15 UTC, cierre 61810.38."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 27/11 07:30 UTC, cierre 61825.27."
   }
 }
