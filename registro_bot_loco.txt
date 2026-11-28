@@ -1,7 +1,4 @@
 Capital simulado (loco): 58.10 USDT
---- 25/11/2026 21:09
-Velas de 5 min procesadas: 0 · operaciones cerradas en esta pasada: 0
-Capital simulado (loco): 58.10 USDT
 --- 25/11/2026 22:08
   VENTA (corto) oro a 59874.30  SL 60117.95  TP1 59630.65  TP2 59387.00  TP3 59143.35  (posición 58.10 €)
   CIERRE corto a 60117.95 (stop loss)  resultado -0.35 €
@@ -597,4 +594,7 @@ Capital simulado (loco): 49.91 USDT
   TP3 alcanzado (59276.20)
   CIERRE corto a 59276.20 (TP3 (3:1))  resultado +0.25 €
 Velas de 5 min procesadas: 10 · operaciones cerradas en esta pasada: 1
+Capital simulado (loco): 49.92 USDT
+--- 28/11/2026 12:09
+Velas de 5 min procesadas: 0 · operaciones cerradas en esta pasada: 0
 Capital simulado (loco): 49.92 USDT
