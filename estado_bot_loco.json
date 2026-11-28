@@ -1,47 +1,47 @@
 {
-  "equity": 50.74971238023781,
+  "equity": 50.53339714119406,
   "trade": {
     "dir": 1,
-    "entry": 59839.85,
-    "sl": 59710.98155597371,
+    "entry": 59999.67,
+    "sl": 59802.84173595609,
     "tps": [
-      59968.718444026286,
-      60097.586888052574,
-      60226.45533207886
+      60196.498264043905,
+      60393.32652808781,
+      60590.15479213172
     ],
     "hit": [
-      true,
+      false,
       false,
       false
     ],
-    "notional": 50.74971238023781,
-    "risk_pct": 0.0021535555992584837,
-    "time": "2026-11-27 22:45"
+    "notional": 50.53339714119406,
+    "risk_pct": 0.003280489110088548,
+    "time": "2026-11-28 01:00"
   },
-  "last_bar": "2026-11-28 00:00:00+00:00",
+  "last_bar": "2026-11-28 01:00:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
   "cash": 0.0,
   "positions": {
     "BTC": {
-      "units": 0.000848092239205777,
-      "entry": 59839.85,
-      "stop": 59710.98155597371,
-      "time": "2026-11-27 22:45"
+      "units": 0.0008422279179401164,
+      "entry": 59999.67,
+      "stop": 59802.84173595609,
+      "time": "2026-11-28 01:00"
     }
   },
   "prices": {
-    "BTC": 59989.38
+    "BTC": 60038.08
   },
-  "actualizado": "2026-11-28T00:08:19+00:00",
+  "actualizado": "2026-11-28T01:08:13+00:00",
   "analisis": {
-    "fecha": "2026-11-28T00:08:19+00:00",
+    "fecha": "2026-11-28T01:08:13+00:00",
     "filas": [
       [
         "Bitcoin",
         "cartera",
-        "Posici\u00f3n en largo (apuesta a que sube) desde 59839.85. Stop 59710.98, objetivo final 60226.46. Cierra antes si sale la se\u00f1al contraria."
+        "Posici\u00f3n en largo (apuesta a que sube) desde 59999.67. Stop 59802.84, objetivo final 60590.15. Cierra antes si sale la se\u00f1al contraria."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 28/11 00:00 UTC, cierre 59976.98."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 28/11 01:00 UTC, cierre 59999.67."
   }
 }
