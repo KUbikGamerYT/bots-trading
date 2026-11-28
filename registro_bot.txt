@@ -1,7 +1,3 @@
---- 25/11/2026 14:52
-Ya se procesó la vela del 2026-11-24. Vuelve a ejecutarlo mañana.
-
-Capital simulado: 100.00 USDT  (liquidez 100.00)
 --- 25/11/2026 15:07
 Ya se procesó la vela del 2026-11-24. Vuelve a ejecutarlo mañana.
 
@@ -595,6 +591,10 @@ Ya se procesó la vela del 2026-11-27. Vuelve a ejecutarlo mañana.
 
 Capital simulado: 100.00 USDT  (liquidez 100.00)
 --- 28/11/2026 03:07
+Ya se procesó la vela del 2026-11-27. Vuelve a ejecutarlo mañana.
+
+Capital simulado: 100.00 USDT  (liquidez 100.00)
+--- 28/11/2026 04:07
 Ya se procesó la vela del 2026-11-27. Vuelve a ejecutarlo mañana.
 
 Capital simulado: 100.00 USDT  (liquidez 100.00)

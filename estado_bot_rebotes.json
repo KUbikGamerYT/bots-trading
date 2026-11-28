@@ -4,14 +4,19 @@
   "last_bar": "2026-11-27",
   "start": "2026-11-12T19:38:36.588794+00:00",
   "prices": {},
-  "actualizado": "2026-11-28T02:08:06+00:00",
+  "actualizado": "2026-11-28T03:08:11+00:00",
   "analisis": {
-    "fecha": "2026-11-28T02:08:06+00:00",
+    "fecha": "2026-11-28T03:08:11+00:00",
     "filas": [
+      [
+        "Bonos EE.UU. 20+",
+        "cerca",
+        "Tendencia alcista, pero RSI(2) 15: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+      ],
       [
         "S&P 500",
         "no",
-        "Tendencia alcista, pero RSI(2) 42: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 83: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Nasdaq 100",
@@ -21,12 +26,12 @@
       [
         "Peque\u00f1as EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 68: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 93: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Desarrollados ex-EE.UU.",
         "no",
-        "Tendencia alcista, pero RSI(2) 53: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 89: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Emergentes",
@@ -39,14 +44,9 @@
         "Por debajo de su media de 200 sesiones (tendencia bajista): no compra ca\u00eddas aqu\u00ed."
       ],
       [
-        "Bonos EE.UU. 20+",
-        "no",
-        "Tendencia alcista, pero RSI(2) 80: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
-      ],
-      [
         "IBEX 35",
         "no",
-        "Tendencia alcista, pero RSI(2) 64: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
+        "Tendencia alcista, pero RSI(2) 81: necesita bajar de 10 (2-3 d\u00edas de ca\u00eddas fuertes)."
       ],
       [
         "Euro Stoxx 50",
