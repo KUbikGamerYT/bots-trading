@@ -32,24 +32,24 @@
       "stop": 0
     }
   },
-  "last_bar": "2026-11-26",
+  "last_bar": "2026-11-27",
   "last_rebalance": "2026-11",
   "start": "2026-11-12T11:40:09.666681+00:00",
   "prices": {
-    "REP.MC": 27.520000457763672,
-    "ASML.AS": 1168.199951171875,
-    "MTS.MC": 51.97999954223633,
-    "ENI.MI": 24.174999237060547,
-    "BAYN.DE": 52.81999969482422
+    "REP.MC": 27.799999237060547,
+    "ASML.AS": 1198.0,
+    "MTS.MC": 54.41999816894531,
+    "ENI.MI": 24.485000610351562,
+    "BAYN.DE": 52.86000061035156
   },
-  "actualizado": "2026-11-28T08:07:59+00:00",
+  "actualizado": "2026-11-28T09:08:00+00:00",
   "analisis": {
-    "fecha": "2026-11-28T08:07:59+00:00",
+    "fecha": "2026-11-28T09:08:00+00:00",
     "filas": [
       [
         "REP.MC",
         "cartera",
-        "Sube +86 % en 12 meses (puesto 1 de 92) y est\u00e1 por encima de su media de 200 sesiones. Sigue entre las 5 m\u00e1s fuertes: se mantiene."
+        "Sube +92 % en 12 meses (puesto 1 de 92) y est\u00e1 por encima de su media de 200 sesiones. Sigue entre las 5 m\u00e1s fuertes: se mantiene."
       ],
       [
         "ENI.MI",
@@ -59,37 +59,42 @@
       [
         "TTE.PA",
         "si",
-        "Sube +55 % en 12 meses (puesto 5 de 92) y est\u00e1 por encima de su media de 200 sesiones. Entrar\u00eda en la pr\u00f3xima revisi\u00f3n mensual."
-      ],
-      [
-        "BAYN.DE",
-        "cartera",
-        "Sube +51 % en 12 meses (puesto 7 de 92) y est\u00e1 por encima de su media de 200 sesiones. Sigue entre las 5 m\u00e1s fuertes: se mantiene."
+        "Sube +57 % en 12 meses (puesto 5 de 92) y est\u00e1 por encima de su media de 200 sesiones. Entrar\u00eda en la pr\u00f3xima revisi\u00f3n mensual."
       ],
       [
         "ELE.MC",
         "si",
-        "Sube +46 % en 12 meses (puesto 8 de 92) y est\u00e1 por encima de su media de 200 sesiones. Entrar\u00eda en la pr\u00f3xima revisi\u00f3n mensual."
+        "Sube +46 % en 12 meses (puesto 9 de 92) y est\u00e1 por encima de su media de 200 sesiones. Entrar\u00eda en la pr\u00f3xima revisi\u00f3n mensual."
+      ],
+      [
+        "MEL.MC",
+        "si",
+        "Sube +46 % en 12 meses (puesto 10 de 92) y est\u00e1 por encima de su media de 200 sesiones. Entrar\u00eda en la pr\u00f3xima revisi\u00f3n mensual."
       ],
       [
         "ASML.AS",
         "no",
-        "Sube +62 % en 12 meses (puesto 3 de 92) y est\u00e1 por debajo de su media de 200 sesiones. Ya no est\u00e1 entre las 5: se vender\u00eda en la pr\u00f3xima revisi\u00f3n."
+        "Sube +61 % en 12 meses (puesto 3 de 92) y est\u00e1 por debajo de su media de 200 sesiones. Ya no est\u00e1 entre las 5: se vender\u00eda en la pr\u00f3xima revisi\u00f3n."
       ],
       [
         "MTS.MC",
         "no",
-        "Sube +44 % en 12 meses (puesto 10 de 92) y est\u00e1 por debajo de su media de 200 sesiones. Ya no est\u00e1 entre las 5: se vender\u00eda en la pr\u00f3xima revisi\u00f3n."
+        "Sube +48 % en 12 meses (puesto 7 de 92) y est\u00e1 por debajo de su media de 200 sesiones. Ya no est\u00e1 entre las 5: se vender\u00eda en la pr\u00f3xima revisi\u00f3n."
+      ],
+      [
+        "BAYN.DE",
+        "no",
+        "Sube +41 % en 12 meses (puesto 13 de 92) y est\u00e1 por encima de su media de 200 sesiones. Ya no est\u00e1 entre las 5: se vender\u00eda en la pr\u00f3xima revisi\u00f3n."
       ],
       [
         "ASML.AS",
         "cerca",
-        "Sube +62 % en 12 meses, pero por debajo de su media de 200 sesiones."
+        "Sube +61 % en 12 meses, pero por debajo de su media de 200 sesiones."
       ],
       [
         "NOKIA.HE",
         "cerca",
-        "Sube +59 % en 12 meses, pero por debajo de su media de 200 sesiones."
+        "Sube +60 % en 12 meses, pero por debajo de su media de 200 sesiones."
       ],
       [
         "IFX.DE",
