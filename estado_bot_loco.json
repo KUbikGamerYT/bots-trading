@@ -1,47 +1,21 @@
 {
-  "equity": 50.20105056913334,
-  "trade": {
-    "dir": -1,
-    "entry": 60000.0,
-    "sl": 60071.52220024532,
-    "tps": [
-      59928.47779975468,
-      59856.955599509354,
-      59785.43339926403
-    ],
-    "hit": [
-      true,
-      false,
-      false
-    ],
-    "notional": 50.20105056913334,
-    "risk_pct": 0.0011920366707553816,
-    "time": "2026-11-28 04:50"
-  },
-  "last_bar": "2026-11-28 05:00:00+00:00",
+  "equity": 50.28017294756163,
+  "trade": null,
+  "last_bar": "2026-11-28 06:00:00+00:00",
   "start": "2026-11-12T19:42:25.439231+00:00",
-  "cash": 100.40210113826669,
-  "positions": {
-    "BTC": {
-      "units": -0.0008366841761522223,
-      "entry": 60000.0,
-      "stop": 60071.52220024532,
-      "time": "2026-11-28 04:50"
-    }
-  },
-  "prices": {
-    "BTC": 59819.51
-  },
-  "actualizado": "2026-11-28T05:08:12+00:00",
+  "cash": 50.28017294756163,
+  "positions": {},
+  "prices": {},
+  "actualizado": "2026-11-28T06:08:07+00:00",
   "analisis": {
-    "fecha": "2026-11-28T05:08:12+00:00",
+    "fecha": "2026-11-28T06:08:07+00:00",
     "filas": [
       [
         "Bitcoin",
-        "cartera",
-        "Posici\u00f3n en corto (apuesta a que baja) desde 60000.00. Stop 60071.52, objetivo final 59785.43. Cierra antes si sale la se\u00f1al contraria."
+        "cerca",
+        "Media r\u00e1pida (EMA 5) 59739.71 por debajo de la lenta (EMA 13) 59798.57. Necesita que se crucen hacia arriba con vela verde para comprar. Diferencia 0.10 %."
       ]
     ],
-    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 28/11 05:00 UTC, cierre 59895.27."
+    "resumen": "Opera cuando las medias de 5 y 13 velas de 5 minutos se cruzan con una vela que lo confirma. \u00daltima vela cerrada: 28/11 06:00 UTC, cierre 59687.03."
   }
 }
